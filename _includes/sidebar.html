@@ -8,6 +8,11 @@
     </h3>
 </header>
 
+{% if site.author.name %}
+<div id="name" class="text-center">
+	{{ site.author.name }}
+</div>
+{% endif %}
 {% if site.author.bio %}
 <div id="bio" class="text-center">
 	{{ site.author.bio }}
