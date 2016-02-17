@@ -13,7 +13,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Mind Deviations
+      title: Ricardo Sanz
 
 description: Not so fast.
 author:
@@ -23,7 +23,7 @@ author:
   twitter: NotSoRick
   pinterest:
   linkedin: rsanzr
-  bio: Telecommunications engineer
+  bio: La tecnología nos ayuda a hacer aquello que nunca tuvimos interés en hacer.
   email_md5: 726351295ec82e145928582f595aa3aa
 
 rss_path: feed.xml

@@ -8,8 +8,10 @@ body{
 	position: fixed;
 	top: 0px;
 	padding-top: 10%;
-	background-color: #2c3e50;
+	background-color: #fff;
 	color: #fff;
+	border-right: 1px #eee solid;
+	padding: 2em;
 }
 
 .sidebar-header {
@@ -45,9 +47,11 @@ a.nav-link:hover { color: #777 }
 
 #bio {
 	font-family: "Open Sans", sans-serif;
-	font-size: 14px;
+	font-size: 1em;
+	line-height: 1.65em;
 	margin: 0 auto;
 	margin-bottom: 10px;
+	color: #2c3e50;
 }
 
 #contact-list li .fa,
@@ -73,7 +77,7 @@ article .share .twitter:hover {
 	color: #CC2127;
 }
 #contact-list li:hover .fa-rss {
-	color: #e74c3c;
+	color: #662f8f;
 }
 article .share .facebook:hover {
 	color: #43609C;
@@ -89,7 +93,11 @@ article .share .gplus:hover {
 }
 
 .page-header {
-	color: #e74c3c;
+	color: #662f8f;
+}
+
+h1.post-title {
+	padding: 0 0 0;
 }
 
 article{
@@ -123,20 +131,20 @@ article.home h4,
 article.home h5,
 article.home h6 {
 	font-family: 'Bree Serif', serif;
-	color: #f2756a;
+	color: #333;
 }
 
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
 article.home h4 a {
-	color: #f2756a;
+	color: #662f8f;
 }
 article.home h1 a:hover,
 article.home h2 a:hover,
 article.home h3 a:hover,
 article.home h4 a:hover {
-	color: #e74c3c;
+	color: #662f8f;
 }
 
 .author .author-image {
@@ -146,7 +154,8 @@ article.home h4 a:hover {
 
 footer {
 	padding-top: 15px;
-	font-family: 'Bree Serif';
+	font-family: 'Open Sans';
+	font-size: 0.8em;
 }
 
 /* nav-vertical-tabs component */
@@ -172,7 +181,7 @@ footer {
     border-radius: 4px 0 0 4px;
 }
 
-.badge { background: #F2756A; }
+.badge { background: #662f8f; }
 
 #nav-menu{
     position: fixed;

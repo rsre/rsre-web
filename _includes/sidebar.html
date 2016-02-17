@@ -1,7 +1,7 @@
 <!-- sidebar.html -->
 <header class="sidebar-header" role="banner">
 	<a href="{{ site.BASE_PATH }}/">
-		<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle" />
+		<img src="{{ site.BASE_PATH }}/profile.jpg" class="img-circle" />
 	</a>
 	<h3 class="title">
         <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
@@ -10,12 +10,17 @@
 
 {% if site.author.name %}
 <div id="name" class="text-center">
-	{{ site.author.name }}
+	<a href="{{ site.BASE_PATH }}/" style="text-decoration: none;">
+		<h2>{{ site.author.name }}</h2>
+	</a>
 </div>
 {% endif %}
 {% if site.author.bio %}
 <div id="bio" class="text-center">
 	{{ site.author.bio }}
+	<br>
+	<br>
+	Learn more <a href="{{ site.BASE_PATH }}/about">about me</a>.
 </div>
 {% endif %}
 

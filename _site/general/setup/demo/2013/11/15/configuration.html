@@ -2,9 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Configuration</title>
+	<title>Articles</title>
 	
-	<meta name="author" content="Ricardo Sanz">
+	<meta name="author" content="Ricardo Sanzp">
 
 	<!-- Enable responsive viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +57,7 @@
 			</a>
 			
 			<a class="navbar-brand" href="/">
-				<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=35" class="img-circle" />
+				<img src="/profile.jpg" class="img-circle" style="width: 55px"/>
 				
 			</a>
 		</div>
@@ -66,14 +66,15 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="/">Home</a></li>
-				<li><a href="/categories.html">Categories</a></li>
-				<li><a href="/tags.html">Tags</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/categories.html">Tags</a></li>
+				<!--<li><a href="/tags.html">Tags</a></li>-->
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
 
 	<!-- nav-menu-dropdown -->
-	<div class="btn-group hidden-xs" id="nav-menu">
+<!--	<div class="btn-group hidden-xs" id="nav-menu">
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-bars"></i>
 		</button>
@@ -84,13 +85,13 @@
 			<li class="divider"></li>
 			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
 		</ul>
-	</div>
+	</div>-->
 
 	<div class="col-sm-3 sidebar hidden-xs" style="">
 		<!-- sidebar.html -->
 <header class="sidebar-header" role="banner">
 	<a href="/">
-		<img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa?s=150" class="img-circle" />
+		<img src="/profile.jpg" class="img-circle" />
 	</a>
 	<h3 class="title">
         <a href="/"></a>
@@ -99,12 +100,17 @@
 
 
 <div id="name" class="text-center">
-	Ricardo Sanz
+	<a href="/" style="text-decoration: none;">
+		<h2>Ricardo Sanz</h2>
+	</a>
 </div>
 
 
 <div id="bio" class="text-center">
-	Telecommunications engineer
+	La tecnología nos ayuda a hacer aquello que nunca tuvimos interés en hacer.
+	<br>
+	<br>
+	Learn more <a href="/about">about me</a>.
 </div>
 
 
@@ -153,20 +159,49 @@
 	</div>
 
 	<div class="col-sm-9 col-sm-offset-3">
-		<div class="page-header">
-  <h1>Configuration </h1>
-</div>
-	
+		
+<br>
 <article>
 
 	<div class="col-sm-10">
-	 <span class="post-date">
-	   
-	   November 
-	   15th,
-	   
-	   2013
-	 </span>
+		<div id="stamp">
+		 <span class="post-date">
+		   
+		   November
+		   15th,
+		   
+		   2013
+	   </span>
+
+	     
+	 		<ul class="tag_box list-unstyled list-inline">
+	 		  
+	 		 
+	 			
+	 				<li><a href="/categories.html#general-ref">
+	 					general
+	 					,
+	 				</a></li>
+	 			
+	 				<li><a href="/categories.html#setup-ref">
+	 					setup
+	 					,
+	 				</a></li>
+	 			
+	 				<li><a href="/categories.html#demo-ref">
+	 					demo
+	 					
+	 				</a></li>
+	 			
+	 		  
+	 		</ul>
+	 		
+		</div>
+
+    <div class="page-header">
+      <h1 title>Configuration </h1 title>
+    </div>
+
 	  <div class="article_body">
 	  <p>In your config file change these settings</p>
 
@@ -184,61 +219,38 @@
 
 	  </div>
 
-		
-		<ul class="tag_box list-unstyled list-inline">
-		  <li><i class="fa fa-folder-open"></i></li>
-		  
-		  
-			 
-				<li><a href="/categories.html#general-ref">
-					general <span>(5)</span>
-					,
-				</a></li>
-			 
-				<li><a href="/categories.html#setup-ref">
-					setup <span>(2)</span>
-					,
-				</a></li>
-			 
-				<li><a href="/categories.html#demo-ref">
-					demo <span>(5)</span>
-					
-				</a></li>
-			
-		  
-		</ul>
-		  
 
-		
+
+	<!--	
 		<ul class="list-inline">
 		  <li><i class="fa fa-tags"></i></li>
 		  
 		  
-			 
+			
 				<li>
 					<a href="/tags.html#demo-ref">
-					demo <span>(5)</span>
+					demo <span>(13)</span>
 					,
 					</a>
 				</li>
-			 
+			
 				<li>
 					<a href="/tags.html#dbyll-ref">
-					dbyll <span>(5)</span>
+					dbyll <span>(13)</span>
 					,
 					</a>
 				</li>
-			 
+			
 				<li>
 					<a href="/tags.html#dbtek-ref">
-					dbtek <span>(5)</span>
+					dbtek <span>(13)</span>
 					,
 					</a>
 				</li>
-			 
+			
 				<li>
 					<a href="/tags.html#setup-ref">
-					setup <span>(2)</span>
+					setup <span>(6)</span>
 					
 					</a>
 				</li>
@@ -246,11 +258,11 @@
 		  
 		  
 		</ul>
-		  
-
+		
+-->
 		<hr>
 
-		<div>
+	<!--	<div>
       <section class="share col-sm-6">
         <h4 class="section-title">Share Post</h4>
         <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Configuration&via=NotSoRick"
@@ -273,26 +285,26 @@
       <section class="col-sm-6 author">
         <img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa" class="img-rounded author-image" />
         <h4 class="section-title author-name">Ricardo Sanz</h4>
-        <p class="author-bio">Telecommunications engineer</p>
+        <p class="author-bio">La tecnología nos ayuda a hacer aquello que nunca tuvimos interés en hacer.</p>
       </section>
     </div>
-
+-->
     <div class="clearfix"></div>
 
-		<ul class="pager">
+	<!--	<ul class="pager">
 		  
-		  <li class="previous"><a href="/general/demo/2013/11/14/sample.html" title="Sample">&larr; Previous</a></li>
+		  <li class="previous"><a href="/general/setup/demo/2013/11/15/configuration-copy.html" title="Configuration">&larr; Previous</a></li>
 		  
 		  
-		  <li class="next"><a href="/general/setup/demo/2013/11/15/hello-world.html" title="Hello World!">Next &rarr;</a></li>
+		  <li class="next"><a href="/general/setup/demo/2013/11/15/hello-world-copy-2.html" title="Hello World!">Next &rarr;</a></li>
 		  
 		</ul>
 
-		<hr>
+		<hr>-->
 	</div>
-	
+
 	<div class="col-sm-2 sidebar-2">
-	
+
 	</div>
 </article>
 <div class="clearfix"></div>
@@ -302,9 +314,8 @@
 
 
 		<footer>
-			<hr/>
 			<p>
-				&copy; 2016 Ricardo Sanz with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+				Creative Commons License <a href="http://creativecommons.org/licenses/by-sa/4.0/">BY-SA 4.0</a>. Tuned <a href="https://github.com/dbtek/dbyll">dbyll</a>.
 			</p>
 		</footer>
 	</div>

@@ -2,11 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
+	<title>Articles</title>
 	{% if page.description %}
-	<meta name="description" content="{{ page.description }}">
+	<meta name="description" content="{{ page.description }}p">
 	{% endif %}
-	<meta name="author" content="{{ site.author.name }}">
+	<meta name="author" content="{{ site.author.name }}p">
 
 	<!-- Enable responsive viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,7 +59,7 @@
 			</a>
 			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
+				<img src="{{ site.BASE_PATH }}/profile.jpg" class="img-circle" style="width: 55px"/>
 				{{ site.title }}
 			</a>
 		</div>
@@ -68,14 +68,15 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="{{ site.BASE_PATH }}/">Home</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
-				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
+				<li><a href="{{ site.BASE_PATH}}/about">About</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Tags</a></li>
+				<!--<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>-->
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
 
 	<!-- nav-menu-dropdown -->
-	<div class="btn-group hidden-xs" id="nav-menu">
+<!--	<div class="btn-group hidden-xs" id="nav-menu">
 		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
 			<i class="fa fa-bars"></i>
 		</button>
@@ -86,7 +87,7 @@
 			<li class="divider"></li>
 			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
 		</ul>
-	</div>
+	</div>-->
 
 	<div class="col-sm-3 sidebar hidden-xs" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat center center !important;{% endif %}">
 		{% include sidebar.html %}
@@ -96,9 +97,8 @@
 		{{ content }}
 
 		<footer>
-			<hr/>
 			<p>
-				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with Jekyll. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
+				Creative Commons License <a href="http://creativecommons.org/licenses/by-sa/4.0/">BY-SA 4.0</a>. Tuned <a href="https://github.com/dbtek/dbyll">dbyll</a>.
 			</p>
 		</footer>
 	</div>
