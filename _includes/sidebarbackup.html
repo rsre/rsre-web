@@ -26,24 +26,17 @@
 
 <div id="contact-list" class="text-center">
 	<ul class="list-unstyled list-inline">
-	<!--	{% if site.author.github %}
+		{% if site.author.github %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://github.com/{{ site.author.github }}" target="_blank">
 				<i class="fa fa-github-alt fa-lg"></i>
 			</a>
 		</li>
-		{% endif %}-->
+		{% endif %}
 		{% if site.author.twitter %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
 				<i class="fa fa-twitter fa-lg"></i>
-			</a>
-		</li>
-		{% endif %}
-		{% if site.author.linkedin %}
-		<li>
-			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
-				<i class="fa fa-linkedin fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
@@ -54,6 +47,8 @@
 			</a>
 		</li>
 		{% endif %}
+	</ul>
+	<ul id="contact-list-secondary" class="list-unstyled list-inline" target="_blank">
 		{% if site.author.pinterest %}
 		<li>
 			<a class="btn btn-default btn-sm" href="https://pinterest.com/{{ site.author.pinterest }}">
@@ -61,10 +56,10 @@
 			</a>
 		</li>
 		{% endif %}
-		{% if site.author.instagram %}
+		{% if site.author.linkedin %}
 		<li>
-			<a class="btn btn-default btn-sm" href="https://instagram.com/{{ site.author.instagram }}" target="_blank">
-				<i class="fa fa-instagram fa-lg"></i>
+			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank">
+				<i class="fa fa-linkedin fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}

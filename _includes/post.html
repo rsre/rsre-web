@@ -16,7 +16,7 @@
 		   {{ page.date | date: "%Y" }}
 	   </span>
 
-	     {% unless page.categories == empty %}
+	  	<!--   {% unless page.categories == empty %}
 	 		<ul class="tag_box list-unstyled list-inline">
 	 		  {% assign categories_list = page.categories %}
 	 		 {% if categories_list.first[0] == null %}
@@ -34,7 +34,34 @@
 	 			{% endfor %}
 	 		  {% endif %}
 	 		</ul>
-	 		{% endunless %}
+	 		{% endunless %}		-->
+
+				{% unless page.tags == empty %}
+				<ul class="list-inline">
+					{% assign tags_list = page.tags %}
+					{% if tags_list.first[0] == null %}
+					{% for tag in tags_list %}
+						<li>
+							<a href="{{ site.BASE_PATH }}/{{ site.tags_path }}#{{ tag }}-ref">
+							{{ tag }}
+							{% unless forloop.last %},{% endunless %}
+							</a>
+						</li>
+					{% endfor %}
+					{% else %}
+					{% for tag in tags_list %}
+						<li>
+							<a href="{{ site.BASE_PATH }}/{{ site.tags_path }}#{{ tag[0] }}-ref">
+								{{ tag[0] }}
+								{% unless forloop.last %},{% endunless %}
+							</a>
+						</li>
+
+					{% endfor %}
+					{% endif %}
+					{% assign tags_list = nil %}
+				</ul>
+				{% endunless %}
 		</div>
 
     <div class="page-header">
@@ -45,36 +72,6 @@
 	  {{ content }}
 	  </div>
 
-
-
-	<!--	{% unless page.tags == empty %}
-		<ul class="list-inline">
-		  <li><i class="fa fa-tags"></i></li>
-		  {% assign tags_list = page.tags %}
-		  {% if tags_list.first[0] == null %}
-			{% for tag in tags_list %}
-				<li>
-					<a href="{{ site.BASE_PATH }}/{{ site.tags_path }}#{{ tag }}-ref">
-					{{ tag }} <span>({{ site.tags[tag].size }})</span>
-					{% unless forloop.last %},{% endunless %}
-					</a>
-				</li>
-			{% endfor %}
-		  {% else %}
-			{% for tag in tags_list %}
-				<li>
-					<a href="{{ site.BASE_PATH }}/{{ site.tags_path }}#{{ tag[0] }}-ref">
-						{{ tag[0] }} <span>({{ tag[1].size }})</span>
-						{% unless forloop.last %},{% endunless %}
-					</a>
-				</li>
-
-			{% endfor %}
-		  {% endif %}
-		  {% assign tags_list = nil %}
-		</ul>
-		{% endunless %}
--->
 		<hr>
 
 	<!--	<div>

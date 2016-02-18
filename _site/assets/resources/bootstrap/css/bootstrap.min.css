@@ -295,7 +295,7 @@ a {
 }
 
 a:hover,a:focus {
-	color: #2a6496;
+	color: #662f8f;
 	text-decoration: underline;
 }
 
@@ -430,7 +430,7 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a {
 }
 
 h1, h2, h2:hover, h2:focus{
-	color: #2c3e50;
+	color: #444;
 }
 
 
@@ -2048,7 +2048,7 @@ textarea.input-lg {
 }
 
 .btn-link:hover,.btn-link:focus {
-	color: #2a6496;
+	color: #662f8f;
 	text-decoration: underline;
 	background-color: transparent;
 }
@@ -2066,10 +2066,10 @@ textarea.input-lg {
 }
 
 .btn-sm,.btn-xs {
-	padding: 5px 10px;
-	font-size: 12px;
-	line-height: 1.5;
-	border-radius: 3px;
+	border-radius: 50%;
+  padding: 8px 8px;
+  width: 40px;
+  height: 40px;
 }
 
 .btn-xs {
@@ -3649,8 +3649,8 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 
 .nav a:hover .caret {
-	border-top-color: #2a6496;
-	border-bottom-color: #2a6496;
+	border-top-color: #662f8f;
+	border-bottom-color: #662f8f;
 }
 
 .nav-tabs .dropdown-menu {
