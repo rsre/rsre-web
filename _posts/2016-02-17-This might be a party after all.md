@@ -2,7 +2,7 @@
 layout: post
 title: This might be a party after all
 categories: [fiesta]
-tags: [demo, dbyll, dbtek, setup]
+tags: [dfiesta]
 fullview: true
 comments: true
 ---
