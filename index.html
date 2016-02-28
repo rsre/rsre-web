@@ -21,8 +21,8 @@ tagline:
     <h3>
       <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
     </h3>
-    <span id="separator">·</span>
     {% unless post.tags == empty %}
+    <span id="separator">·</span>
     <ul class="tag_box list-unstyled list-inline">
       {% assign tags_list = post.tags %}
      {% if tags_list.first[0] == null %}
