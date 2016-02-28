@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ricardo Sanz</title>
+	
+	<meta name="author" content="Ricardo Sanz">
+
+	<!-- Enable responsive viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le styles -->
+	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+	<!-- Le fav and touch icons -->
+	<!-- Update these with your own images
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	-->
+
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://github.com/rsre">
+				<i class="fa fa-github"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/NotSoRick">
+				<i class="fa fa-twitter"></i>
+			</a>
+			
+			
+			<a type="button" class="navbar-toggle nav-link" href="mailto:ric.sanz.re@gmail.com">
+				<i class="fa fa-envelope"></i>
+			</a>
+			
+			<a class="navbar-brand" href="/">
+				<img src="/profile.jpg" class="img-circle" style="width: 55px"/>
+				
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<!--<li><a href="/categories.html">Tags</a></li>-->
+				<li><a href="/tags.html">Tags</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</nav>
+
+	<!-- nav-menu-dropdown -->
+<!--	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+			<i class="fa fa-bars"></i>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
+			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>-->
+
+	<div class="col-sm-3 sidebar hidden-xs" style="">
+		<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="/">
+		<img src="/profile.jpg" class="img-circle" />
+	</a>
+	<h3 class="title">
+        <a href="/"></a>
+    </h3>
+</header>
+
+
+<div id="name" class="text-center">
+	<a href="/" style="text-decoration: none;">
+		<h2>Ricardo Sanz</h2>
+	</a>
+</div>
+
+
+<div id="bio" class="text-center">
+	Telecommunications student always willing to make stuff. I love electronics.
+	<br>
+	<br>
+	Learn more <a href="/about">about me</a>.
+</div>
+
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+	<!--	
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/rsre" target="_blank">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		-->
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://twitter.com/NotSoRick" target="_blank">
+				<i class="fa fa-twitter fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/rsanzr" target="_blank">
+				<i class="fa fa-linkedin fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:ric.sanz.re@gmail.com">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		
+		
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="https://instagram.com/rsrepictures" target="_blank">
+				<i class="fa fa-instagram fa-lg"></i>
+			</a>
+		</li>
+		
+		<li>
+			<a class="btn btn-default btn-sm" href="/feed.xml" target="_blank">
+				<i class="fa fa-rss fa-lg"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- sidebar.html end -->
+
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		
+<br>
+<article>
+
+	<div class="col-sm-10">
+		<div id="stamp">
+		 <span class="post-date">
+		   
+		   June
+		   3rd,
+		     
+		   2015
+	   </span>
+
+	  	<!--   		-->
+
+				
+				<ul class="list-inline">
+					
+					
+					
+						<li>
+							<a href="/tags.html#ETSIST-ref">
+							ETSIST
+							
+							</a>
+						</li>
+					
+					
+					
+				</ul>
+				
+		</div>
+
+    <div class="page-header">
+      <h1 title>Práctica 4 Prog 1 </h1 title>
+    </div>
+
+	  <div class="article_body">
+	  <h3 style="text-align: center;">ATTENTION: POSSIBLE SPAGHETTI CODE AHEAD</h3>
+<p>Bueno, en vista de que el examen de recuperación de <strong>Programación I</strong> es dentro de un par de horas, supongo que no pasará nada si publico mi solución a la <strong>Práctica 4</strong> de esta asignatura que entregué en Enero de este año.</p>
+
+<p>El enunciado decía lo siguiente:</p>
+<blockquote>Se pretende codificar un programa que simule el manejo de una lista de impresoras. En cada impresora de la lista se encolarán los nombres de los ficheros a imprimir y se podrá dar órdenes para mandar los ficheros a imprimir, lo cual se simulará a través de la salida estándar (pantalla).</blockquote>
+<div class="page" title="Page 3">
+<div class="layoutArea">
+<div class="column">
+<blockquote>El programa se codificará en tres fases, que irán permitiendo al alumno ir probando el programa e irlo ampliando sobre código ya probado.
+<ol>
+	<li>PRIMERA FASE:
+Codificar en C un programa colaImpresora.c que maneje una estructura de tipo cola en la que se almacenarán los nombres de los ficheros que se quieren imprimir.Los 6 nombres que se van a utilizar para generar los nombres de los ficheros, se pasarán al programa en el mandato de ejecución, y el programa los recibirá como parámetros de main(), de tal forma que la ejecución será:
+<pre class="lang:sh decode:true ">C:\&gt; colaImpresora fichero1 fichero2 fichero3 fichero4 fichero5 fichero6
+</pre>
+Donde ficheroN es el nombre que el alumno asigne a un determinado fichero.</li>
+	<li>SEGUNDA FASE:
+Codificar en C un programa listaImpresoras.c que maneje una lista de impresoras.
+Cada impresora se almacenará en una estructura con tres campos:
+<ul>
+	<li>nombre: identificador de la impresora. Cadena de 20 caracteres significativos.</li>
+	<li>número de ficheros pendientes de impresión en la cola de la impresora.</li>
+	<li>la cola de ficheros (resultante de la primera fase da la práctica).Inicialmente el programa leerá el nombre de seis ficheros que se pasará al programa en la ejecución, como parámetros de main(), de tal forma que la ejecución será:
+<pre class="lang:sh decode:true">C:\&gt; listaImpresoras fichero1 fichero2 fichero3 fichero4 fichero5 fichero6</pre>
+</li>
+</ul>
+</li>
+	<li>TERCERA FASE:
+  Se copiarán en el directorio en el que se vaya a codificar el programa fuente, los 6 ficheros de texto que se proporcionan en Moodle (a.txt b.txt c.txt d.txt e.txt f.txt).Se codificará un nuevo programa fuente listaImpresorasFicheros.c partiendo del código de listaImpresoras.c y realizando las siguientes modificaciones:Se modificarán las opciones 4. Imprimir un fichero y 5. Borrar una impresora, para que cada vez que se escriba por la salida estándar el nombre de un fichero, se escriba también el contenido del correspondiente fichero.Se modificará la opción 6. Salir, para que además de escribir el mensaje de despedida, se almacene en un fichero binario de nombre listaImpresoras.bin, el contenido de las posiciones ocupadas de la lista de impresoras para su uso en una sesión de trabajo posterior.Se modificará la función de inicialización de la lista, para que si el fichero listaImpresoras.bin existe, el contenido del fichero se añada en la lista de impresoras, ocupando las primeras posiciones de la lista.</li>
+</ol>
+</blockquote>
+</div>
+</div>
+</div>
+
+<p>En el momento de escribir el código planteé varias posibles soluciones: pasar todos los valores de un sitio a otro por referencia, hacer una máquina de estados con una impresora dónde solo se cambiaran las variables de la misma…pero al final me decidí por una opción fatídica que me acabó costando la nota: decidí usar variables globales.</p>
+
+<p>Era un chollazo, me ahorraba andar pasando tantos parámetros y al fin y al cabo muchas funciones tenían que acceder a esos valores ¿por qué no declararlos para todo el programa y me quitaba de andar jugando con ellos? Pues resulta que las variables globales están prohibidisimas, algo que yo desconocía en el momento.</p>
+
+<p>Entregué mi práctica muy confiado, habiendo entregado todas las partes optativas y cual fue mi sorpresa cuando publicaron la nota y me encontré un 0. Después de hablar con el profesor conseguí subir la nota a un aprobado porque después de todo <strong>sí que paso parámetros</strong> de todas las formas que nos han enseñado, ergo estaba demostrado que sabía pasar parámetros. También descubrí que el profesor pensaba que había <em>usado recursos extraños (sic)</em> en la parte optativa de ficheros, pero de eso hablaremos después.</p>
+
+<p>Os dejo el código:</p>
+<pre class="theme:solarized-light nums:true lang:c decode:true " title="listaImpresorasFicheros.c">/**************************************************************
+*listaImpresorasFicheros.c
+*Ricardo Sanz Retuerta
+*Maneja una lista de impresoras imprimiendo ficheros
+*y guarda el estado entre una ejecucion y otra
+***************************************************************/
+#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+#include&lt;stdlib.h&gt;
+#define COLA (10+1)
+#define IMPRESORAS 4
+
+typedef struct{
+  char colaFich[COLA][12+1];
+  int inicio;
+  int final;
+}tCola;
+
+typedef struct{
+  char nombre[10+1];
+  int pendientes;
+  tCola colaImp;
+}tImpresora;
+
+tImpresora lista[IMPRESORAS];//lista esta declarada como variable global para simplificar el programa
+
+//Declaracion de las funciones
+int colaLlena(tCola *pcola);
+/*************************************************************
+*Nombre:colaLlena
+*Descripcion: analiza si una cola esta llena
+*Parametros de entrada: pcola: un puntero a la cola a analizar
+*
+*Parametros de salida: devuelve un entero. 1 si esta llena, 0 si no esta llena
+*Parametros de entrada/salida:-----
+*************************************************************/
+int colaVacia(tCola *pcola);
+/*************************************************************
+*Nombre:colaVacia
+*Descripcion:analiza si una cola esta vacia
+*Parametros de entrada:pcola: un puntero a la cola a analizar
+*
+*Parametros de salida: devuelve 1 si esta vacia y 0 si no esta vacia
+*Parametros de entrada/salida:----
+*************************************************************/
+int huecoLibre(void);
+/*************************************************************
+*Nombre:huecoLibre
+*Descripcion:busca huecos en la lista de impresoras
+*Parametros de entrada:----
+*
+*Parametros de salida:devuelve un entero, la primera posicion
+*                     libre en la lista o -1 si esta llena
+*Parametros de entrada/salida:------
+*************************************************************/
+int listaVacia(void);
+/*************************************************************
+*Nombre:listaVacia
+*Descripcion:analiza si la lista esta vacia
+*Parametros de entrada:----
+*
+*Parametros de salida:devuelve el primer hueco ocupado en
+*                       la lista o -1 si está vacia
+*Parametros de entrada/salida:-------
+*************************************************************/
+int listaLlena(void);
+/*************************************************************
+*Nombre:listaLlena
+*Descripcion:analiza si la lista esta llena
+*Parametros de entrada:-----
+*
+*Parametros de salida:devuelve 0 si la lista tiene al
+*                       menos un hueco libre, 1 si esta llena
+*Parametros de entrada/salida:--------
+*************************************************************/
+void meterCola(char cadena[], tCola *pcola);
+/*************************************************************
+*Nombre:meterCola
+*Descripcion:pone una cadena de caracteres en una cola
+*Parametros de entrada:cadena: la cadena que quieres meter
+*                      pcola: puntero a la cola donde lo quieres meter
+*Parametros de salida:---
+*Parametros de entrada/salida:-----
+*************************************************************/
+int enLista (char buscar[]);
+/*************************************************************
+*Nombre:enLista
+*Descripcion:busca en la lista una impresora
+*Parametros de entrada:buscar:el nombre de la impresora que quieres buscar
+*
+*Parametros de salida:si lo encuentra, devuelve la posicion de la impresora
+*                     si no, devuele -1
+*Parametros de entrada/salida:-----
+*************************************************************/
+void mandarFicherosPorLote(char *argv[], int n, tImpresora *pimpresora);
+/*************************************************************
+*Nombre:mandarFicherosPorLote
+*Descripcion:manda n ficheros de argv a la cola de una impresora
+*Parametros de entrada: argv: puntero a donde estan las cadenas
+*                          que se van a meter en la cola
+*                       n: el numero de ficheros a meter
+*                       pimpresora: puntero a la impresora donde
+*                           se van a meter las cadenas
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+void sacarCola(char *ficheroOut, tCola *pcola);
+/*************************************************************
+*Nombre:sacarCola
+*Descripcion:saca 1 fichero de la cola
+*Parametros de entrada: pcola: puntero a la cola de la que se quiere desencolar
+*
+*Parametros de salida: ficheroOut: donde se guarda el fichero sacado
+*Parametros de entrada/salida:----
+*************************************************************/
+void imprimirCola(tCola *pcola);
+/*************************************************************
+*Nombre:imprimirCola
+*Descripcion:imprime toda una cola de impresion
+*Parametros de entrada:pcola: puntero a la cola que se quiere imprimir
+*
+*Parametros de salida:----
+*Parametros de entrada/salida:-----
+*************************************************************/
+void inicializarCola(tCola *pcola);
+/*************************************************************
+*Nombre:inicializarCola
+*Descripcion:inicializa una cola poniendo a 0 todos sus parametros
+*Parametros de entrada:pcola:puntero a la cola que se quiere inicializar
+*
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+void inicializarLista(void);
+/*************************************************************
+*Nombre:inicializarLista
+*Descripcion:inicializa la lista poniendo a cero todos sus parametros
+*Parametros de entrada:----
+*
+*Parametros de salida:-----
+*Parametros de entrada/salida:-----
+*************************************************************/
+int guardarLista(void);
+/*************************************************************
+*Nombre:guardarLista
+*Descripcion:guarda el estado actual de la lista en un fichero externo
+*Parametros de entrada:----
+*
+*Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
+*Parametros de entrada/salida:----
+*************************************************************/
+int recuperarLista(void);
+/*************************************************************
+*Nombre:recuperarLista
+*Descripcion:recupera una lista si encuentra una copia guardada
+*Parametros de entrada:----
+*
+*Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
+*Parametros de entrada/salida:----
+*************************************************************/
+int menu (void);
+/*************************************************************
+*Nombre:menu
+*Descripcion:muestra un menu y pide al usuario una opcion
+*Parametros de entrada:---
+*
+*Parametros de salida:devuelve la opcion elegida
+*Parametros de entrada/salida:----
+*************************************************************/
+void agregarImpresora(int numImpresora);
+/*************************************************************
+*Nombre:agregarImpresora
+*Descripcion:agrega una impresora a la lista
+*Parametros de entrada:numImpresora:la posicion en la que se
+*                           quiere almacenar la impresora
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+void leerFichero(char ficheroOut[13]);
+/*************************************************************
+*Nombre:leerFichero
+*Descripcion:lee un fichero de texto y lo muestra por salida estandar
+*Parametros de entrada:ficheroOut: el nombre del fichero a imprimir
+*
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+void borrarImpresora(int queImp);
+/*************************************************************
+*Nombre:borrarImpresora
+*Descripcion:borra una impresora de la lista
+*Parametros de entrada:queImp:el numero de la impresora que se quiere borrar
+*
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+
+//FUNCION PRINCIPAL
+int main(int argc, char *argv[])
+{
+  char ficheroOut[12+1];
+  int condicion;
+  int n;
+  int i;
+  char input[21];
+  int queImp;
+
+  condicion=1;
+  if(!recuperarLista())
+    inicializarLista();
+
+  if(argc==7)
+    while(condicion)
+    {
+      switch(menu())
+      {
+        case 1:
+          if(!listaLlena())
+            agregarImpresora(huecoLibre());
+          else
+            printf("No quedan impresoras por agregar!\n\n");
+          break;
+
+        case 2:
+          if(listaVacia()&gt;=0)
+          {
+            printf("Impresoras disponibles:\n");
+            for(i=0;i&lt;IMPRESORAS;i++)
+              printf("\n%s",lista[i].nombre);
+            printf("\nIntroduzca el nombre de la impresora: ");
+            fgets(input,20,stdin);
+            if((queImp=enLista(input))&gt;=0)
+            {
+              n=1+(rand()%6);
+              printf("Mandando %d ficheros por lote a la impresora...\n",n);
+              mandarFicherosPorLote(argv,n,&amp;lista[queImp]);
+          }
+          else
+            printf("Esa impresora no existe!\n\n");
+          }
+          else
+            printf("La lista de impresoras esta vacia!\n\n");
+          break;
+
+        case 3:
+          for(i=0;i&lt;IMPRESORAS;i++)
+          {
+            if(lista[i].nombre[0]!='\0')
+            {
+              printf("Ficheros en la cola de impresión de: %s\n",lista[i].nombre);
+              imprimirCola(&amp;lista[i].colaImp);
+            }
+          }
+          break;
+
+        case 4:
+          if(listaVacia()&gt;=0)
+          {
+            printf("Impresoras disponibles:\n");
+            for(i=0;i&lt;IMPRESORAS;i++)
+              printf("\n%s",lista[i].nombre);
+            printf("\nIntroduzca el nombre de la impresora: ");
+            fgets(input,20,stdin);
+            if((queImp=enLista(input))&gt;=0)
+            {
+              if(lista[queImp].pendientes&gt;0)
+              {
+                sacarCola(ficheroOut, &amp;lista[queImp].colaImp);
+                printf("Imprimiendo '%s'\n\n",ficheroOut);
+                leerFichero(ficheroOut);
+                lista[queImp].pendientes--;
+                printf("Quedan %d ficheros en esta cola.\n\n", lista[queImp].pendientes);
+              }
+              else
+                printf("No quedan ficheros por imprimir en esta cola!\n\n");
+            }
+            else
+              printf("Esa impresora no existe!\n\n");
+          }
+          else
+            printf("La lista de impresoras esta vacia!\n\n");
+          break;
+
+        case 5:
+          if(listaVacia()&gt;=0)
+          {
+            printf("Impresoras disponibles:\n");
+            for(i=0;i&lt;IMPRESORAS;i++)
+              printf("\n%s",lista[i].nombre);
+            printf("\nIntroduzca el nombre de la impresora: ");
+            fgets(input,20,stdin);
+            if((queImp=enLista(input))&gt;=0)
+              borrarImpresora(queImp);
+            else
+              printf("Esa impresora no existe!\n\n");
+          }
+          else
+            printf("La lista de impresoras esta vacia!\n\n");
+          break;
+        case 6:
+          guardarLista();
+          printf("Fin del programa. Lista guardada. Adios.\n");
+          condicion=0;
+          break;
+        }//fin del switch
+      }//fin del bucle
+}//fin de main
+
+
+
+int colaLlena(tCola *pcola)
+{
+  if(pcola-&gt;inicio==((pcola-&gt;final+1)%COLA))
+    return 1;
+  else
+    return 0;
+}
+
+int colaVacia(tCola *pcola)
+{
+  if(pcola-&gt;inicio==pcola-&gt;final)
+    return 1;
+  else
+    return 0;
+}
+
+int huecoLibre(void)
+{
+  int i;
+  for(i=0;i&lt;IMPRESORAS;i++)
+  {
+    if((lista[i].nombre[0])=='\0')
+      return i;/*Devuelve el primer hueco libre en la lista*/
+  }
+  return -1;/*Devuele -1 si esta llena*/
+}
+
+int listaVacia(void)
+{
+  int i;
+  for(i=0;i&lt;IMPRESORAS;i++)
+  {
+    if((lista[i].nombre[0])!='\0')
+      return i;/*Devuelve el primer hueco ocupado en la lista*/
+    }
+  return -1;/*Devuelve -1 si esta vacia*/
+}
+
+int listaLlena(void)
+{
+  int i;
+  for(i=0;i&lt;IMPRESORAS;i++)
+  {
+    if((lista[i].nombre[0])==('\0'))
+      return 0;
+  }
+  return 1;
+}
+
+void meterCola(char cadena[], tCola *pcola)
+{
+  if(!colaLlena(pcola))
+  {
+    strcpy(pcola-&gt;colaFich[pcola-&gt;final],cadena);
+    strcat(pcola-&gt;colaFich[pcola-&gt;final],".txt");
+    pcola-&gt;final=((pcola-&gt;final+1)%COLA);
+  }
+}
+
+int enLista (char buscar[])
+{
+  int i;
+  for(i=0;i&lt;IMPRESORAS;i++)
+  {
+    if(!(strcmp(lista[i].nombre,buscar)))
+      return i;
+  }
+  return -1;
+}
+
+void mandarFicherosPorLote(char *argv[], int n, tImpresora *pimpresora)
+{
+  int i;
+  for(i=0;i&lt;n;i++)
+  {
+    meterCola(argv[i+1], &amp;pimpresora-&gt;colaImp);
+    pimpresora-&gt;pendientes++;
+  }
+}
+
+void sacarCola(char *ficheroOut, tCola *pcola)
+{
+  if(!colaVacia(pcola))
+  {
+    strcpy(ficheroOut,pcola-&gt;colaFich[pcola-&gt;inicio]);
+    pcola-&gt;colaFich[pcola-&gt;inicio][0]='\0';
+    pcola-&gt;inicio=((pcola-&gt;inicio+1)%COLA);
+  }
+}
+
+void imprimirCola(tCola *pcola)
+{
+  int i;
+  for(i=0;i&lt;(COLA-1);i++)
+  {
+    if((pcola-&gt;inicio+i)&lt;COLA)
+    {
+      printf("\t%d.  ",i);
+      puts(pcola-&gt;colaFich[pcola-&gt;inicio+i]);
+    }
+    else
+    {
+      printf("\t%d.  ",i);
+      puts(pcola-&gt;colaFich[pcola-&gt;inicio-(COLA-i)]);
+    }
+
+  }
+}
+
+void inicializarCola(tCola *pcola)
+{
+  int i;
+  pcola-&gt;inicio=0;
+  pcola-&gt;final=0;
+  for(i=0;i&lt;=COLA;i++)
+    pcola-&gt;colaFich[i][0]='\0';
+}
+
+void inicializarLista(void)
+{
+  int i;
+  for(i=0;i&lt;IMPRESORAS;i++)
+  {
+    lista[i].nombre[0]='\0';
+    lista[i].pendientes=0;
+    inicializarCola(&amp;lista[i].colaImp);
+  }
+
+
+}
+
+int guardarLista(void)
+{
+  FILE *pfich; /* Referencia al fichero */
+  char *p;
+  int error; /* almacena si ha habido error */
+  error=1;
+
+
+  if ((pfich=fopen("listaImpresoras.bin","w"))!=NULL)
+  {
+    for(p=(char*)(lista);p&lt;(char*)(((unsigned long)lista)+(IMPRESORAS*sizeof(tImpresora)));p++)
+    {
+      putc(*p,pfich);
+    }
+    fclose (pfich);
+  }
+  else
+    error=0;
+  return error;
+}
+
+int recuperarLista(void)
+{
+  FILE *pfich; /* Referencia al fichero */
+  char *p;
+  int error; /* almacena si ha habido error */
+  error=1;
+
+  if ((pfich=fopen("listaImpresoras.bin","r"))!=NULL)
+  {
+    for(p=(char*)(lista);p&lt;(char*)(((unsigned long)(lista))+(IMPRESORAS*sizeof(tImpresora)));p++)
+    {
+      *p=(char)getc(pfich);
+    }
+    fclose (pfich);
+  }
+  else
+    error=0;
+  return error;
+  }
+
+int menu (void)
+{
+  char opcion[3];
+  printf("Menu\nSeleccione una opcion:\n\t1. Agregar impresora\n\t2. Mandar ficheros por lote a una impresora\n\t3. Listar todos los ficheros pendientes de imprimir\n\t4. Imprimir un fichero\n\t5. Borrar una impresora\n\t6. Salir\n ");
+  fflush(stdin);
+  fgets(opcion,3,stdin);
+  return atoi(opcion);
+}
+
+void agregarImpresora(int numImpresora)
+{
+  char input[11];
+  int i;
+
+  printf("Impresoras disponibles:\n");
+  for(i=0;i&lt;IMPRESORAS;i++)
+    printf("\n%s",lista[i].nombre);
+  printf("\nIntroduzca un nombre para la impresora: ");
+  fgets(input,11,stdin);
+
+  if(enLista(input)&lt;0)
+  {
+    strncpy(lista[huecoLibre()].nombre,input,10);
+  }
+  else
+    printf("Esa impresora ya esta en la lista!\n\n");
+}
+
+void leerFichero(char ficheroOut[13])
+{
+  FILE *lectura;
+  char letra;
+  lectura=fopen(ficheroOut,"r");
+  if(lectura!=NULL)
+  {
+    while((letra=(char)fgetc(lectura))!=EOF)
+      printf("%c",letra);
+    printf("\n\n");
+  }
+  else
+    printf("Error al abrir el archivo.\n");
+  fclose(lectura);
+}
+
+void borrarImpresora(int queImp)
+{
+  char sacado[13];
+
+  printf("Borrando impresora %s\n",lista[queImp].nombre);
+
+  lista[queImp].nombre[0]='\0';
+  while(lista[queImp].pendientes)
+  {
+    sacarCola(sacado,&amp;lista[queImp].colaImp);
+    printf("Desencolando elemento '%s'\n",sacado);
+    leerFichero(sacado);
+    lista[queImp].pendientes--;
+  }
+}
+</pre>
+<p>Perdonad el posible nivel de spaghetti que pueda haber en el código, en el momento no estaba demasiado familiarizado con las formas estándar de hacer las cosas (y posiblemente ahora tampoco).</p>
+
+<p>El problema de haber usado recursos extraños viene en las funciones <em>int recuperarLista(void)</em> e <em>int guardarLista(void)</em>. La parte de ficheros no la vimos muy en profundidad en las clases de teoría, así que yo la escribí de la forma que consideré que había que hacerlo.</p>
+
+<p>Por ejemplo:</p>
+<pre class="theme:solarized-light lang:c decode:true" title="listaImpresorasFicheros.c">int guardarLista(void)
+{
+  FILE *pfich; /* Referencia al fichero */
+  char *p;
+  int error; /* almacena si ha habido error */
+  error=1;
+
+
+  if ((pfich=fopen("listaImpresoras.bin","w"))!=NULL)
+  {
+    for(p=(char*)(lista);p&lt;(char*)(((unsigned long)lista)+(IMPRESORAS*sizeof(tImpresora)));p++)
+    {
+      putc(*p,pfich);
+    }
+    fclose (pfich);
+  }
+  else
+    error=0;
+  return error;
+}</pre>
+<p>Procedo a intentar explicarlo. Lo que había que guardar del programa era un array de impresoras (del tipo <em>tImpresora</em>). Entonces, en la función los pasos que sigo son los siguientes:</p>
+<ul>
+	<li>Abro el fichero para escribir</li>
+	<li>Si se abre correctamente hago un bucle <em>for</em> que empieza en el puntero del array y acaba en el puntero resultante de la suma del puntero del array y el tamaño del tipo impresora multiplicado por el número de impresoras. De esta forma recorremos <strong>todo</strong> el array puntero a puntero.</li>
+	<li>En cada iteración del <em>for</em> escribo en el fichero un "carácter". Da igual lo que hubiera en esa posición de memoria, yo escribo un carácter porque en C un char ocupa 1 byte exactamente.  Con esto consigo escribir todas las posiciones de memoria del array en el fichero.</li>
+	<li>Cierro el fichero y salgo de la función.</li>
+</ul>
+<p>Con<em> recursos extraños</em> entiendo que el profesor pensaba que lo había copiado, plagiado o que me lo había hecho alguien. Le expliqué cómo funcionaba y cuando vio que lo entendía se dio por satisfecho y consideró que el código era mío, como ciertamente era.</p>
+
+	  </div>
+
+		<hr>
+
+	<!--	<div>
+      <section class="share col-sm-6">
+        <h4 class="section-title">Share Post</h4>
+        <a class="btn btn-default btn-sm twitter" href="http://twitter.com/share?text=Práctica 4 Prog 1&via=NotSoRick"
+           onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+          <i class="fa fa-twitter fa-lg"></i>
+          Twitter
+        </a>
+        <a class="btn btn-default btn-sm facebook" href="https://www.facebook.com/sharer/sharer.php"
+           onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <i class="fa fa-facebook fa-lg"></i>
+          Facebook
+        </a>
+        <a class="btn btn-default btn-sm gplus"
+           onclick="window.open('https://plus.google.com/share?url='+window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <i class="fa fa-google-plus fa-lg"></i>
+          Google+
+        </a>
+      </section>
+
+      <section class="col-sm-6 author">
+        <img src="http://www.gravatar.com/avatar/726351295ec82e145928582f595aa3aa" class="img-rounded author-image" />
+        <h4 class="section-title author-name">Ricardo Sanz</h4>
+        <p class="author-bio">Telecommunications student always willing to make stuff. I love electronics.</p>
+      </section>
+    </div>
+-->
+    <div class="clearfix"></div>
+
+	<!--	<ul class="pager">
+		  
+		  <li class="previous"><a href="/2015/05/06/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos.html" title="Métodos para el análisis de circuitos básicos">&larr; Previous</a></li>
+		  
+		  
+		  <li class="next"><a href="/2015/06/19/Help-Arranz.html" title="Help Arranz">Next &rarr;</a></li>
+		  
+		</ul>
+
+		<hr>-->
+	</div>
+
+	<div class="col-sm-2 sidebar-2">
+
+	</div>
+</article>
+<div class="clearfix"></div>
+
+
+
+    
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'ricardosanz';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+		<footer>
+			<p>
+				Creative Commons License <a href="http://creativecommons.org/licenses/by-sa/4.0/">BY-SA 4.0</a>. Running a modified <a href="https://github.com/dbtek/dbyll">dbyll</a>.
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+</body>
+</html>
+
+
+

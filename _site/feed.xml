@@ -7,188 +7,710 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>This might be a party after all</title>
-				<description>&lt;p&gt;&lt;strong&gt;This might be a party after all&lt;/strong&gt; is minimalist, stylish theme for jekyll. Supports gravatar, account links (github, twitter, e-mail, pinterest, résume file) and a bio.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is brought to you by &lt;strong&gt;&lt;a href=&quot;http://ismaildemirbilek.com&quot;&gt;dbtek&lt;/a&gt;&lt;/strong&gt;. Open sourced under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-
-&lt;h3 id=&quot;fiesta&quot;&gt;Fiesta&lt;/h3&gt;
-
-&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;https://github.com/dbtek/dbyll&quot;&gt;Aplaude fuerte!&lt;/a&gt;&lt;/p&gt;
-</description>
-				<pubDate>Wed, 17 Feb 2016 00:00:00 +0100</pubDate>
-				<link>/fiesta/2016/02/17/This-might-be-a-party-after-all.html</link>
-				<guid isPermaLink="true">/fiesta/2016/02/17/This-might-be-a-party-after-all.html</guid>
-			</item>
-		
-			<item>
 				<title>Hello World!</title>
-				<description>&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is minimalist, stylish theme for jekyll. Supports gravatar, account links (github, twitter, e-mail, pinterest, résume file) and a bio.&lt;/p&gt;
+				<description>&lt;p&gt;He migrado mi blog a &lt;strong&gt;jekyll&lt;/strong&gt;.
+Wordpress requería más atención, mantenimiento y tiempo del que me gustaría dedicar.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is brought to you by &lt;strong&gt;&lt;a href=&quot;http://ismaildemirbilek.com&quot;&gt;dbtek&lt;/a&gt;&lt;/strong&gt;. Open sourced under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;El tema que estoy usando es una versión de &lt;strong&gt;dbyll&lt;/strong&gt;, el cual fue originalmente hecho por &lt;strong&gt;&lt;a href=&quot;http://ismaildemirbilek.com&quot;&gt;dbtek&lt;/a&gt;&lt;/strong&gt;. Open sourced under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 
-&lt;h3 id=&quot;dbyll-is-on-github&quot;&gt;dbyll is on GitHub&lt;/h3&gt;
+&lt;h3 id=&quot;voy-a-mantener-este-post&quot;&gt;Voy a mantener este post&lt;/h3&gt;
 
-&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;https://github.com/dbtek/dbyll&quot;&gt;Grab your copy now!&lt;/a&gt;&lt;/p&gt;
-</description>
-				<pubDate>Fri, 15 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/setup/demo/2013/11/15/hello-world.html</link>
-				<guid isPermaLink="true">/general/setup/demo/2013/11/15/hello-world.html</guid>
-			</item>
-		
-			<item>
-				<title>Hello World!</title>
-				<description>&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is minimalist, stylish theme for jekyll. Supports gravatar, account links (github, twitter, e-mail, pinterest, résume file) and a bio.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is brought to you by &lt;strong&gt;&lt;a href=&quot;http://ismaildemirbilek.com&quot;&gt;dbtek&lt;/a&gt;&lt;/strong&gt;. Open sourced under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-
-&lt;h3 id=&quot;dbyll-is-on-github&quot;&gt;dbyll is on GitHub&lt;/h3&gt;
-
-&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;https://github.com/dbtek/dbyll&quot;&gt;Grab your copy now!&lt;/a&gt;&lt;/p&gt;
-</description>
-				<pubDate>Fri, 15 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/setup/demo/2013/11/15/hello-world-copy.html</link>
-				<guid isPermaLink="true">/general/setup/demo/2013/11/15/hello-world-copy.html</guid>
-			</item>
-		
-			<item>
-				<title>Hello World!</title>
-				<description>&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is minimalist, stylish theme for jekyll. Supports gravatar, account links (github, twitter, e-mail, pinterest, résume file) and a bio.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;dbyll&lt;/strong&gt; is brought to you by &lt;strong&gt;&lt;a href=&quot;http://ismaildemirbilek.com&quot;&gt;dbtek&lt;/a&gt;&lt;/strong&gt;. Open sourced under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-
-&lt;h3 id=&quot;dbyll-is-on-github&quot;&gt;dbyll is on GitHub&lt;/h3&gt;
-
-&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;https://github.com/dbtek/dbyll&quot;&gt;Grab your copy now!&lt;/a&gt;&lt;/p&gt;
-</description>
-				<pubDate>Fri, 15 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/setup/demo/2013/11/15/hello-world-copy-2.html</link>
-				<guid isPermaLink="true">/general/setup/demo/2013/11/15/hello-world-copy-2.html</guid>
-			</item>
-		
-			<item>
-				<title>Configuration</title>
-				<description>&lt;p&gt;In your config file change these settings&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dbyll&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;yourname&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;youremail&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;pinterest&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;linkedin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Your stylish,  minimalist theme!&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;email_md5&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;md5ofemail&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-</description>
-				<pubDate>Fri, 15 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/setup/demo/2013/11/15/configuration.html</link>
-				<guid isPermaLink="true">/general/setup/demo/2013/11/15/configuration.html</guid>
-			</item>
-		
-			<item>
-				<title>Configuration</title>
-				<description>&lt;p&gt;In your config file change these settings&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dbyll&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;yourname&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;youremail&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;pinterest&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;linkedin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Your stylish,  minimalist theme!&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;email_md5&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;md5ofemail&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-</description>
-				<pubDate>Fri, 15 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/setup/demo/2013/11/15/configuration-copy.html</link>
-				<guid isPermaLink="true">/general/setup/demo/2013/11/15/configuration-copy.html</guid>
-			</item>
-		
-			<item>
-				<title>Configuration</title>
-				<description>&lt;p&gt;In your config file change these settings&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;dbyll&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;yourname&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;youremail&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;twitter&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;pinterest&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;linkedin&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;resume&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;asd123&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;bio&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Your stylish,  minimalist theme!&lt;/span&gt;  
-  &lt;span class=&quot;s&quot;&gt;email_md5&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;md5ofemail&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-</description>
-				<pubDate>Fri, 15 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/setup/demo/2013/11/15/configuration-copy-2.html</link>
-				<guid isPermaLink="true">/general/setup/demo/2013/11/15/configuration-copy-2.html</guid>
-			</item>
-		
-			<item>
-				<title>Sample</title>
-				<description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;Como &lt;em&gt;chuleta&lt;/em&gt; de Markdown para futuras referencias.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;foo&#39;&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Así se pone código&#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;que_no_va_a_ningun_lado&quot;&gt;Así se pone un botón&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Thu, 14 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/demo/2013/11/14/sample.html</link>
-				<guid isPermaLink="true">/general/demo/2013/11/14/sample.html</guid>
+				<pubDate>Sun, 28 Feb 2016 00:00:00 +0100</pubDate>
+				<link>/2016/02/28/hello-world.html</link>
+				<guid isPermaLink="true">/2016/02/28/hello-world.html</guid>
 			</item>
 		
 			<item>
-				<title>Sample 2</title>
-				<description>&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+				<title>Productivity Hour</title>
+				<description>&lt;p&gt;Hoy he tomado una nueva medida: he instaurado la hora de la productividad.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;Durante esa hora hay que centrarse en hacer una cosa. No importa si ese día estás haciendo algo o haciendo nada, la hora de la productividad es sagrada.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/media/prodhour.png&quot; alt=&quot;Productivity Hour&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La idea es centrarse en hacer una sola cosa y avanzar esa cosa lo máximo posible en una hora.&lt;/p&gt;
+
+&lt;p&gt;Ningún tipo de distracción está permitida, no importa lo interesante que sea.&lt;/p&gt;
 </description>
-				<pubDate>Thu, 14 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/demo/sample/2013/11/14/sample-2.html</link>
-				<guid isPermaLink="true">/general/demo/sample/2013/11/14/sample-2.html</guid>
+				<pubDate>Tue, 04 Aug 2015 00:00:00 +0200</pubDate>
+				<link>/2015/08/04/Productivity-Hour.html</link>
+				<guid isPermaLink="true">/2015/08/04/Productivity-Hour.html</guid>
 			</item>
 		
 			<item>
-				<title>Hey lol</title>
-				<description>&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+				<title>Help Arranz</title>
+				<description>&lt;p&gt;Quería desconectar un poco del estudio así que en un rato he hecho un pequeño juego con HTML 5. La mecánica es un poco absurda y no hay forma de librarse de una asegurada muerte, solo prolongar la agonía hasta llevarte un &lt;i&gt;calculadorazo &lt;/i&gt;en la jeta.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;Pero bueno, para pasar un rato corto el juego está bien.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;Además, sale Arranz.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;Y como todo en lo que aparece Arranz, es necesariamente bueno.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Arranz es un estudiante de Turismo e Historia y necesita tu ayuda. Échale una mano esquivando calculadoras científicas y recuperando valiosos jarrones griegos.
+Usa las flechas de tu teclado o los botones del juego para controlar a Arranz.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet,  consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;/html5/arranz/&quot;&gt;Juega&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Thu, 14 Nov 2013 00:00:00 +0100</pubDate>
-				<link>/general/demo/sample/2013/11/14/sample-2-copy.html</link>
-				<guid isPermaLink="true">/general/demo/sample/2013/11/14/sample-2-copy.html</guid>
+				<pubDate>Fri, 19 Jun 2015 00:00:00 +0200</pubDate>
+				<link>/2015/06/19/Help-Arranz.html</link>
+				<guid isPermaLink="true">/2015/06/19/Help-Arranz.html</guid>
+			</item>
+		
+			<item>
+				<title>Práctica 4 Prog 1</title>
+				<description>&lt;h3 style=&quot;text-align: center;&quot;&gt;ATTENTION: POSSIBLE SPAGHETTI CODE AHEAD&lt;/h3&gt;
+&lt;p&gt;Bueno, en vista de que el examen de recuperación de &lt;strong&gt;Programación I&lt;/strong&gt; es dentro de un par de horas, supongo que no pasará nada si publico mi solución a la &lt;strong&gt;Práctica 4&lt;/strong&gt; de esta asignatura que entregué en Enero de este año.&lt;/p&gt;
+
+&lt;p&gt;El enunciado decía lo siguiente:&lt;/p&gt;
+&lt;blockquote&gt;Se pretende codificar un programa que simule el manejo de una lista de impresoras. En cada impresora de la lista se encolarán los nombres de los ficheros a imprimir y se podrá dar órdenes para mandar los ficheros a imprimir, lo cual se simulará a través de la salida estándar (pantalla).&lt;/blockquote&gt;
+&lt;div class=&quot;page&quot; title=&quot;Page 3&quot;&gt;
+&lt;div class=&quot;layoutArea&quot;&gt;
+&lt;div class=&quot;column&quot;&gt;
+&lt;blockquote&gt;El programa se codificará en tres fases, que irán permitiendo al alumno ir probando el programa e irlo ampliando sobre código ya probado.
+&lt;ol&gt;
+	&lt;li&gt;PRIMERA FASE:
+Codificar en C un programa colaImpresora.c que maneje una estructura de tipo cola en la que se almacenarán los nombres de los ficheros que se quieren imprimir.Los 6 nombres que se van a utilizar para generar los nombres de los ficheros, se pasarán al programa en el mandato de ejecución, y el programa los recibirá como parámetros de main(), de tal forma que la ejecución será:
+&lt;pre class=&quot;lang:sh decode:true &quot;&gt;C:\&amp;gt; colaImpresora fichero1 fichero2 fichero3 fichero4 fichero5 fichero6
+&lt;/pre&gt;
+Donde ficheroN es el nombre que el alumno asigne a un determinado fichero.&lt;/li&gt;
+	&lt;li&gt;SEGUNDA FASE:
+Codificar en C un programa listaImpresoras.c que maneje una lista de impresoras.
+Cada impresora se almacenará en una estructura con tres campos:
+&lt;ul&gt;
+	&lt;li&gt;nombre: identificador de la impresora. Cadena de 20 caracteres significativos.&lt;/li&gt;
+	&lt;li&gt;número de ficheros pendientes de impresión en la cola de la impresora.&lt;/li&gt;
+	&lt;li&gt;la cola de ficheros (resultante de la primera fase da la práctica).Inicialmente el programa leerá el nombre de seis ficheros que se pasará al programa en la ejecución, como parámetros de main(), de tal forma que la ejecución será:
+&lt;pre class=&quot;lang:sh decode:true&quot;&gt;C:\&amp;gt; listaImpresoras fichero1 fichero2 fichero3 fichero4 fichero5 fichero6&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+	&lt;li&gt;TERCERA FASE:
+  Se copiarán en el directorio en el que se vaya a codificar el programa fuente, los 6 ficheros de texto que se proporcionan en Moodle (a.txt b.txt c.txt d.txt e.txt f.txt).Se codificará un nuevo programa fuente listaImpresorasFicheros.c partiendo del código de listaImpresoras.c y realizando las siguientes modificaciones:Se modificarán las opciones 4. Imprimir un fichero y 5. Borrar una impresora, para que cada vez que se escriba por la salida estándar el nombre de un fichero, se escriba también el contenido del correspondiente fichero.Se modificará la opción 6. Salir, para que además de escribir el mensaje de despedida, se almacene en un fichero binario de nombre listaImpresoras.bin, el contenido de las posiciones ocupadas de la lista de impresoras para su uso en una sesión de trabajo posterior.Se modificará la función de inicialización de la lista, para que si el fichero listaImpresoras.bin existe, el contenido del fichero se añada en la lista de impresoras, ocupando las primeras posiciones de la lista.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;En el momento de escribir el código planteé varias posibles soluciones: pasar todos los valores de un sitio a otro por referencia, hacer una máquina de estados con una impresora dónde solo se cambiaran las variables de la misma…pero al final me decidí por una opción fatídica que me acabó costando la nota: decidí usar variables globales.&lt;/p&gt;
+
+&lt;p&gt;Era un chollazo, me ahorraba andar pasando tantos parámetros y al fin y al cabo muchas funciones tenían que acceder a esos valores ¿por qué no declararlos para todo el programa y me quitaba de andar jugando con ellos? Pues resulta que las variables globales están prohibidisimas, algo que yo desconocía en el momento.&lt;/p&gt;
+
+&lt;p&gt;Entregué mi práctica muy confiado, habiendo entregado todas las partes optativas y cual fue mi sorpresa cuando publicaron la nota y me encontré un 0. Después de hablar con el profesor conseguí subir la nota a un aprobado porque después de todo &lt;strong&gt;sí que paso parámetros&lt;/strong&gt; de todas las formas que nos han enseñado, ergo estaba demostrado que sabía pasar parámetros. También descubrí que el profesor pensaba que había &lt;em&gt;usado recursos extraños (sic)&lt;/em&gt; en la parte optativa de ficheros, pero de eso hablaremos después.&lt;/p&gt;
+
+&lt;p&gt;Os dejo el código:&lt;/p&gt;
+&lt;pre class=&quot;theme:solarized-light nums:true lang:c decode:true &quot; title=&quot;listaImpresorasFicheros.c&quot;&gt;/**************************************************************
+*listaImpresorasFicheros.c
+*Ricardo Sanz Retuerta
+*Maneja una lista de impresoras imprimiendo ficheros
+*y guarda el estado entre una ejecucion y otra
+***************************************************************/
+#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;string.h&amp;gt;
+#include&amp;lt;stdlib.h&amp;gt;
+#define COLA (10+1)
+#define IMPRESORAS 4
+
+typedef struct{
+  char colaFich[COLA][12+1];
+  int inicio;
+  int final;
+}tCola;
+
+typedef struct{
+  char nombre[10+1];
+  int pendientes;
+  tCola colaImp;
+}tImpresora;
+
+tImpresora lista[IMPRESORAS];//lista esta declarada como variable global para simplificar el programa
+
+//Declaracion de las funciones
+int colaLlena(tCola *pcola);
+/*************************************************************
+*Nombre:colaLlena
+*Descripcion: analiza si una cola esta llena
+*Parametros de entrada: pcola: un puntero a la cola a analizar
+*
+*Parametros de salida: devuelve un entero. 1 si esta llena, 0 si no esta llena
+*Parametros de entrada/salida:-----
+*************************************************************/
+int colaVacia(tCola *pcola);
+/*************************************************************
+*Nombre:colaVacia
+*Descripcion:analiza si una cola esta vacia
+*Parametros de entrada:pcola: un puntero a la cola a analizar
+*
+*Parametros de salida: devuelve 1 si esta vacia y 0 si no esta vacia
+*Parametros de entrada/salida:----
+*************************************************************/
+int huecoLibre(void);
+/*************************************************************
+*Nombre:huecoLibre
+*Descripcion:busca huecos en la lista de impresoras
+*Parametros de entrada:----
+*
+*Parametros de salida:devuelve un entero, la primera posicion
+*                     libre en la lista o -1 si esta llena
+*Parametros de entrada/salida:------
+*************************************************************/
+int listaVacia(void);
+/*************************************************************
+*Nombre:listaVacia
+*Descripcion:analiza si la lista esta vacia
+*Parametros de entrada:----
+*
+*Parametros de salida:devuelve el primer hueco ocupado en
+*                       la lista o -1 si está vacia
+*Parametros de entrada/salida:-------
+*************************************************************/
+int listaLlena(void);
+/*************************************************************
+*Nombre:listaLlena
+*Descripcion:analiza si la lista esta llena
+*Parametros de entrada:-----
+*
+*Parametros de salida:devuelve 0 si la lista tiene al
+*                       menos un hueco libre, 1 si esta llena
+*Parametros de entrada/salida:--------
+*************************************************************/
+void meterCola(char cadena[], tCola *pcola);
+/*************************************************************
+*Nombre:meterCola
+*Descripcion:pone una cadena de caracteres en una cola
+*Parametros de entrada:cadena: la cadena que quieres meter
+*                      pcola: puntero a la cola donde lo quieres meter
+*Parametros de salida:---
+*Parametros de entrada/salida:-----
+*************************************************************/
+int enLista (char buscar[]);
+/*************************************************************
+*Nombre:enLista
+*Descripcion:busca en la lista una impresora
+*Parametros de entrada:buscar:el nombre de la impresora que quieres buscar
+*
+*Parametros de salida:si lo encuentra, devuelve la posicion de la impresora
+*                     si no, devuele -1
+*Parametros de entrada/salida:-----
+*************************************************************/
+void mandarFicherosPorLote(char *argv[], int n, tImpresora *pimpresora);
+/*************************************************************
+*Nombre:mandarFicherosPorLote
+*Descripcion:manda n ficheros de argv a la cola de una impresora
+*Parametros de entrada: argv: puntero a donde estan las cadenas
+*                          que se van a meter en la cola
+*                       n: el numero de ficheros a meter
+*                       pimpresora: puntero a la impresora donde
+*                           se van a meter las cadenas
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+void sacarCola(char *ficheroOut, tCola *pcola);
+/*************************************************************
+*Nombre:sacarCola
+*Descripcion:saca 1 fichero de la cola
+*Parametros de entrada: pcola: puntero a la cola de la que se quiere desencolar
+*
+*Parametros de salida: ficheroOut: donde se guarda el fichero sacado
+*Parametros de entrada/salida:----
+*************************************************************/
+void imprimirCola(tCola *pcola);
+/*************************************************************
+*Nombre:imprimirCola
+*Descripcion:imprime toda una cola de impresion
+*Parametros de entrada:pcola: puntero a la cola que se quiere imprimir
+*
+*Parametros de salida:----
+*Parametros de entrada/salida:-----
+*************************************************************/
+void inicializarCola(tCola *pcola);
+/*************************************************************
+*Nombre:inicializarCola
+*Descripcion:inicializa una cola poniendo a 0 todos sus parametros
+*Parametros de entrada:pcola:puntero a la cola que se quiere inicializar
+*
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+void inicializarLista(void);
+/*************************************************************
+*Nombre:inicializarLista
+*Descripcion:inicializa la lista poniendo a cero todos sus parametros
+*Parametros de entrada:----
+*
+*Parametros de salida:-----
+*Parametros de entrada/salida:-----
+*************************************************************/
+int guardarLista(void);
+/*************************************************************
+*Nombre:guardarLista
+*Descripcion:guarda el estado actual de la lista en un fichero externo
+*Parametros de entrada:----
+*
+*Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
+*Parametros de entrada/salida:----
+*************************************************************/
+int recuperarLista(void);
+/*************************************************************
+*Nombre:recuperarLista
+*Descripcion:recupera una lista si encuentra una copia guardada
+*Parametros de entrada:----
+*
+*Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
+*Parametros de entrada/salida:----
+*************************************************************/
+int menu (void);
+/*************************************************************
+*Nombre:menu
+*Descripcion:muestra un menu y pide al usuario una opcion
+*Parametros de entrada:---
+*
+*Parametros de salida:devuelve la opcion elegida
+*Parametros de entrada/salida:----
+*************************************************************/
+void agregarImpresora(int numImpresora);
+/*************************************************************
+*Nombre:agregarImpresora
+*Descripcion:agrega una impresora a la lista
+*Parametros de entrada:numImpresora:la posicion en la que se
+*                           quiere almacenar la impresora
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+void leerFichero(char ficheroOut[13]);
+/*************************************************************
+*Nombre:leerFichero
+*Descripcion:lee un fichero de texto y lo muestra por salida estandar
+*Parametros de entrada:ficheroOut: el nombre del fichero a imprimir
+*
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+void borrarImpresora(int queImp);
+/*************************************************************
+*Nombre:borrarImpresora
+*Descripcion:borra una impresora de la lista
+*Parametros de entrada:queImp:el numero de la impresora que se quiere borrar
+*
+*Parametros de salida:----
+*Parametros de entrada/salida:----
+*************************************************************/
+
+//FUNCION PRINCIPAL
+int main(int argc, char *argv[])
+{
+  char ficheroOut[12+1];
+  int condicion;
+  int n;
+  int i;
+  char input[21];
+  int queImp;
+
+  condicion=1;
+  if(!recuperarLista())
+    inicializarLista();
+
+  if(argc==7)
+    while(condicion)
+    {
+      switch(menu())
+      {
+        case 1:
+          if(!listaLlena())
+            agregarImpresora(huecoLibre());
+          else
+            printf(&quot;No quedan impresoras por agregar!\n\n&quot;);
+          break;
+
+        case 2:
+          if(listaVacia()&amp;gt;=0)
+          {
+            printf(&quot;Impresoras disponibles:\n&quot;);
+            for(i=0;i&amp;lt;IMPRESORAS;i++)
+              printf(&quot;\n%s&quot;,lista[i].nombre);
+            printf(&quot;\nIntroduzca el nombre de la impresora: &quot;);
+            fgets(input,20,stdin);
+            if((queImp=enLista(input))&amp;gt;=0)
+            {
+              n=1+(rand()%6);
+              printf(&quot;Mandando %d ficheros por lote a la impresora...\n&quot;,n);
+              mandarFicherosPorLote(argv,n,&amp;amp;lista[queImp]);
+          }
+          else
+            printf(&quot;Esa impresora no existe!\n\n&quot;);
+          }
+          else
+            printf(&quot;La lista de impresoras esta vacia!\n\n&quot;);
+          break;
+
+        case 3:
+          for(i=0;i&amp;lt;IMPRESORAS;i++)
+          {
+            if(lista[i].nombre[0]!=&#39;\0&#39;)
+            {
+              printf(&quot;Ficheros en la cola de impresión de: %s\n&quot;,lista[i].nombre);
+              imprimirCola(&amp;amp;lista[i].colaImp);
+            }
+          }
+          break;
+
+        case 4:
+          if(listaVacia()&amp;gt;=0)
+          {
+            printf(&quot;Impresoras disponibles:\n&quot;);
+            for(i=0;i&amp;lt;IMPRESORAS;i++)
+              printf(&quot;\n%s&quot;,lista[i].nombre);
+            printf(&quot;\nIntroduzca el nombre de la impresora: &quot;);
+            fgets(input,20,stdin);
+            if((queImp=enLista(input))&amp;gt;=0)
+            {
+              if(lista[queImp].pendientes&amp;gt;0)
+              {
+                sacarCola(ficheroOut, &amp;amp;lista[queImp].colaImp);
+                printf(&quot;Imprimiendo &#39;%s&#39;\n\n&quot;,ficheroOut);
+                leerFichero(ficheroOut);
+                lista[queImp].pendientes--;
+                printf(&quot;Quedan %d ficheros en esta cola.\n\n&quot;, lista[queImp].pendientes);
+              }
+              else
+                printf(&quot;No quedan ficheros por imprimir en esta cola!\n\n&quot;);
+            }
+            else
+              printf(&quot;Esa impresora no existe!\n\n&quot;);
+          }
+          else
+            printf(&quot;La lista de impresoras esta vacia!\n\n&quot;);
+          break;
+
+        case 5:
+          if(listaVacia()&amp;gt;=0)
+          {
+            printf(&quot;Impresoras disponibles:\n&quot;);
+            for(i=0;i&amp;lt;IMPRESORAS;i++)
+              printf(&quot;\n%s&quot;,lista[i].nombre);
+            printf(&quot;\nIntroduzca el nombre de la impresora: &quot;);
+            fgets(input,20,stdin);
+            if((queImp=enLista(input))&amp;gt;=0)
+              borrarImpresora(queImp);
+            else
+              printf(&quot;Esa impresora no existe!\n\n&quot;);
+          }
+          else
+            printf(&quot;La lista de impresoras esta vacia!\n\n&quot;);
+          break;
+        case 6:
+          guardarLista();
+          printf(&quot;Fin del programa. Lista guardada. Adios.\n&quot;);
+          condicion=0;
+          break;
+        }//fin del switch
+      }//fin del bucle
+}//fin de main
+
+
+
+int colaLlena(tCola *pcola)
+{
+  if(pcola-&amp;gt;inicio==((pcola-&amp;gt;final+1)%COLA))
+    return 1;
+  else
+    return 0;
+}
+
+int colaVacia(tCola *pcola)
+{
+  if(pcola-&amp;gt;inicio==pcola-&amp;gt;final)
+    return 1;
+  else
+    return 0;
+}
+
+int huecoLibre(void)
+{
+  int i;
+  for(i=0;i&amp;lt;IMPRESORAS;i++)
+  {
+    if((lista[i].nombre[0])==&#39;\0&#39;)
+      return i;/*Devuelve el primer hueco libre en la lista*/
+  }
+  return -1;/*Devuele -1 si esta llena*/
+}
+
+int listaVacia(void)
+{
+  int i;
+  for(i=0;i&amp;lt;IMPRESORAS;i++)
+  {
+    if((lista[i].nombre[0])!=&#39;\0&#39;)
+      return i;/*Devuelve el primer hueco ocupado en la lista*/
+    }
+  return -1;/*Devuelve -1 si esta vacia*/
+}
+
+int listaLlena(void)
+{
+  int i;
+  for(i=0;i&amp;lt;IMPRESORAS;i++)
+  {
+    if((lista[i].nombre[0])==(&#39;\0&#39;))
+      return 0;
+  }
+  return 1;
+}
+
+void meterCola(char cadena[], tCola *pcola)
+{
+  if(!colaLlena(pcola))
+  {
+    strcpy(pcola-&amp;gt;colaFich[pcola-&amp;gt;final],cadena);
+    strcat(pcola-&amp;gt;colaFich[pcola-&amp;gt;final],&quot;.txt&quot;);
+    pcola-&amp;gt;final=((pcola-&amp;gt;final+1)%COLA);
+  }
+}
+
+int enLista (char buscar[])
+{
+  int i;
+  for(i=0;i&amp;lt;IMPRESORAS;i++)
+  {
+    if(!(strcmp(lista[i].nombre,buscar)))
+      return i;
+  }
+  return -1;
+}
+
+void mandarFicherosPorLote(char *argv[], int n, tImpresora *pimpresora)
+{
+  int i;
+  for(i=0;i&amp;lt;n;i++)
+  {
+    meterCola(argv[i+1], &amp;amp;pimpresora-&amp;gt;colaImp);
+    pimpresora-&amp;gt;pendientes++;
+  }
+}
+
+void sacarCola(char *ficheroOut, tCola *pcola)
+{
+  if(!colaVacia(pcola))
+  {
+    strcpy(ficheroOut,pcola-&amp;gt;colaFich[pcola-&amp;gt;inicio]);
+    pcola-&amp;gt;colaFich[pcola-&amp;gt;inicio][0]=&#39;\0&#39;;
+    pcola-&amp;gt;inicio=((pcola-&amp;gt;inicio+1)%COLA);
+  }
+}
+
+void imprimirCola(tCola *pcola)
+{
+  int i;
+  for(i=0;i&amp;lt;(COLA-1);i++)
+  {
+    if((pcola-&amp;gt;inicio+i)&amp;lt;COLA)
+    {
+      printf(&quot;\t%d.  &quot;,i);
+      puts(pcola-&amp;gt;colaFich[pcola-&amp;gt;inicio+i]);
+    }
+    else
+    {
+      printf(&quot;\t%d.  &quot;,i);
+      puts(pcola-&amp;gt;colaFich[pcola-&amp;gt;inicio-(COLA-i)]);
+    }
+
+  }
+}
+
+void inicializarCola(tCola *pcola)
+{
+  int i;
+  pcola-&amp;gt;inicio=0;
+  pcola-&amp;gt;final=0;
+  for(i=0;i&amp;lt;=COLA;i++)
+    pcola-&amp;gt;colaFich[i][0]=&#39;\0&#39;;
+}
+
+void inicializarLista(void)
+{
+  int i;
+  for(i=0;i&amp;lt;IMPRESORAS;i++)
+  {
+    lista[i].nombre[0]=&#39;\0&#39;;
+    lista[i].pendientes=0;
+    inicializarCola(&amp;amp;lista[i].colaImp);
+  }
+
+
+}
+
+int guardarLista(void)
+{
+  FILE *pfich; /* Referencia al fichero */
+  char *p;
+  int error; /* almacena si ha habido error */
+  error=1;
+
+
+  if ((pfich=fopen(&quot;listaImpresoras.bin&quot;,&quot;w&quot;))!=NULL)
+  {
+    for(p=(char*)(lista);p&amp;lt;(char*)(((unsigned long)lista)+(IMPRESORAS*sizeof(tImpresora)));p++)
+    {
+      putc(*p,pfich);
+    }
+    fclose (pfich);
+  }
+  else
+    error=0;
+  return error;
+}
+
+int recuperarLista(void)
+{
+  FILE *pfich; /* Referencia al fichero */
+  char *p;
+  int error; /* almacena si ha habido error */
+  error=1;
+
+  if ((pfich=fopen(&quot;listaImpresoras.bin&quot;,&quot;r&quot;))!=NULL)
+  {
+    for(p=(char*)(lista);p&amp;lt;(char*)(((unsigned long)(lista))+(IMPRESORAS*sizeof(tImpresora)));p++)
+    {
+      *p=(char)getc(pfich);
+    }
+    fclose (pfich);
+  }
+  else
+    error=0;
+  return error;
+  }
+
+int menu (void)
+{
+  char opcion[3];
+  printf(&quot;Menu\nSeleccione una opcion:\n\t1. Agregar impresora\n\t2. Mandar ficheros por lote a una impresora\n\t3. Listar todos los ficheros pendientes de imprimir\n\t4. Imprimir un fichero\n\t5. Borrar una impresora\n\t6. Salir\n &quot;);
+  fflush(stdin);
+  fgets(opcion,3,stdin);
+  return atoi(opcion);
+}
+
+void agregarImpresora(int numImpresora)
+{
+  char input[11];
+  int i;
+
+  printf(&quot;Impresoras disponibles:\n&quot;);
+  for(i=0;i&amp;lt;IMPRESORAS;i++)
+    printf(&quot;\n%s&quot;,lista[i].nombre);
+  printf(&quot;\nIntroduzca un nombre para la impresora: &quot;);
+  fgets(input,11,stdin);
+
+  if(enLista(input)&amp;lt;0)
+  {
+    strncpy(lista[huecoLibre()].nombre,input,10);
+  }
+  else
+    printf(&quot;Esa impresora ya esta en la lista!\n\n&quot;);
+}
+
+void leerFichero(char ficheroOut[13])
+{
+  FILE *lectura;
+  char letra;
+  lectura=fopen(ficheroOut,&quot;r&quot;);
+  if(lectura!=NULL)
+  {
+    while((letra=(char)fgetc(lectura))!=EOF)
+      printf(&quot;%c&quot;,letra);
+    printf(&quot;\n\n&quot;);
+  }
+  else
+    printf(&quot;Error al abrir el archivo.\n&quot;);
+  fclose(lectura);
+}
+
+void borrarImpresora(int queImp)
+{
+  char sacado[13];
+
+  printf(&quot;Borrando impresora %s\n&quot;,lista[queImp].nombre);
+
+  lista[queImp].nombre[0]=&#39;\0&#39;;
+  while(lista[queImp].pendientes)
+  {
+    sacarCola(sacado,&amp;amp;lista[queImp].colaImp);
+    printf(&quot;Desencolando elemento &#39;%s&#39;\n&quot;,sacado);
+    leerFichero(sacado);
+    lista[queImp].pendientes--;
+  }
+}
+&lt;/pre&gt;
+&lt;p&gt;Perdonad el posible nivel de spaghetti que pueda haber en el código, en el momento no estaba demasiado familiarizado con las formas estándar de hacer las cosas (y posiblemente ahora tampoco).&lt;/p&gt;
+
+&lt;p&gt;El problema de haber usado recursos extraños viene en las funciones &lt;em&gt;int recuperarLista(void)&lt;/em&gt; e &lt;em&gt;int guardarLista(void)&lt;/em&gt;. La parte de ficheros no la vimos muy en profundidad en las clases de teoría, así que yo la escribí de la forma que consideré que había que hacerlo.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo:&lt;/p&gt;
+&lt;pre class=&quot;theme:solarized-light lang:c decode:true&quot; title=&quot;listaImpresorasFicheros.c&quot;&gt;int guardarLista(void)
+{
+  FILE *pfich; /* Referencia al fichero */
+  char *p;
+  int error; /* almacena si ha habido error */
+  error=1;
+
+
+  if ((pfich=fopen(&quot;listaImpresoras.bin&quot;,&quot;w&quot;))!=NULL)
+  {
+    for(p=(char*)(lista);p&amp;lt;(char*)(((unsigned long)lista)+(IMPRESORAS*sizeof(tImpresora)));p++)
+    {
+      putc(*p,pfich);
+    }
+    fclose (pfich);
+  }
+  else
+    error=0;
+  return error;
+}&lt;/pre&gt;
+&lt;p&gt;Procedo a intentar explicarlo. Lo que había que guardar del programa era un array de impresoras (del tipo &lt;em&gt;tImpresora&lt;/em&gt;). Entonces, en la función los pasos que sigo son los siguientes:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Abro el fichero para escribir&lt;/li&gt;
+	&lt;li&gt;Si se abre correctamente hago un bucle &lt;em&gt;for&lt;/em&gt; que empieza en el puntero del array y acaba en el puntero resultante de la suma del puntero del array y el tamaño del tipo impresora multiplicado por el número de impresoras. De esta forma recorremos &lt;strong&gt;todo&lt;/strong&gt; el array puntero a puntero.&lt;/li&gt;
+	&lt;li&gt;En cada iteración del &lt;em&gt;for&lt;/em&gt; escribo en el fichero un &quot;carácter&quot;. Da igual lo que hubiera en esa posición de memoria, yo escribo un carácter porque en C un char ocupa 1 byte exactamente.  Con esto consigo escribir todas las posiciones de memoria del array en el fichero.&lt;/li&gt;
+	&lt;li&gt;Cierro el fichero y salgo de la función.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Con&lt;em&gt; recursos extraños&lt;/em&gt; entiendo que el profesor pensaba que lo había copiado, plagiado o que me lo había hecho alguien. Le expliqué cómo funcionaba y cuando vio que lo entendía se dio por satisfecho y consideró que el código era mío, como ciertamente era.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 03 Jun 2015 00:00:00 +0200</pubDate>
+				<link>/2015/06/03/Pra-ctica-4-Prog-1.html</link>
+				<guid isPermaLink="true">/2015/06/03/Pra-ctica-4-Prog-1.html</guid>
+			</item>
+		
+			<item>
+				<title>Métodos para el análisis de circuitos básicos</title>
+				<description>&lt;p&gt;En Análisis de Circuitos I nos enseñaron unos sencillos métodos para aplicar a la hora de analizar un circuito. Son bastante straight-forward y aveces te llevan demasiado de la mano, pero una vez los interiorizas son muy útiles. También son de gran ayuda para gente a la que le cuesta comprender las definiciones.&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Método 1: Evaluar una corriente
+&lt;ul&gt;
+	&lt;li&gt;paso 1: localizar una resistencia por la que pase una corriente&lt;/li&gt;
+	&lt;li&gt;paso 2: aplicar la ley de Ohm
+&lt;blockquote&gt;V = I*R&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+	&lt;li&gt;Método 2: Ley de Kirchhoff de las intensidades
+&lt;ul&gt;
+	&lt;li&gt;paso 1: evaluar todas las corrientes que salen o entran al nudo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+				<pubDate>Wed, 06 May 2015 00:00:00 +0200</pubDate>
+				<link>/2015/05/06/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos.html</link>
+				<guid isPermaLink="true">/2015/05/06/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos.html</guid>
 			</item>
 		
 	</channel>
