@@ -387,53 +387,54 @@ Cada impresora se almacenará en una estructura con tres campos:
 <p>Entregué mi práctica muy confiado, habiendo entregado todas las partes optativas y cual fue mi sorpresa cuando publicaron la nota y me encontré un 0. Después de hablar con el profesor conseguí subir la nota a un aprobado porque después de todo <strong>sí que paso parámetros</strong> de todas las formas que nos han enseñado, ergo estaba demostrado que sabía pasar parámetros. También descubrí que el profesor pensaba que había <em>usado recursos extraños (sic)</em> en la parte optativa de ficheros, pero de eso hablaremos después.</p>
 
 <p>Os dejo el código:</p>
-<pre class="theme:solarized-light nums:true lang:c decode:true " title="listaImpresorasFicheros.c">/**************************************************************
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/**************************************************************
 *listaImpresorasFicheros.c
 *Ricardo Sanz Retuerta
 *Maneja una lista de impresoras imprimiendo ficheros
 *y guarda el estado entre una ejecucion y otra
-***************************************************************/
-#include&lt;stdio.h&gt;
-#include&lt;string.h&gt;
-#include&lt;stdlib.h&gt;
+***************************************************************/</span>
+<span class="cp">#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;string.h&amp;gt;
+#include&amp;lt;stdlib.h&amp;gt;
 #define COLA (10+1)
 #define IMPRESORAS 4
+</span>
+<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
+  <span class="kt">char</span> <span class="n">colaFich</span><span class="p">[</span><span class="n">COLA</span><span class="p">][</span><span class="mi">12</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">inicio</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">final</span><span class="p">;</span>
+<span class="p">}</span><span class="n">tCola</span><span class="p">;</span>
 
-typedef struct{
-  char colaFich[COLA][12+1];
-  int inicio;
-  int final;
-}tCola;
+<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
+  <span class="kt">char</span> <span class="n">nombre</span><span class="p">[</span><span class="mi">10</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">pendientes</span><span class="p">;</span>
+  <span class="n">tCola</span> <span class="n">colaImp</span><span class="p">;</span>
+<span class="p">}</span><span class="n">tImpresora</span><span class="p">;</span>
 
-typedef struct{
-  char nombre[10+1];
-  int pendientes;
-  tCola colaImp;
-}tImpresora;
-
-tImpresora lista[IMPRESORAS];//lista esta declarada como variable global para simplificar el programa
-
-//Declaracion de las funciones
-int colaLlena(tCola *pcola);
-/*************************************************************
+<span class="n">tImpresora</span> <span class="n">lista</span><span class="p">[</span><span class="n">IMPRESORAS</span><span class="p">];</span><span class="c1">//lista esta declarada como variable global para simplificar el programa
+</span>
+<span class="c1">//Declaracion de las funciones
+</span><span class="kt">int</span> <span class="n">colaLlena</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:colaLlena
 *Descripcion: analiza si una cola esta llena
 *Parametros de entrada: pcola: un puntero a la cola a analizar
 *
 *Parametros de salida: devuelve un entero. 1 si esta llena, 0 si no esta llena
 *Parametros de entrada/salida:-----
-*************************************************************/
-int colaVacia(tCola *pcola);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">int</span> <span class="n">colaVacia</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:colaVacia
 *Descripcion:analiza si una cola esta vacia
 *Parametros de entrada:pcola: un puntero a la cola a analizar
 *
 *Parametros de salida: devuelve 1 si esta vacia y 0 si no esta vacia
 *Parametros de entrada/salida:----
-*************************************************************/
-int huecoLibre(void);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">int</span> <span class="n">huecoLibre</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:huecoLibre
 *Descripcion:busca huecos en la lista de impresoras
 *Parametros de entrada:----
@@ -441,9 +442,9 @@ int huecoLibre(void);
 *Parametros de salida:devuelve un entero, la primera posicion
 *                     libre en la lista o -1 si esta llena
 *Parametros de entrada/salida:------
-*************************************************************/
-int listaVacia(void);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">int</span> <span class="n">listaVacia</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:listaVacia
 *Descripcion:analiza si la lista esta vacia
 *Parametros de entrada:----
@@ -451,9 +452,9 @@ int listaVacia(void);
 *Parametros de salida:devuelve el primer hueco ocupado en
 *                       la lista o -1 si está vacia
 *Parametros de entrada/salida:-------
-*************************************************************/
-int listaLlena(void);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">int</span> <span class="n">listaLlena</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:listaLlena
 *Descripcion:analiza si la lista esta llena
 *Parametros de entrada:-----
@@ -461,18 +462,18 @@ int listaLlena(void);
 *Parametros de salida:devuelve 0 si la lista tiene al
 *                       menos un hueco libre, 1 si esta llena
 *Parametros de entrada/salida:--------
-*************************************************************/
-void meterCola(char cadena[], tCola *pcola);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">meterCola</span><span class="p">(</span><span class="kt">char</span> <span class="n">cadena</span><span class="p">[],</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:meterCola
 *Descripcion:pone una cadena de caracteres en una cola
 *Parametros de entrada:cadena: la cadena que quieres meter
 *                      pcola: puntero a la cola donde lo quieres meter
 *Parametros de salida:---
 *Parametros de entrada/salida:-----
-*************************************************************/
-int enLista (char buscar[]);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">int</span> <span class="n">enLista</span> <span class="p">(</span><span class="kt">char</span> <span class="n">buscar</span><span class="p">[]);</span>
+<span class="cm">/*************************************************************
 *Nombre:enLista
 *Descripcion:busca en la lista una impresora
 *Parametros de entrada:buscar:el nombre de la impresora que quieres buscar
@@ -480,9 +481,9 @@ int enLista (char buscar[]);
 *Parametros de salida:si lo encuentra, devuelve la posicion de la impresora
 *                     si no, devuele -1
 *Parametros de entrada/salida:-----
-*************************************************************/
-void mandarFicherosPorLote(char *argv[], int n, tImpresora *pimpresora);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">mandarFicherosPorLote</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">tImpresora</span> <span class="o">*</span><span class="n">pimpresora</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:mandarFicherosPorLote
 *Descripcion:manda n ficheros de argv a la cola de una impresora
 *Parametros de entrada: argv: puntero a donde estan las cadenas
@@ -492,468 +493,470 @@ void mandarFicherosPorLote(char *argv[], int n, tImpresora *pimpresora);
 *                           se van a meter las cadenas
 *Parametros de salida:----
 *Parametros de entrada/salida:----
-*************************************************************/
-void sacarCola(char *ficheroOut, tCola *pcola);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">sacarCola</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">ficheroOut</span><span class="p">,</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:sacarCola
 *Descripcion:saca 1 fichero de la cola
 *Parametros de entrada: pcola: puntero a la cola de la que se quiere desencolar
 *
 *Parametros de salida: ficheroOut: donde se guarda el fichero sacado
 *Parametros de entrada/salida:----
-*************************************************************/
-void imprimirCola(tCola *pcola);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">imprimirCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:imprimirCola
 *Descripcion:imprime toda una cola de impresion
 *Parametros de entrada:pcola: puntero a la cola que se quiere imprimir
 *
 *Parametros de salida:----
 *Parametros de entrada/salida:-----
-*************************************************************/
-void inicializarCola(tCola *pcola);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">inicializarCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:inicializarCola
 *Descripcion:inicializa una cola poniendo a 0 todos sus parametros
 *Parametros de entrada:pcola:puntero a la cola que se quiere inicializar
 *
 *Parametros de salida:----
 *Parametros de entrada/salida:----
-*************************************************************/
-void inicializarLista(void);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">inicializarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:inicializarLista
 *Descripcion:inicializa la lista poniendo a cero todos sus parametros
 *Parametros de entrada:----
 *
 *Parametros de salida:-----
 *Parametros de entrada/salida:-----
-*************************************************************/
-int guardarLista(void);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">int</span> <span class="n">guardarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:guardarLista
 *Descripcion:guarda el estado actual de la lista en un fichero externo
 *Parametros de entrada:----
 *
 *Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
 *Parametros de entrada/salida:----
-*************************************************************/
-int recuperarLista(void);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">int</span> <span class="n">recuperarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:recuperarLista
 *Descripcion:recupera una lista si encuentra una copia guardada
 *Parametros de entrada:----
 *
 *Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
 *Parametros de entrada/salida:----
-*************************************************************/
-int menu (void);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">int</span> <span class="n">menu</span> <span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:menu
 *Descripcion:muestra un menu y pide al usuario una opcion
 *Parametros de entrada:---
 *
 *Parametros de salida:devuelve la opcion elegida
 *Parametros de entrada/salida:----
-*************************************************************/
-void agregarImpresora(int numImpresora);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">agregarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">numImpresora</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:agregarImpresora
 *Descripcion:agrega una impresora a la lista
 *Parametros de entrada:numImpresora:la posicion en la que se
 *                           quiere almacenar la impresora
 *Parametros de salida:----
 *Parametros de entrada/salida:----
-*************************************************************/
-void leerFichero(char ficheroOut[13]);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">leerFichero</span><span class="p">(</span><span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">13</span><span class="p">]);</span>
+<span class="cm">/*************************************************************
 *Nombre:leerFichero
 *Descripcion:lee un fichero de texto y lo muestra por salida estandar
 *Parametros de entrada:ficheroOut: el nombre del fichero a imprimir
 *
 *Parametros de salida:----
 *Parametros de entrada/salida:----
-*************************************************************/
-void borrarImpresora(int queImp);
-/*************************************************************
+*************************************************************/</span>
+<span class="kt">void</span> <span class="n">borrarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">queImp</span><span class="p">);</span>
+<span class="cm">/*************************************************************
 *Nombre:borrarImpresora
 *Descripcion:borra una impresora de la lista
 *Parametros de entrada:queImp:el numero de la impresora que se quiere borrar
 *
 *Parametros de salida:----
 *Parametros de entrada/salida:----
-*************************************************************/
+*************************************************************/</span>
 
-//FUNCION PRINCIPAL
-int main(int argc, char *argv[])
-{
-  char ficheroOut[12+1];
-  int condicion;
-  int n;
-  int i;
-  char input[21];
-  int queImp;
+<span class="c1">//FUNCION PRINCIPAL
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+  <span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">12</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">condicion</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">input</span><span class="p">[</span><span class="mi">21</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">queImp</span><span class="p">;</span>
 
-  condicion=1;
-  if(!recuperarLista())
-    inicializarLista();
+  <span class="n">condicion</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">recuperarLista</span><span class="p">())</span>
+    <span class="n">inicializarLista</span><span class="p">();</span>
 
-  if(argc==7)
-    while(condicion)
-    {
-      switch(menu())
-      {
-        case 1:
-          if(!listaLlena())
-            agregarImpresora(huecoLibre());
-          else
-            printf("No quedan impresoras por agregar!\n\n");
-          break;
+  <span class="k">if</span><span class="p">(</span><span class="n">argc</span><span class="o">==</span><span class="mi">7</span><span class="p">)</span>
+    <span class="k">while</span><span class="p">(</span><span class="n">condicion</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="k">switch</span><span class="p">(</span><span class="n">menu</span><span class="p">())</span>
+      <span class="p">{</span>
+        <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+          <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">listaLlena</span><span class="p">())</span>
+            <span class="n">agregarImpresora</span><span class="p">(</span><span class="n">huecoLibre</span><span class="p">());</span>
+          <span class="k">else</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"No quedan impresoras por agregar!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+          <span class="k">break</span><span class="p">;</span>
 
-        case 2:
-          if(listaVacia()&gt;=0)
-          {
-            printf("Impresoras disponibles:\n");
-            for(i=0;i&lt;IMPRESORAS;i++)
-              printf("\n%s",lista[i].nombre);
-            printf("\nIntroduzca el nombre de la impresora: ");
-            fgets(input,20,stdin);
-            if((queImp=enLista(input))&gt;=0)
-            {
-              n=1+(rand()%6);
-              printf("Mandando %d ficheros por lote a la impresora...\n",n);
-              mandarFicherosPorLote(argv,n,&amp;lista[queImp]);
-          }
-          else
-            printf("Esa impresora no existe!\n\n");
-          }
-          else
-            printf("La lista de impresoras esta vacia!\n\n");
-          break;
+        <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
+          <span class="k">if</span><span class="p">(</span><span class="n">listaVacia</span><span class="p">()</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+          <span class="p">{</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Impresoras disponibles:</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%s"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Introduzca el nombre de la impresora: "</span><span class="p">);</span>
+            <span class="n">fgets</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
+            <span class="k">if</span><span class="p">((</span><span class="n">queImp</span><span class="o">=</span><span class="n">enLista</span><span class="p">(</span><span class="n">input</span><span class="p">))</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="p">{</span>
+              <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="o">+</span><span class="p">(</span><span class="n">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">6</span><span class="p">);</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"Mandando %d ficheros por lote a la impresora...</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">n</span><span class="p">);</span>
+              <span class="n">mandarFicherosPorLote</span><span class="p">(</span><span class="n">argv</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">]);</span>
+          <span class="p">}</span>
+          <span class="k">else</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Esa impresora no existe!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+          <span class="p">}</span>
+          <span class="k">else</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"La lista de impresoras esta vacia!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+          <span class="k">break</span><span class="p">;</span>
 
-        case 3:
-          for(i=0;i&lt;IMPRESORAS;i++)
-          {
-            if(lista[i].nombre[0]!='\0')
-            {
-              printf("Ficheros en la cola de impresión de: %s\n",lista[i].nombre);
-              imprimirCola(&amp;lista[i].colaImp);
-            }
-          }
-          break;
+        <span class="k">case</span> <span class="mi">3</span><span class="p">:</span>
+          <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+          <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">!=</span><span class="sc">'\0'</span><span class="p">)</span>
+            <span class="p">{</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"Ficheros en la cola de impresión de: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
+              <span class="n">imprimirCola</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">colaImp</span><span class="p">);</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+          <span class="k">break</span><span class="p">;</span>
 
-        case 4:
-          if(listaVacia()&gt;=0)
-          {
-            printf("Impresoras disponibles:\n");
-            for(i=0;i&lt;IMPRESORAS;i++)
-              printf("\n%s",lista[i].nombre);
-            printf("\nIntroduzca el nombre de la impresora: ");
-            fgets(input,20,stdin);
-            if((queImp=enLista(input))&gt;=0)
-            {
-              if(lista[queImp].pendientes&gt;0)
-              {
-                sacarCola(ficheroOut, &amp;lista[queImp].colaImp);
-                printf("Imprimiendo '%s'\n\n",ficheroOut);
-                leerFichero(ficheroOut);
-                lista[queImp].pendientes--;
-                printf("Quedan %d ficheros en esta cola.\n\n", lista[queImp].pendientes);
-              }
-              else
-                printf("No quedan ficheros por imprimir en esta cola!\n\n");
-            }
-            else
-              printf("Esa impresora no existe!\n\n");
-          }
-          else
-            printf("La lista de impresoras esta vacia!\n\n");
-          break;
+        <span class="k">case</span> <span class="mi">4</span><span class="p">:</span>
+          <span class="k">if</span><span class="p">(</span><span class="n">listaVacia</span><span class="p">()</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+          <span class="p">{</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Impresoras disponibles:</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%s"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Introduzca el nombre de la impresora: "</span><span class="p">);</span>
+            <span class="n">fgets</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
+            <span class="k">if</span><span class="p">((</span><span class="n">queImp</span><span class="o">=</span><span class="n">enLista</span><span class="p">(</span><span class="n">input</span><span class="p">))</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="p">{</span>
+              <span class="k">if</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="mi">0</span><span class="p">)</span>
+              <span class="p">{</span>
+                <span class="n">sacarCola</span><span class="p">(</span><span class="n">ficheroOut</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">colaImp</span><span class="p">);</span>
+                <span class="n">printf</span><span class="p">(</span><span class="s">"Imprimiendo '%s'</span><span class="se">\n\n</span><span class="s">"</span><span class="p">,</span><span class="n">ficheroOut</span><span class="p">);</span>
+                <span class="n">leerFichero</span><span class="p">(</span><span class="n">ficheroOut</span><span class="p">);</span>
+                <span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="o">--</span><span class="p">;</span>
+                <span class="n">printf</span><span class="p">(</span><span class="s">"Quedan %d ficheros en esta cola.</span><span class="se">\n\n</span><span class="s">"</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="p">);</span>
+              <span class="p">}</span>
+              <span class="k">else</span>
+                <span class="n">printf</span><span class="p">(</span><span class="s">"No quedan ficheros por imprimir en esta cola!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">else</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"Esa impresora no existe!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+          <span class="p">}</span>
+          <span class="k">else</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"La lista de impresoras esta vacia!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+          <span class="k">break</span><span class="p">;</span>
 
-        case 5:
-          if(listaVacia()&gt;=0)
-          {
-            printf("Impresoras disponibles:\n");
-            for(i=0;i&lt;IMPRESORAS;i++)
-              printf("\n%s",lista[i].nombre);
-            printf("\nIntroduzca el nombre de la impresora: ");
-            fgets(input,20,stdin);
-            if((queImp=enLista(input))&gt;=0)
-              borrarImpresora(queImp);
-            else
-              printf("Esa impresora no existe!\n\n");
-          }
-          else
-            printf("La lista de impresoras esta vacia!\n\n");
-          break;
-        case 6:
-          guardarLista();
-          printf("Fin del programa. Lista guardada. Adios.\n");
-          condicion=0;
-          break;
-        }//fin del switch
-      }//fin del bucle
-}//fin de main
-
-
-
-int colaLlena(tCola *pcola)
-{
-  if(pcola-&gt;inicio==((pcola-&gt;final+1)%COLA))
-    return 1;
-  else
-    return 0;
-}
-
-int colaVacia(tCola *pcola)
-{
-  if(pcola-&gt;inicio==pcola-&gt;final)
-    return 1;
-  else
-    return 0;
-}
-
-int huecoLibre(void)
-{
-  int i;
-  for(i=0;i&lt;IMPRESORAS;i++)
-  {
-    if((lista[i].nombre[0])=='\0')
-      return i;/*Devuelve el primer hueco libre en la lista*/
-  }
-  return -1;/*Devuele -1 si esta llena*/
-}
-
-int listaVacia(void)
-{
-  int i;
-  for(i=0;i&lt;IMPRESORAS;i++)
-  {
-    if((lista[i].nombre[0])!='\0')
-      return i;/*Devuelve el primer hueco ocupado en la lista*/
-    }
-  return -1;/*Devuelve -1 si esta vacia*/
-}
-
-int listaLlena(void)
-{
-  int i;
-  for(i=0;i&lt;IMPRESORAS;i++)
-  {
-    if((lista[i].nombre[0])==('\0'))
-      return 0;
-  }
-  return 1;
-}
-
-void meterCola(char cadena[], tCola *pcola)
-{
-  if(!colaLlena(pcola))
-  {
-    strcpy(pcola-&gt;colaFich[pcola-&gt;final],cadena);
-    strcat(pcola-&gt;colaFich[pcola-&gt;final],".txt");
-    pcola-&gt;final=((pcola-&gt;final+1)%COLA);
-  }
-}
-
-int enLista (char buscar[])
-{
-  int i;
-  for(i=0;i&lt;IMPRESORAS;i++)
-  {
-    if(!(strcmp(lista[i].nombre,buscar)))
-      return i;
-  }
-  return -1;
-}
-
-void mandarFicherosPorLote(char *argv[], int n, tImpresora *pimpresora)
-{
-  int i;
-  for(i=0;i&lt;n;i++)
-  {
-    meterCola(argv[i+1], &amp;pimpresora-&gt;colaImp);
-    pimpresora-&gt;pendientes++;
-  }
-}
-
-void sacarCola(char *ficheroOut, tCola *pcola)
-{
-  if(!colaVacia(pcola))
-  {
-    strcpy(ficheroOut,pcola-&gt;colaFich[pcola-&gt;inicio]);
-    pcola-&gt;colaFich[pcola-&gt;inicio][0]='\0';
-    pcola-&gt;inicio=((pcola-&gt;inicio+1)%COLA);
-  }
-}
-
-void imprimirCola(tCola *pcola)
-{
-  int i;
-  for(i=0;i&lt;(COLA-1);i++)
-  {
-    if((pcola-&gt;inicio+i)&lt;COLA)
-    {
-      printf("\t%d.  ",i);
-      puts(pcola-&gt;colaFich[pcola-&gt;inicio+i]);
-    }
-    else
-    {
-      printf("\t%d.  ",i);
-      puts(pcola-&gt;colaFich[pcola-&gt;inicio-(COLA-i)]);
-    }
-
-  }
-}
-
-void inicializarCola(tCola *pcola)
-{
-  int i;
-  pcola-&gt;inicio=0;
-  pcola-&gt;final=0;
-  for(i=0;i&lt;=COLA;i++)
-    pcola-&gt;colaFich[i][0]='\0';
-}
-
-void inicializarLista(void)
-{
-  int i;
-  for(i=0;i&lt;IMPRESORAS;i++)
-  {
-    lista[i].nombre[0]='\0';
-    lista[i].pendientes=0;
-    inicializarCola(&amp;lista[i].colaImp);
-  }
+        <span class="k">case</span> <span class="mi">5</span><span class="p">:</span>
+          <span class="k">if</span><span class="p">(</span><span class="n">listaVacia</span><span class="p">()</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+          <span class="p">{</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"Impresoras disponibles:</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%s"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Introduzca el nombre de la impresora: "</span><span class="p">);</span>
+            <span class="n">fgets</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
+            <span class="k">if</span><span class="p">((</span><span class="n">queImp</span><span class="o">=</span><span class="n">enLista</span><span class="p">(</span><span class="n">input</span><span class="p">))</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+              <span class="n">borrarImpresora</span><span class="p">(</span><span class="n">queImp</span><span class="p">);</span>
+            <span class="k">else</span>
+              <span class="n">printf</span><span class="p">(</span><span class="s">"Esa impresora no existe!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+          <span class="p">}</span>
+          <span class="k">else</span>
+            <span class="n">printf</span><span class="p">(</span><span class="s">"La lista de impresoras esta vacia!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="mi">6</span><span class="p">:</span>
+          <span class="n">guardarLista</span><span class="p">();</span>
+          <span class="n">printf</span><span class="p">(</span><span class="s">"Fin del programa. Lista guardada. Adios.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+          <span class="n">condicion</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+          <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span><span class="c1">//fin del switch
+</span>      <span class="p">}</span><span class="c1">//fin del bucle
+</span><span class="p">}</span><span class="c1">//fin de main
+</span>
 
 
-}
+<span class="kt">int</span> <span class="nf">colaLlena</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">==</span><span class="p">((</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="n">COLA</span><span class="p">))</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">else</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 
-int guardarLista(void)
-{
-  FILE *pfich; /* Referencia al fichero */
-  char *p;
-  int error; /* almacena si ha habido error */
-  error=1;
+<span class="kt">int</span> <span class="nf">colaVacia</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">==</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">else</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">huecoLibre</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">if</span><span class="p">((</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">==</span><span class="sc">'\0'</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">i</span><span class="p">;</span><span class="cm">/*Devuelve el primer hueco libre en la lista*/</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="cm">/*Devuele -1 si esta llena*/</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">listaVacia</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">if</span><span class="p">((</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">!=</span><span class="sc">'\0'</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">i</span><span class="p">;</span><span class="cm">/*Devuelve el primer hueco ocupado en la lista*/</span>
+    <span class="p">}</span>
+  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="cm">/*Devuelve -1 si esta vacia*/</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">listaLlena</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">if</span><span class="p">((</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">==</span><span class="p">(</span><span class="sc">'\0'</span><span class="p">))</span>
+      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">meterCola</span><span class="p">(</span><span class="kt">char</span> <span class="n">cadena</span><span class="p">[],</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">colaLlena</span><span class="p">(</span><span class="n">pcola</span><span class="p">))</span>
+  <span class="p">{</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="p">],</span><span class="n">cadena</span><span class="p">);</span>
+    <span class="n">strcat</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="p">],</span><span class="s">".txt"</span><span class="p">);</span>
+    <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="o">=</span><span class="p">((</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="n">COLA</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">enLista</span> <span class="p">(</span><span class="kt">char</span> <span class="n">buscar</span><span class="p">[])</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">,</span><span class="n">buscar</span><span class="p">)))</span>
+      <span class="k">return</span> <span class="n">i</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">mandarFicherosPorLote</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">tImpresora</span> <span class="o">*</span><span class="n">pimpresora</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">meterCola</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">pimpresora</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaImp</span><span class="p">);</span>
+    <span class="n">pimpresora</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">pendientes</span><span class="o">++</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">sacarCola</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">ficheroOut</span><span class="p">,</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">colaVacia</span><span class="p">(</span><span class="n">pcola</span><span class="p">))</span>
+  <span class="p">{</span>
+    <span class="n">strcpy</span><span class="p">(</span><span class="n">ficheroOut</span><span class="p">,</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="p">]);</span>
+    <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sc">'\0'</span><span class="p">;</span>
+    <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">=</span><span class="p">((</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="n">COLA</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">imprimirCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;(</span><span class="n">COLA</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">if</span><span class="p">((</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">COLA</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\t</span><span class="s">%d.  "</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+      <span class="n">puts</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">+</span><span class="n">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+      <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\t</span><span class="s">%d.  "</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+      <span class="n">puts</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">-</span><span class="p">(</span><span class="n">COLA</span><span class="o">-</span><span class="n">i</span><span class="p">)]);</span>
+    <span class="p">}</span>
+
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">inicializarCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">=</span><span class="n">COLA</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sc">'\0'</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">inicializarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sc">'\0'</span><span class="p">;</span>
+    <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pendientes</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="n">inicializarCola</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">colaImp</span><span class="p">);</span>
+  <span class="p">}</span>
 
 
-  if ((pfich=fopen("listaImpresoras.bin","w"))!=NULL)
-  {
-    for(p=(char*)(lista);p&lt;(char*)(((unsigned long)lista)+(IMPRESORAS*sizeof(tImpresora)));p++)
-    {
-      putc(*p,pfich);
-    }
-    fclose (pfich);
-  }
-  else
-    error=0;
-  return error;
-}
+<span class="p">}</span>
 
-int recuperarLista(void)
-{
-  FILE *pfich; /* Referencia al fichero */
-  char *p;
-  int error; /* almacena si ha habido error */
-  error=1;
+<span class="kt">int</span> <span class="nf">guardarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">FILE</span> <span class="o">*</span><span class="n">pfich</span><span class="p">;</span> <span class="cm">/* Referencia al fichero */</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">error</span><span class="p">;</span> <span class="cm">/* almacena si ha habido error */</span>
+  <span class="n">error</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
 
-  if ((pfich=fopen("listaImpresoras.bin","r"))!=NULL)
-  {
-    for(p=(char*)(lista);p&lt;(char*)(((unsigned long)(lista))+(IMPRESORAS*sizeof(tImpresora)));p++)
-    {
-      *p=(char)getc(pfich);
-    }
-    fclose (pfich);
-  }
-  else
-    error=0;
-  return error;
-  }
 
-int menu (void)
-{
-  char opcion[3];
-  printf("Menu\nSeleccione una opcion:\n\t1. Agregar impresora\n\t2. Mandar ficheros por lote a una impresora\n\t3. Listar todos los ficheros pendientes de imprimir\n\t4. Imprimir un fichero\n\t5. Borrar una impresora\n\t6. Salir\n ");
-  fflush(stdin);
-  fgets(opcion,3,stdin);
-  return atoi(opcion);
-}
+  <span class="k">if</span> <span class="p">((</span><span class="n">pfich</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="s">"listaImpresoras.bin"</span><span class="p">,</span><span class="s">"w"</span><span class="p">))</span><span class="o">!=</span><span class="nb">NULL</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(</span><span class="n">lista</span><span class="p">);</span><span class="n">p</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(((</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)</span><span class="n">lista</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">IMPRESORAS</span><span class="o">*</span><span class="k">sizeof</span><span class="p">(</span><span class="n">tImpresora</span><span class="p">)));</span><span class="n">p</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">putc</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">,</span><span class="n">pfich</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">fclose</span> <span class="p">(</span><span class="n">pfich</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span>
+    <span class="n">error</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">error</span><span class="p">;</span>
+<span class="p">}</span>
 
-void agregarImpresora(int numImpresora)
-{
-  char input[11];
-  int i;
+<span class="kt">int</span> <span class="nf">recuperarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">FILE</span> <span class="o">*</span><span class="n">pfich</span><span class="p">;</span> <span class="cm">/* Referencia al fichero */</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">error</span><span class="p">;</span> <span class="cm">/* almacena si ha habido error */</span>
+  <span class="n">error</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
 
-  printf("Impresoras disponibles:\n");
-  for(i=0;i&lt;IMPRESORAS;i++)
-    printf("\n%s",lista[i].nombre);
-  printf("\nIntroduzca un nombre para la impresora: ");
-  fgets(input,11,stdin);
+  <span class="k">if</span> <span class="p">((</span><span class="n">pfich</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="s">"listaImpresoras.bin"</span><span class="p">,</span><span class="s">"r"</span><span class="p">))</span><span class="o">!=</span><span class="nb">NULL</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(</span><span class="n">lista</span><span class="p">);</span><span class="n">p</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(((</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)(</span><span class="n">lista</span><span class="p">))</span><span class="o">+</span><span class="p">(</span><span class="n">IMPRESORAS</span><span class="o">*</span><span class="k">sizeof</span><span class="p">(</span><span class="n">tImpresora</span><span class="p">)));</span><span class="n">p</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">getc</span><span class="p">(</span><span class="n">pfich</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">fclose</span> <span class="p">(</span><span class="n">pfich</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span>
+    <span class="n">error</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">error</span><span class="p">;</span>
+  <span class="p">}</span>
 
-  if(enLista(input)&lt;0)
-  {
-    strncpy(lista[huecoLibre()].nombre,input,10);
-  }
-  else
-    printf("Esa impresora ya esta en la lista!\n\n");
-}
+<span class="kt">int</span> <span class="nf">menu</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">char</span> <span class="n">opcion</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Menu</span><span class="se">\n</span><span class="s">Seleccione una opcion:</span><span class="se">\n\t</span><span class="s">1. Agregar impresora</span><span class="se">\n\t</span><span class="s">2. Mandar ficheros por lote a una impresora</span><span class="se">\n\t</span><span class="s">3. Listar todos los ficheros pendientes de imprimir</span><span class="se">\n\t</span><span class="s">4. Imprimir un fichero</span><span class="se">\n\t</span><span class="s">5. Borrar una impresora</span><span class="se">\n\t</span><span class="s">6. Salir</span><span class="se">\n</span><span class="s"> "</span><span class="p">);</span>
+  <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
+  <span class="n">fgets</span><span class="p">(</span><span class="n">opcion</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
+  <span class="k">return</span> <span class="n">atoi</span><span class="p">(</span><span class="n">opcion</span><span class="p">);</span>
+<span class="p">}</span>
 
-void leerFichero(char ficheroOut[13])
-{
-  FILE *lectura;
-  char letra;
-  lectura=fopen(ficheroOut,"r");
-  if(lectura!=NULL)
-  {
-    while((letra=(char)fgetc(lectura))!=EOF)
-      printf("%c",letra);
-    printf("\n\n");
-  }
-  else
-    printf("Error al abrir el archivo.\n");
-  fclose(lectura);
-}
+<span class="kt">void</span> <span class="nf">agregarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">numImpresora</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">char</span> <span class="n">input</span><span class="p">[</span><span class="mi">11</span><span class="p">];</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
 
-void borrarImpresora(int queImp)
-{
-  char sacado[13];
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Impresoras disponibles:</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%s"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Introduzca un nombre para la impresora: "</span><span class="p">);</span>
+  <span class="n">fgets</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
 
-  printf("Borrando impresora %s\n",lista[queImp].nombre);
+  <span class="k">if</span><span class="p">(</span><span class="n">enLista</span><span class="p">(</span><span class="n">input</span><span class="p">)</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">0</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">strncpy</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">huecoLibre</span><span class="p">()].</span><span class="n">nombre</span><span class="p">,</span><span class="n">input</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Esa impresora ya esta en la lista!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
 
-  lista[queImp].nombre[0]='\0';
-  while(lista[queImp].pendientes)
-  {
-    sacarCola(sacado,&amp;lista[queImp].colaImp);
-    printf("Desencolando elemento '%s'\n",sacado);
-    leerFichero(sacado);
-    lista[queImp].pendientes--;
-  }
-}
-</pre>
+<span class="kt">void</span> <span class="nf">leerFichero</span><span class="p">(</span><span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">13</span><span class="p">])</span>
+<span class="p">{</span>
+  <span class="kt">FILE</span> <span class="o">*</span><span class="n">lectura</span><span class="p">;</span>
+  <span class="kt">char</span> <span class="n">letra</span><span class="p">;</span>
+  <span class="n">lectura</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="n">ficheroOut</span><span class="p">,</span><span class="s">"r"</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">lectura</span><span class="o">!=</span><span class="nb">NULL</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">while</span><span class="p">((</span><span class="n">letra</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">fgetc</span><span class="p">(</span><span class="n">lectura</span><span class="p">))</span><span class="o">!=</span><span class="n">EOF</span><span class="p">)</span>
+      <span class="n">printf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,</span><span class="n">letra</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Error al abrir el archivo.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+  <span class="n">fclose</span><span class="p">(</span><span class="n">lectura</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">borrarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">queImp</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">char</span> <span class="n">sacado</span><span class="p">[</span><span class="mi">13</span><span class="p">];</span>
+
+  <span class="n">printf</span><span class="p">(</span><span class="s">"Borrando impresora %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
+
+  <span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sc">'\0'</span><span class="p">;</span>
+  <span class="k">while</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">sacarCola</span><span class="p">(</span><span class="n">sacado</span><span class="p">,</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">colaImp</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Desencolando elemento '%s'</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">sacado</span><span class="p">);</span>
+    <span class="n">leerFichero</span><span class="p">(</span><span class="n">sacado</span><span class="p">);</span>
+    <span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="o">--</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
 <p>Perdonad el posible nivel de spaghetti que pueda haber en el código, en el momento no estaba demasiado familiarizado con las formas estándar de hacer las cosas (y posiblemente ahora tampoco).</p>
 
 <p>El problema de haber usado recursos extraños viene en las funciones <em>int recuperarLista(void)</em> e <em>int guardarLista(void)</em>. La parte de ficheros no la vimos muy en profundidad en las clases de teoría, así que yo la escribí de la forma que consideré que había que hacerlo.</p>
 
 <p>Por ejemplo:</p>
-<pre class="theme:solarized-light lang:c decode:true" title="listaImpresorasFicheros.c">int guardarLista(void)
-{
-  FILE *pfich; /* Referencia al fichero */
-  char *p;
-  int error; /* almacena si ha habido error */
-  error=1;
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">guardarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kt">FILE</span> <span class="o">*</span><span class="n">pfich</span><span class="p">;</span> <span class="cm">/* Referencia al fichero */</span>
+  <span class="kt">char</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">error</span><span class="p">;</span> <span class="cm">/* almacena si ha habido error */</span>
+  <span class="n">error</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
 
 
-  if ((pfich=fopen("listaImpresoras.bin","w"))!=NULL)
-  {
-    for(p=(char*)(lista);p&lt;(char*)(((unsigned long)lista)+(IMPRESORAS*sizeof(tImpresora)));p++)
-    {
-      putc(*p,pfich);
-    }
-    fclose (pfich);
-  }
-  else
-    error=0;
-  return error;
-}</pre>
+  <span class="k">if</span> <span class="p">((</span><span class="n">pfich</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="s">"listaImpresoras.bin"</span><span class="p">,</span><span class="s">"w"</span><span class="p">))</span><span class="o">!=</span><span class="nb">NULL</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(</span><span class="n">lista</span><span class="p">);</span><span class="n">p</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(((</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)</span><span class="n">lista</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">IMPRESORAS</span><span class="o">*</span><span class="k">sizeof</span><span class="p">(</span><span class="n">tImpresora</span><span class="p">)));</span><span class="n">p</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="n">putc</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">,</span><span class="n">pfich</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">fclose</span> <span class="p">(</span><span class="n">pfich</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">else</span>
+    <span class="n">error</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">error</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
 <p>Procedo a intentar explicarlo. Lo que había que guardar del programa era un array de impresoras (del tipo <em>tImpresora</em>). Entonces, en la función los pasos que sigo son los siguientes:</p>
 <ul>
 	<li>Abro el fichero para escribir</li>

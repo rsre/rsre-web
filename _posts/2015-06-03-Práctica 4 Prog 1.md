@@ -48,7 +48,8 @@ Era un chollazo, me ahorraba andar pasando tantos parámetros y al fin y al cabo
 Entregué mi práctica muy confiado, habiendo entregado todas las partes optativas y cual fue mi sorpresa cuando publicaron la nota y me encontré un 0. Después de hablar con el profesor conseguí subir la nota a un aprobado porque después de todo <strong>sí que paso parámetros</strong> de todas las formas que nos han enseñado, ergo estaba demostrado que sabía pasar parámetros. También descubrí que el profesor pensaba que había <em>usado recursos extraños (sic)</em> en la parte optativa de ficheros, pero de eso hablaremos después.
 
 Os dejo el código:
-<pre class="theme:solarized-light nums:true lang:c decode:true " title="listaImpresorasFicheros.c">/**************************************************************
+{% highlight c %}
+/**************************************************************
 *listaImpresorasFicheros.c
 *Ricardo Sanz Retuerta
 *Maneja una lista de impresoras imprimiendo ficheros
@@ -589,13 +590,15 @@ void borrarImpresora(int queImp)
     lista[queImp].pendientes--;
   }
 }
-</pre>
+{% endhighlight %}
 Perdonad el posible nivel de spaghetti que pueda haber en el código, en el momento no estaba demasiado familiarizado con las formas estándar de hacer las cosas (y posiblemente ahora tampoco).
 
 El problema de haber usado recursos extraños viene en las funciones <em>int recuperarLista(void)</em> e <em>int guardarLista(void)</em>. La parte de ficheros no la vimos muy en profundidad en las clases de teoría, así que yo la escribí de la forma que consideré que había que hacerlo.
 
 Por ejemplo:
-<pre class="theme:solarized-light lang:c decode:true" title="listaImpresorasFicheros.c">int guardarLista(void)
+
+{% highlight c %}
+int guardarLista(void)
 {
   FILE *pfich; /* Referencia al fichero */
   char *p;
@@ -614,7 +617,9 @@ Por ejemplo:
   else
     error=0;
   return error;
-}</pre>
+}
+{% endhighlight %}
+
 Procedo a intentar explicarlo. Lo que había que guardar del programa era un array de impresoras (del tipo <em>tImpresora</em>). Entonces, en la función los pasos que sigo son los siguientes:
 <ul>
 	<li>Abro el fichero para escribir</li>
