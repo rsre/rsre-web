@@ -4522,12 +4522,22 @@ display:inline;
 display:inline;
 }
 #article ul li a{
-text-decoration:none;
-color: #aeaeae;
-font-weight: 400;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+	background-color: #aeaeae;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-radius: 2px;
 }
 #article ul li a:hover{
-text-decoration:underline;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+	background-color: #888;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-radius: 2px;
 }
 
 #stamp {
