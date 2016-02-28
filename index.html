@@ -29,8 +29,9 @@ tagline:
       {% for category in tags_list %}
         <li><a href="{{ site.BASE_PATH }}/{{ site.tags_path }}#{{ category }}-ref">
           {{ category | join: "/" }}
-          {% unless forloop.last %},{% endunless %}
+        <!--  {% unless forloop.last %},{% endunless %}-->
         </a></li>
+        {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
       {% else %}
       {% for category in tags_list %}
