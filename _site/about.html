@@ -43,8 +43,9 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://ricardosa.nz/about">
+  <link rel="canonical" href="http://ricardosa.nz//2015/Help-Arranz/">
   <link rel="alternate" type="application/rss+xml" title="Ricardo Sanz" href="/feed.xml">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 
@@ -55,6 +56,31 @@
 </span>
 
 <header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  <script>
+    // Create the Trianglify pattern
+    var pattern = Trianglify({
+        cell_size: Math.floor((Math.random() * 70) + 20),
+        seed: 'jr5jm',
+        variance: (Math.random() * (0.25 - 1.00) + 1.00).toFixed(2),
+        x_colors: 'PRGn',
+        y_colors: 'match_x',
+        palette: Trianglify.colorbrewer,
+        stroke_width: 1.51,
+    });
+
+    // Serialize the SVG object to a String
+    var m = new XMLSerializer().serializeToString(pattern.svg());
+
+    // Perform the base64 encoding of the String
+    var k = window.btoa(m);
+
+    // Query the element to set the background image property
+    var element = document.getElementsByTagName('header')[0];
+
+    // Set the background image property, including the encoding type header
+    element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + k + '")';
+  </script>
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
@@ -65,7 +91,8 @@
         </a>
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">Telecommunications student always willing to make stuff. I love electronics.</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
+        <!--<hr class="panel-cover__divider panel-cover__divider- -secondary">-->
+        <hr class="panel-cover__divider">
 
         <div class="navigation-wrapper">
 
@@ -84,22 +111,14 @@
             <ul class="navigation">
 
 
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a href="http://twitter.com/NotSoRick" title="@NotSoRick on Twitter" target="_blank">
-                  <i class="icon icon-social-twitter"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-
 
 
 
 
               <!-- LinkedIn -->
               <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/rsre" title="rsre on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
+                <a href="https://www.linkedin.com/in/rsanzr" title="rsanzr on LinkedIn" target="_blank">
+                  <i class='fa fa-linkedin-square'></i>
                   <span class="label">LinkedIn</span>
                 </a>
               </li>
@@ -109,7 +128,7 @@
               <!-- GitHub -->
               <li class="navigation__item">
                 <a href="https://www.github.com/rsre" title="rsre on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
+                  <i class='fa fa-github-alt'></i>
                   <span class="label">GitHub</span>
                 </a>
               </li>
@@ -119,8 +138,18 @@
               <!-- Email -->
               <li class="navigation__item">
                 <a href="mailto:me@ricardosa.nz" title="Email me@ricardosa.nz" target="_blank">
-                  <i class="icon icon-mail"></i>
+                  <i class='fa fa-envelope'></i>
                   <span class="label">Email</span>
+                </a>
+              </li>
+
+
+
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.instagram.com/rsrepictures" title="rsrepictures on Instagram" target="_blank">
+                  <i class='fa fa-instagram'></i>
+                  <span class="label">Instagram</span>
                 </a>
               </li>
 
@@ -128,7 +157,7 @@
             <!-- RSS -->
             <li class="navigation__item">
               <a href="/feed.xml" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
+                <i class='fa fa-rss'></i>
                 <span class="label">RSS</span>
               </a>
             </li>
@@ -156,28 +185,38 @@
   </header>
 
   <section class="post">
-    I was born in Guadalajara, Spain.
-    <h3>Electronic Engineering Student</h3>
-    <p>I study Electronic Engineering at Universidad Politécnica de Madrid. In Spain there are two branches of Electronic Engineering: one focused on <strong>Telecommunications</strong> with more weight on signal processing and other focused on Industrial applications with more weight on control theory. I study the former.</p>
+  I was born in Guadalajara, Spain.
+  <h3>Electronic Engineering Student</h3>
+  <p>I study Electronic Engineering at Universidad Politécnica de Madrid. In Spain there are two branches of Electronic Engineering: one focused on <strong>Telecommunications</strong> with more weight on signal processing and other focused on Industrial applications with more weight on control theory. I study the former.</p>
 
 
-    <h3>Secretary IEEE Student Branch Campus Sur</h3>
-    <img src="/images/ieee_mb_blue.jpg" style="float: right; width: 250px;"/>
-    <p><a href="http://www.ieee.org/">IEEE</a> is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.
-    <br><br>
-    I am in charge of the communications and webpage of the student branch, as well as organizing and preparing talks and workshops.</p>
-    <p><a class="btn btn-secondary" href="http://upmsur.ieeespain.org">IEEE SB UPM Sur</a></p>
+  <h3>Secretary IEEE Student Branch Campus Sur</h3>
+  <img src="/images/ieee_mb_blue.jpg" style="float: right; width: 250px;"/>
+  <p><a href="http://www.ieee.org/">IEEE</a> is the world's largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.
+  <br><br>
+  I am in charge of the communications and webpage of the student branch, as well as organizing and preparing talks and workshops.</p>
+  <p><a class="btn btn-secondary" href="http://upmsur.ieeespain.org">IEEE SB UPM Sur</a></p>
   </section>
+  <section id="disqus_thread"></section><!-- /#disqus_thread -->
 </article>
-
       </div>
 
       <footer class="footer">
-  <span class="footer__copyright">This work by Ricardo Sanz is licensed under a Creative Commons License <a href="http://creativecommons.org/licenses/by-sa/4.0/">BY-SA 4.0.</a></span>
+  <span class="footer__copyright">This work by Ricardo Sanz is licensed under a Creative Commons License <a href="http://creativecommons.org/licenses/by-sa/4.0/">BY-SA 4.0</a>.</span>
 </footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64295510-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
       <br>
