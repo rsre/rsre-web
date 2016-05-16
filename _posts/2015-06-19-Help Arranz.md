@@ -18,4 +18,4 @@ Y como todo en lo que aparece Arranz, es necesariamente bueno.
 *Arranz es un estudiante de Turismo e Historia y necesita tu ayuda. Échale una mano esquivando calculadoras científicas y recuperando valiosos jarrones griegos.
 Usa las flechas de tu teclado o los botones del juego para controlar a Arranz.*
 
-<a class="btn btn-default" href="/html5/arranz/">Juega</a>
+<a class="btn btn-secondary" href="/html5/arranz/" target="_blank">Juega</a>

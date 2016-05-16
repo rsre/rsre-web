@@ -1,40 +1,40 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+# Site settings
+title: Ricardo Sanz
+description: 'Telecommunications student always willing to make stuff. I love electronics.'
+url: 'http://ricardosa.nz'
+baseurl: '/'
+google_analytics: 'UA-64295510-1'
+disqus_shortname: 'ricardosanz'
 
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
-highlighter: rouge
-markdown: kramdown
-disqus: ricardosanz
-google_analytics:
+author:
+  name: 'Ricardo Sanz'
+  email: me@ricardosa.nz
+  twitter_username:
+  facebook_username:
+  github_username: rsre
+  linkedin_username: rsanzr
+  instagram_username: rsrepictures
 
 defaults:
   -
     scope:
-      path: "" # empty string for all files
+      path: ''
+      type: 'posts'
     values:
-      title: Ricardo Sand
+        layout: 'post'
 
-description: Not so fast.
-author:
-  name: Ricardo Sanz
-  email: ric.sanz.re@gmail.com
-  github: rsre
-  twitter: NotSoRick
-  pinterest:
-  linkedin: rsanzr
-  instagram: rsrepictures
-  bio: Telecommunications student always willing to make stuff. I love electronics.
-  email_md5: 726351295ec82e145928582f595aa3aa
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
 
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
-# set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
-
-BASE_PATH:
-
-gems:
-  - jekyll-paginate
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

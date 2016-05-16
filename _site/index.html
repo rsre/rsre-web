@@ -1,1013 +1,204 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Ricardo Sanz</title>
-	
-	<meta name="author" content="Ricardo Sanz">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<!-- Enable responsive viewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricardo Sanz</title>
+  <meta name="description" content="Telecommunications student always willing to make stuff. I love electronics.">
+  <meta name="author" content="Ricardo Sanz">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ricardo Sanz">
+  <meta name="twitter:description" content="Telecommunications student always willing to make stuff. I love electronics.">
 
-	<!-- Le styles -->
-	<link href="/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="/assets/resources/syntax/syntax.css" rel="stylesheet">
-	<link href="/assets/css/style.css" rel="stylesheet">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ricardo Sanz">
+  <meta property="og:description" content="Telecommunications student always willing to make stuff. I love electronics.">
 
-	<!-- Le fav and touch icons -->
-	<!-- Update these with your own images
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	-->
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/images/favicons/manifest.json">
+  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://ricardosa.nz//">
+  <link rel="alternate" type="application/rss+xml" title="Ricardo Sanz" href="/feed.xml">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
-	<nav class="navbar navbar-default visible-xs" role="navigation">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/rsre">
-				<i class="fa fa-github"></i>
-			</a>
-			
-			
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/NotSoRick">
-				<i class="fa fa-twitter"></i>
-			</a>
-			
-			
-			<a type="button" class="navbar-toggle nav-link" href="mailto:ric.sanz.re@gmail.com">
-				<i class="fa fa-envelope"></i>
-			</a>
-			
-			<a class="navbar-brand" href="/">
-				<img src="/profile.jpg" class="img-circle" style="width: 55px"/>
-				
-			</a>
-		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<!--<li><a href="/categories.html">Tags</a></li>-->
-				<li><a href="/tags.html">Tags</a></li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</nav>
+  <body>
+    <span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
 
-	<!-- nav-menu-dropdown -->
-<!--	<div class="btn-group hidden-xs" id="nav-menu">
-		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-			<i class="fa fa-bars"></i>
-		</button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
-			<li><a href="/categories.html"><i class="fa fa-folder"></i>Categories</a></li>
-			<li><a href="/tags.html"><i class="fa fa-tags"></i>Tags</a></li>
-			<li class="divider"></li>
-			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
-		</ul>
-	</div>-->
+<header class="panel-cover" style="background-image: url(/images/cover.jpg)">
+  <div class="panel-main">
 
-	<div class="col-sm-3 sidebar hidden-xs" style="">
-		<!-- sidebar.html -->
-<header class="sidebar-header" role="banner">
-	<a href="/">
-		<img src="/assets/media/profile.jpg" class="img-circle" />
-	</a>
-	<h3 class="title">
-        <a href="/"></a>
-    </h3>
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="/" title="link to home of Ricardo Sanz">
+          <img src="/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">Ricardo Sanz</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">Telecommunications student always willing to make stuff. I love electronics.</p>
+        <!--<hr class="panel-cover__divider panel-cover__divider- -secondary">-->
+        <hr class="panel-cover__divider">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/about" title="link to Ricardo Sanz about" class="blog-button">About</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="link to Ricardo Sanz blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+
+            
+
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/rsanzr" title="rsanzr on LinkedIn" target="_blank">
+                  <i class='fa fa-linkedin-square'></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/rsre" title="rsre on GitHub" target="_blank">
+                  <i class='fa fa-github-alt'></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:me@ricardosa.nz" title="Email me@ricardosa.nz" target="_blank">
+                  <i class='fa fa-envelope'></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            
+
+            
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.instagram.com/rsrepictures" title="rsrepictures on Instagram" target="_blank">
+                  <i class='fa fa-instagram'></i>
+                  <span class="label">Instagram</span>
+                </a>
+              </li>
+            
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="/feed.xml" title="Subscribe" target="_blank">
+                <i class='fa fa-rss'></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
 </header>
 
 
-<div id="name" class="text-center">
-	<a href="/" style="text-decoration: none;">
-		<h2>Ricardo Sanz</h2>
-	</a>
-</div>
+    <div class="content-wrapper">
+      <div class="content-wrapper__inner">
+        <h1> Mind Deviations </h1>
+<br>
+<div class="main-post-list">
 
-
-<div id="bio" class="text-center">
-	Telecommunications student always willing to make stuff. I love electronics.
-	<br>
-	<br>
-	Learn more <a href="/about">about me</a>.
-</div>
-
-
-<div id="contact-list" class="text-center">
-	<ul class="list-unstyled list-inline">
-	<!--	
-		<li>
-			<a class="btn btn-default btn-sm" href="https://github.com/rsre" target="_blank">
-				<i class="fa fa-github-alt fa-lg"></i>
-			</a>
-		</li>
-		-->
-		
-		<li>
-			<a class="btn btn-default btn-sm" href="https://twitter.com/NotSoRick" target="_blank">
-				<i class="fa fa-twitter fa-lg"></i>
-			</a>
-		</li>
-		
-		
-		<li>
-			<a class="btn btn-default btn-sm" href="https://linkedin.com/in/rsanzr" target="_blank">
-				<i class="fa fa-linkedin fa-lg"></i>
-			</a>
-		</li>
-		
-		
-		<li>
-			<a class="btn btn-default btn-sm" href="mailto:ric.sanz.re@gmail.com">
-				<i class="fa fa-envelope fa-lg"></i>
-			</a>
-		</li>
-		
-		
-		
-		<li>
-			<a class="btn btn-default btn-sm" href="https://instagram.com/rsrepictures" target="_blank">
-				<i class="fa fa-instagram fa-lg"></i>
-			</a>
-		</li>
-		
-		<li>
-			<a class="btn btn-default btn-sm" href="/feed.xml" target="_blank">
-				<i class="fa fa-rss fa-lg"></i>
-			</a>
-		</li>
-	</ul>
-</div>
-<!-- sidebar.html end -->
-
-	</div>
-
-	<div class="col-sm-9 col-sm-offset-3">
-		<div class="page-header">
-  <!--<div id="article" style="margin-top:1em;">
-    <h3>
-      <i class="fa fa-github" style="color: #444;"></i>
-      <a href="/hey">Mi vida</a>
-    </h3>
-    <span id="separator">·</span>
-      <a style="text-decoration: none; color: #aeaeae; font-weight: 400;">esto es una prueba</a>
-  </div>
-  <hr>-->
-  <h1>Mind Deviations</h1>
-</div>
-
-
-<article class="home">
-
-  <!--<span class="post-date">
+  <ol class="post-list">
     
-    February
-    28th,
+      <li>
+        <h3><span class="post-list__post-title post-title"><a href="/2016/hello-world/" title="Hello World!">Hello World!</a></h3>
+        <!--<p class="excerpt">He migrado mi blog a <strong>jekyll</strong>.
+Wordpress requería más atención, mantenimiento y tiempo del que me gustaría dedicar.
+
+&hellip;</p>&#8226;
+        <div class="post-list__meta"><time datetime="28 Feb 2016" class="post-list__meta--date date">28 Feb 2016</time> &#8226; <span class="post-meta__tags">on </span></div>-->
+        <hr class="post-list__divider">
+      </li>
     
-    2016
-  </span>-->
-  <div id="article">
-    <h3>
-      <a href="/2016/02/28/hello-world.html">Hello World!</a>
-    </h3>
+      <li>
+        <h3><span class="post-list__post-title post-title"><a href="/2015/Productivity-Hour/" title="Productivity Hour">Productivity Hour</a></span><span class="post-meta__tags"><a href="/tags/#theory">theory</a> </span></h3>
+        <!--<p class="excerpt">Hoy he tomado una nueva medida: he instaurado la hora de la productividad.
+
+&hellip;</p>&#8226;
+        <div class="post-list__meta"><time datetime="4 Aug 2015" class="post-list__meta--date date">4 Aug 2015</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#theory">theory</a> </span></div>-->
+        <hr class="post-list__divider">
+      </li>
     
+      <li>
+        <h3><span class="post-list__post-title post-title"><a href="/2015/Help-Arranz/" title="Help Arranz">Help Arranz</a></span><span class="post-meta__tags"><a href="/tags/#ocio">ocio</a> </span></h3>
+        <!--<p class="excerpt">Quería desconectar un poco del estudio así que en un rato he hecho un pequeño juego con HTML 5. La mecánica es un poco absurda y no hay forma de librarse de una asegurada muerte, solo prolongar la agonía hasta llevarte un <i>calculadorazo </i>en la jeta.
 
-    <hr><!--custom added-->
-  </div>
-<!--  <div>
+&hellip;</p>&#8226;
+        <div class="post-list__meta"><time datetime="19 Jun 2015" class="post-list__meta--date date">19 Jun 2015</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#ocio">ocio</a> </span></div>-->
+        <hr class="post-list__divider">
+      </li>
     
-    <p>He migrado mi blog a <strong>jekyll</strong>.
-Wordpress requería más atención, mantenimiento y tiempo del que me gustaría dedicar.</p>
+      <li>
+        <h3><span class="post-list__post-title post-title"><a href="/2015/Pra-ctica-4-Prog-1/" title="Práctica 4 Prog 1">Práctica 4 Prog 1</a></span><span class="post-meta__tags"><a href="/tags/#ETSIST">ETSIST</a> </span></h3>
+        <!--<p class="excerpt"><h3 style="text-align: center;">ATTENTION: POSSIBLE SPAGHETTI CODE AHEAD</h3>
+Bueno, en vista de que el examen de recuperación de <strong>Programación I</strong> es dentro de un par de horas, supongo que no pasará nada si publico mi solución a la <strong>Práctica 4</strong> de esta asignatura que entregué en Enero de este año.
 
-<p>El tema que estoy usando es una versión de <strong>dbyll</strong>, el cual fue originalmente hecho por <strong><a href="http://ismaildemirbilek.com">dbtek</a></strong>. Open sourced under <a href="http://opensource.org/licenses/MIT">MIT</a> license.</p>
-
-<h3 id="voy-a-mantener-este-post">Voy a mantener este post</h3>
-
-<p>Como <em>chuleta</em> de Markdown para futuras referencias.</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'Así se pone código'</span>
-<span class="k">end</span></code></pre></figure>
-
-<p><a class="btn btn-default" href="que_no_va_a_ningun_lado">Así se pone un botón</a></p>
-
+&hellip;</p>&#8226;
+        <div class="post-list__meta"><time datetime="3 Jun 2015" class="post-list__meta--date date">3 Jun 2015</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#ETSIST">ETSIST</a> </span></div>-->
+        <hr class="post-list__divider">
+      </li>
     
-  </div>-->
-
-<!--</article>
-
-<article class="home">
-
-  <!--<span class="post-date">
-    
-    August
-    4th,
-    
-    2015
-  </span>-->
-  <div id="article">
-    <h3>
-      <a href="/2015/08/04/Productivity-Hour.html">Productivity Hour</a>
-    </h3>
-    
-    <span id="separator">·</span>
-    <ul class="tag_box list-unstyled list-inline">
-      
-     
-      
-        <li><a href="/tags.html#theory-ref">
-          theory
-        <!--  -->
-        </a></li>
-        
-      
-      
-    </ul>
-    
-
-    <hr><!--custom added-->
-  </div>
-<!--  <div>
-    
-    <p>Hoy he tomado una nueva medida: he instaurado la hora de la productividad.</p>
-
-<p>Durante esa hora hay que centrarse en hacer una cosa. No importa si ese día estás haciendo algo o haciendo nada, la hora de la productividad es sagrada.</p>
-
-<p><img src="/assets/media/prodhour.png" alt="Productivity Hour" /></p>
-
-<p>La idea es centrarse en hacer una sola cosa y avanzar esa cosa lo máximo posible en una hora.</p>
-
-<p>Ningún tipo de distracción está permitida, no importa lo interesante que sea.</p>
-
-    
-  </div>-->
-
-<!--</article>
-
-<article class="home">
-
-  <!--<span class="post-date">
-    
-    June
-    19th,
-    
-    2015
-  </span>-->
-  <div id="article">
-    <h3>
-      <a href="/2015/06/19/Help-Arranz.html">Help Arranz</a>
-    </h3>
-    
-    <span id="separator">·</span>
-    <ul class="tag_box list-unstyled list-inline">
-      
-     
-      
-        <li><a href="/tags.html#ocio-ref">
-          ocio
-        <!--  -->
-        </a></li>
-        
-      
-      
-    </ul>
-    
-
-    <hr><!--custom added-->
-  </div>
-<!--  <div>
-    
-    <p>Quería desconectar un poco del estudio así que en un rato he hecho un pequeño juego con HTML 5. La mecánica es un poco absurda y no hay forma de librarse de una asegurada muerte, solo prolongar la agonía hasta llevarte un <i>calculadorazo </i>en la jeta.</p>
-
-<p>Pero bueno, para pasar un rato corto el juego está bien.</p>
-
-<p>Además, sale Arranz.</p>
-
-<p>Y como todo en lo que aparece Arranz, es necesariamente bueno.</p>
-
-<p><em>Arranz es un estudiante de Turismo e Historia y necesita tu ayuda. Échale una mano esquivando calculadoras científicas y recuperando valiosos jarrones griegos.
-Usa las flechas de tu teclado o los botones del juego para controlar a Arranz.</em></p>
-
-<p><a class="btn btn-default" href="/html5/arranz/">Juega</a></p>
-
-    
-  </div>-->
-
-<!--</article>
-
-<article class="home">
-
-  <!--<span class="post-date">
-    
-    June
-    3rd,
-    
-    2015
-  </span>-->
-  <div id="article">
-    <h3>
-      <a href="/2015/06/03/Pra-ctica-4-Prog-1.html">Práctica 4 Prog 1</a>
-    </h3>
-    
-    <span id="separator">·</span>
-    <ul class="tag_box list-unstyled list-inline">
-      
-     
-      
-        <li><a href="/tags.html#ETSIST-ref">
-          ETSIST
-        <!--  -->
-        </a></li>
-        
-      
-      
-    </ul>
-    
-
-    <hr><!--custom added-->
-  </div>
-<!--  <div>
-    
-    <h3 style="text-align: center;">ATTENTION: POSSIBLE SPAGHETTI CODE AHEAD</h3>
-<p>Bueno, en vista de que el examen de recuperación de <strong>Programación I</strong> es dentro de un par de horas, supongo que no pasará nada si publico mi solución a la <strong>Práctica 4</strong> de esta asignatura que entregué en Enero de este año.</p>
-
-<p>El enunciado decía lo siguiente:</p>
-<blockquote>Se pretende codificar un programa que simule el manejo de una lista de impresoras. En cada impresora de la lista se encolarán los nombres de los ficheros a imprimir y se podrá dar órdenes para mandar los ficheros a imprimir, lo cual se simulará a través de la salida estándar (pantalla).</blockquote>
-<div class="page" title="Page 3">
-<div class="layoutArea">
-<div class="column">
-<blockquote>El programa se codificará en tres fases, que irán permitiendo al alumno ir probando el programa e irlo ampliando sobre código ya probado.
-<ol>
-	<li>PRIMERA FASE:
-Codificar en C un programa colaImpresora.c que maneje una estructura de tipo cola en la que se almacenarán los nombres de los ficheros que se quieren imprimir.Los 6 nombres que se van a utilizar para generar los nombres de los ficheros, se pasarán al programa en el mandato de ejecución, y el programa los recibirá como parámetros de main(), de tal forma que la ejecución será:
-<pre class="lang:sh decode:true ">C:\&gt; colaImpresora fichero1 fichero2 fichero3 fichero4 fichero5 fichero6
-</pre>
-Donde ficheroN es el nombre que el alumno asigne a un determinado fichero.</li>
-	<li>SEGUNDA FASE:
-Codificar en C un programa listaImpresoras.c que maneje una lista de impresoras.
-Cada impresora se almacenará en una estructura con tres campos:
-<ul>
-	<li>nombre: identificador de la impresora. Cadena de 20 caracteres significativos.</li>
-	<li>número de ficheros pendientes de impresión en la cola de la impresora.</li>
-	<li>la cola de ficheros (resultante de la primera fase da la práctica).Inicialmente el programa leerá el nombre de seis ficheros que se pasará al programa en la ejecución, como parámetros de main(), de tal forma que la ejecución será:
-<pre class="lang:sh decode:true">C:\&gt; listaImpresoras fichero1 fichero2 fichero3 fichero4 fichero5 fichero6</pre>
-</li>
-</ul>
-</li>
-	<li>TERCERA FASE:
-  Se copiarán en el directorio en el que se vaya a codificar el programa fuente, los 6 ficheros de texto que se proporcionan en Moodle (a.txt b.txt c.txt d.txt e.txt f.txt).Se codificará un nuevo programa fuente listaImpresorasFicheros.c partiendo del código de listaImpresoras.c y realizando las siguientes modificaciones:Se modificarán las opciones 4. Imprimir un fichero y 5. Borrar una impresora, para que cada vez que se escriba por la salida estándar el nombre de un fichero, se escriba también el contenido del correspondiente fichero.Se modificará la opción 6. Salir, para que además de escribir el mensaje de despedida, se almacene en un fichero binario de nombre listaImpresoras.bin, el contenido de las posiciones ocupadas de la lista de impresoras para su uso en una sesión de trabajo posterior.Se modificará la función de inicialización de la lista, para que si el fichero listaImpresoras.bin existe, el contenido del fichero se añada en la lista de impresoras, ocupando las primeras posiciones de la lista.</li>
-</ol>
-</blockquote>
-</div>
-</div>
-</div>
-
-<p>En el momento de escribir el código planteé varias posibles soluciones: pasar todos los valores de un sitio a otro por referencia, hacer una máquina de estados con una impresora dónde solo se cambiaran las variables de la misma…pero al final me decidí por una opción fatídica que me acabó costando la nota: decidí usar variables globales.</p>
-
-<p>Era un chollazo, me ahorraba andar pasando tantos parámetros y al fin y al cabo muchas funciones tenían que acceder a esos valores ¿por qué no declararlos para todo el programa y me quitaba de andar jugando con ellos? Pues resulta que las variables globales están prohibidisimas, algo que yo desconocía en el momento.</p>
-
-<p>Entregué mi práctica muy confiado, habiendo entregado todas las partes optativas y cual fue mi sorpresa cuando publicaron la nota y me encontré un 0. Después de hablar con el profesor conseguí subir la nota a un aprobado porque después de todo <strong>sí que paso parámetros</strong> de todas las formas que nos han enseñado, ergo estaba demostrado que sabía pasar parámetros. También descubrí que el profesor pensaba que había <em>usado recursos extraños (sic)</em> en la parte optativa de ficheros, pero de eso hablaremos después.</p>
-
-<p>Os dejo el código:</p>
-
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="cm">/**************************************************************
-*listaImpresorasFicheros.c
-*Ricardo Sanz Retuerta
-*Maneja una lista de impresoras imprimiendo ficheros
-*y guarda el estado entre una ejecucion y otra
-***************************************************************/</span>
-<span class="cp">#include&amp;lt;stdio.h&amp;gt;
-#include&amp;lt;string.h&amp;gt;
-#include&amp;lt;stdlib.h&amp;gt;
-#define COLA (10+1)
-#define IMPRESORAS 4
-</span>
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-  <span class="kt">char</span> <span class="n">colaFich</span><span class="p">[</span><span class="n">COLA</span><span class="p">][</span><span class="mi">12</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-  <span class="kt">int</span> <span class="n">inicio</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">final</span><span class="p">;</span>
-<span class="p">}</span><span class="n">tCola</span><span class="p">;</span>
-
-<span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
-  <span class="kt">char</span> <span class="n">nombre</span><span class="p">[</span><span class="mi">10</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-  <span class="kt">int</span> <span class="n">pendientes</span><span class="p">;</span>
-  <span class="n">tCola</span> <span class="n">colaImp</span><span class="p">;</span>
-<span class="p">}</span><span class="n">tImpresora</span><span class="p">;</span>
-
-<span class="n">tImpresora</span> <span class="n">lista</span><span class="p">[</span><span class="n">IMPRESORAS</span><span class="p">];</span><span class="c1">//lista esta declarada como variable global para simplificar el programa
-</span>
-<span class="c1">//Declaracion de las funciones
-</span><span class="kt">int</span> <span class="n">colaLlena</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:colaLlena
-*Descripcion: analiza si una cola esta llena
-*Parametros de entrada: pcola: un puntero a la cola a analizar
-*
-*Parametros de salida: devuelve un entero. 1 si esta llena, 0 si no esta llena
-*Parametros de entrada/salida:-----
-*************************************************************/</span>
-<span class="kt">int</span> <span class="n">colaVacia</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:colaVacia
-*Descripcion:analiza si una cola esta vacia
-*Parametros de entrada:pcola: un puntero a la cola a analizar
-*
-*Parametros de salida: devuelve 1 si esta vacia y 0 si no esta vacia
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">int</span> <span class="n">huecoLibre</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:huecoLibre
-*Descripcion:busca huecos en la lista de impresoras
-*Parametros de entrada:----
-*
-*Parametros de salida:devuelve un entero, la primera posicion
-*                     libre en la lista o -1 si esta llena
-*Parametros de entrada/salida:------
-*************************************************************/</span>
-<span class="kt">int</span> <span class="n">listaVacia</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:listaVacia
-*Descripcion:analiza si la lista esta vacia
-*Parametros de entrada:----
-*
-*Parametros de salida:devuelve el primer hueco ocupado en
-*                       la lista o -1 si está vacia
-*Parametros de entrada/salida:-------
-*************************************************************/</span>
-<span class="kt">int</span> <span class="n">listaLlena</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:listaLlena
-*Descripcion:analiza si la lista esta llena
-*Parametros de entrada:-----
-*
-*Parametros de salida:devuelve 0 si la lista tiene al
-*                       menos un hueco libre, 1 si esta llena
-*Parametros de entrada/salida:--------
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">meterCola</span><span class="p">(</span><span class="kt">char</span> <span class="n">cadena</span><span class="p">[],</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:meterCola
-*Descripcion:pone una cadena de caracteres en una cola
-*Parametros de entrada:cadena: la cadena que quieres meter
-*                      pcola: puntero a la cola donde lo quieres meter
-*Parametros de salida:---
-*Parametros de entrada/salida:-----
-*************************************************************/</span>
-<span class="kt">int</span> <span class="n">enLista</span> <span class="p">(</span><span class="kt">char</span> <span class="n">buscar</span><span class="p">[]);</span>
-<span class="cm">/*************************************************************
-*Nombre:enLista
-*Descripcion:busca en la lista una impresora
-*Parametros de entrada:buscar:el nombre de la impresora que quieres buscar
-*
-*Parametros de salida:si lo encuentra, devuelve la posicion de la impresora
-*                     si no, devuele -1
-*Parametros de entrada/salida:-----
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">mandarFicherosPorLote</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">tImpresora</span> <span class="o">*</span><span class="n">pimpresora</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:mandarFicherosPorLote
-*Descripcion:manda n ficheros de argv a la cola de una impresora
-*Parametros de entrada: argv: puntero a donde estan las cadenas
-*                          que se van a meter en la cola
-*                       n: el numero de ficheros a meter
-*                       pimpresora: puntero a la impresora donde
-*                           se van a meter las cadenas
-*Parametros de salida:----
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">sacarCola</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">ficheroOut</span><span class="p">,</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:sacarCola
-*Descripcion:saca 1 fichero de la cola
-*Parametros de entrada: pcola: puntero a la cola de la que se quiere desencolar
-*
-*Parametros de salida: ficheroOut: donde se guarda el fichero sacado
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">imprimirCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:imprimirCola
-*Descripcion:imprime toda una cola de impresion
-*Parametros de entrada:pcola: puntero a la cola que se quiere imprimir
-*
-*Parametros de salida:----
-*Parametros de entrada/salida:-----
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">inicializarCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:inicializarCola
-*Descripcion:inicializa una cola poniendo a 0 todos sus parametros
-*Parametros de entrada:pcola:puntero a la cola que se quiere inicializar
-*
-*Parametros de salida:----
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">inicializarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:inicializarLista
-*Descripcion:inicializa la lista poniendo a cero todos sus parametros
-*Parametros de entrada:----
-*
-*Parametros de salida:-----
-*Parametros de entrada/salida:-----
-*************************************************************/</span>
-<span class="kt">int</span> <span class="n">guardarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:guardarLista
-*Descripcion:guarda el estado actual de la lista en un fichero externo
-*Parametros de entrada:----
-*
-*Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">int</span> <span class="n">recuperarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:recuperarLista
-*Descripcion:recupera una lista si encuentra una copia guardada
-*Parametros de entrada:----
-*
-*Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">int</span> <span class="n">menu</span> <span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:menu
-*Descripcion:muestra un menu y pide al usuario una opcion
-*Parametros de entrada:---
-*
-*Parametros de salida:devuelve la opcion elegida
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">agregarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">numImpresora</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:agregarImpresora
-*Descripcion:agrega una impresora a la lista
-*Parametros de entrada:numImpresora:la posicion en la que se
-*                           quiere almacenar la impresora
-*Parametros de salida:----
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">leerFichero</span><span class="p">(</span><span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">13</span><span class="p">]);</span>
-<span class="cm">/*************************************************************
-*Nombre:leerFichero
-*Descripcion:lee un fichero de texto y lo muestra por salida estandar
-*Parametros de entrada:ficheroOut: el nombre del fichero a imprimir
-*
-*Parametros de salida:----
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-<span class="kt">void</span> <span class="n">borrarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">queImp</span><span class="p">);</span>
-<span class="cm">/*************************************************************
-*Nombre:borrarImpresora
-*Descripcion:borra una impresora de la lista
-*Parametros de entrada:queImp:el numero de la impresora que se quiere borrar
-*
-*Parametros de salida:----
-*Parametros de entrada/salida:----
-*************************************************************/</span>
-
-<span class="c1">//FUNCION PRINCIPAL
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
-<span class="p">{</span>
-  <span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">12</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
-  <span class="kt">int</span> <span class="n">condicion</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="kt">char</span> <span class="n">input</span><span class="p">[</span><span class="mi">21</span><span class="p">];</span>
-  <span class="kt">int</span> <span class="n">queImp</span><span class="p">;</span>
-
-  <span class="n">condicion</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">recuperarLista</span><span class="p">())</span>
-    <span class="n">inicializarLista</span><span class="p">();</span>
-
-  <span class="k">if</span><span class="p">(</span><span class="n">argc</span><span class="o">==</span><span class="mi">7</span><span class="p">)</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">condicion</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="k">switch</span><span class="p">(</span><span class="n">menu</span><span class="p">())</span>
-      <span class="p">{</span>
-        <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
-          <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">listaLlena</span><span class="p">())</span>
-            <span class="n">agregarImpresora</span><span class="p">(</span><span class="n">huecoLibre</span><span class="p">());</span>
-          <span class="k">else</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"No quedan impresoras por agregar!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-          <span class="k">break</span><span class="p">;</span>
-
-        <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
-          <span class="k">if</span><span class="p">(</span><span class="n">listaVacia</span><span class="p">()</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-          <span class="p">{</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"Impresoras disponibles:</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-            <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%s"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Introduzca el nombre de la impresora: "</span><span class="p">);</span>
-            <span class="n">fgets</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
-            <span class="k">if</span><span class="p">((</span><span class="n">queImp</span><span class="o">=</span><span class="n">enLista</span><span class="p">(</span><span class="n">input</span><span class="p">))</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-            <span class="p">{</span>
-              <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="o">+</span><span class="p">(</span><span class="n">rand</span><span class="p">()</span><span class="o">%</span><span class="mi">6</span><span class="p">);</span>
-              <span class="n">printf</span><span class="p">(</span><span class="s">"Mandando %d ficheros por lote a la impresora...</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">n</span><span class="p">);</span>
-              <span class="n">mandarFicherosPorLote</span><span class="p">(</span><span class="n">argv</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">]);</span>
-          <span class="p">}</span>
-          <span class="k">else</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"Esa impresora no existe!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-          <span class="p">}</span>
-          <span class="k">else</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"La lista de impresoras esta vacia!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-          <span class="k">break</span><span class="p">;</span>
-
-        <span class="k">case</span> <span class="mi">3</span><span class="p">:</span>
-          <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-          <span class="p">{</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">!=</span><span class="sc">'\0'</span><span class="p">)</span>
-            <span class="p">{</span>
-              <span class="n">printf</span><span class="p">(</span><span class="s">"Ficheros en la cola de impresión de: %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
-              <span class="n">imprimirCola</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">colaImp</span><span class="p">);</span>
-            <span class="p">}</span>
-          <span class="p">}</span>
-          <span class="k">break</span><span class="p">;</span>
-
-        <span class="k">case</span> <span class="mi">4</span><span class="p">:</span>
-          <span class="k">if</span><span class="p">(</span><span class="n">listaVacia</span><span class="p">()</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-          <span class="p">{</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"Impresoras disponibles:</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-            <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%s"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Introduzca el nombre de la impresora: "</span><span class="p">);</span>
-            <span class="n">fgets</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
-            <span class="k">if</span><span class="p">((</span><span class="n">queImp</span><span class="o">=</span><span class="n">enLista</span><span class="p">(</span><span class="n">input</span><span class="p">))</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-            <span class="p">{</span>
-              <span class="k">if</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="mi">0</span><span class="p">)</span>
-              <span class="p">{</span>
-                <span class="n">sacarCola</span><span class="p">(</span><span class="n">ficheroOut</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">colaImp</span><span class="p">);</span>
-                <span class="n">printf</span><span class="p">(</span><span class="s">"Imprimiendo '%s'</span><span class="se">\n\n</span><span class="s">"</span><span class="p">,</span><span class="n">ficheroOut</span><span class="p">);</span>
-                <span class="n">leerFichero</span><span class="p">(</span><span class="n">ficheroOut</span><span class="p">);</span>
-                <span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="o">--</span><span class="p">;</span>
-                <span class="n">printf</span><span class="p">(</span><span class="s">"Quedan %d ficheros en esta cola.</span><span class="se">\n\n</span><span class="s">"</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="p">);</span>
-              <span class="p">}</span>
-              <span class="k">else</span>
-                <span class="n">printf</span><span class="p">(</span><span class="s">"No quedan ficheros por imprimir en esta cola!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-            <span class="p">}</span>
-            <span class="k">else</span>
-              <span class="n">printf</span><span class="p">(</span><span class="s">"Esa impresora no existe!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-          <span class="p">}</span>
-          <span class="k">else</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"La lista de impresoras esta vacia!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-          <span class="k">break</span><span class="p">;</span>
-
-        <span class="k">case</span> <span class="mi">5</span><span class="p">:</span>
-          <span class="k">if</span><span class="p">(</span><span class="n">listaVacia</span><span class="p">()</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-          <span class="p">{</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"Impresoras disponibles:</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-            <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-              <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%s"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Introduzca el nombre de la impresora: "</span><span class="p">);</span>
-            <span class="n">fgets</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
-            <span class="k">if</span><span class="p">((</span><span class="n">queImp</span><span class="o">=</span><span class="n">enLista</span><span class="p">(</span><span class="n">input</span><span class="p">))</span><span class="o">&amp;</span><span class="n">gt</span><span class="p">;</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-              <span class="n">borrarImpresora</span><span class="p">(</span><span class="n">queImp</span><span class="p">);</span>
-            <span class="k">else</span>
-              <span class="n">printf</span><span class="p">(</span><span class="s">"Esa impresora no existe!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-          <span class="p">}</span>
-          <span class="k">else</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">"La lista de impresoras esta vacia!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-          <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="mi">6</span><span class="p">:</span>
-          <span class="n">guardarLista</span><span class="p">();</span>
-          <span class="n">printf</span><span class="p">(</span><span class="s">"Fin del programa. Lista guardada. Adios.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-          <span class="n">condicion</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-          <span class="k">break</span><span class="p">;</span>
-        <span class="p">}</span><span class="c1">//fin del switch
-</span>      <span class="p">}</span><span class="c1">//fin del bucle
-</span><span class="p">}</span><span class="c1">//fin de main
-</span>
-
-
-<span class="kt">int</span> <span class="nf">colaLlena</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">==</span><span class="p">((</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="n">COLA</span><span class="p">))</span>
-    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-  <span class="k">else</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">colaVacia</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">==</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="p">)</span>
-    <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-  <span class="k">else</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">huecoLibre</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">if</span><span class="p">((</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">==</span><span class="sc">'\0'</span><span class="p">)</span>
-      <span class="k">return</span> <span class="n">i</span><span class="p">;</span><span class="cm">/*Devuelve el primer hueco libre en la lista*/</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="cm">/*Devuele -1 si esta llena*/</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">listaVacia</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">if</span><span class="p">((</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">!=</span><span class="sc">'\0'</span><span class="p">)</span>
-      <span class="k">return</span> <span class="n">i</span><span class="p">;</span><span class="cm">/*Devuelve el primer hueco ocupado en la lista*/</span>
-    <span class="p">}</span>
-  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="cm">/*Devuelve -1 si esta vacia*/</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">listaLlena</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">if</span><span class="p">((</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">==</span><span class="p">(</span><span class="sc">'\0'</span><span class="p">))</span>
-      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">meterCola</span><span class="p">(</span><span class="kt">char</span> <span class="n">cadena</span><span class="p">[],</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">colaLlena</span><span class="p">(</span><span class="n">pcola</span><span class="p">))</span>
-  <span class="p">{</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="p">],</span><span class="n">cadena</span><span class="p">);</span>
-    <span class="n">strcat</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="p">],</span><span class="s">".txt"</span><span class="p">);</span>
-    <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="o">=</span><span class="p">((</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="n">COLA</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">enLista</span> <span class="p">(</span><span class="kt">char</span> <span class="n">buscar</span><span class="p">[])</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">,</span><span class="n">buscar</span><span class="p">)))</span>
-      <span class="k">return</span> <span class="n">i</span><span class="p">;</span>
-  <span class="p">}</span>
-  <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">mandarFicherosPorLote</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">tImpresora</span> <span class="o">*</span><span class="n">pimpresora</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">meterCola</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">pimpresora</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaImp</span><span class="p">);</span>
-    <span class="n">pimpresora</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">pendientes</span><span class="o">++</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">sacarCola</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">ficheroOut</span><span class="p">,</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">colaVacia</span><span class="p">(</span><span class="n">pcola</span><span class="p">))</span>
-  <span class="p">{</span>
-    <span class="n">strcpy</span><span class="p">(</span><span class="n">ficheroOut</span><span class="p">,</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="p">]);</span>
-    <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sc">'\0'</span><span class="p">;</span>
-    <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">=</span><span class="p">((</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="n">COLA</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">imprimirCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;(</span><span class="n">COLA</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">if</span><span class="p">((</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">+</span><span class="n">i</span><span class="p">)</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">COLA</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\t</span><span class="s">%d.  "</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
-      <span class="n">puts</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">+</span><span class="n">i</span><span class="p">]);</span>
-    <span class="p">}</span>
-    <span class="k">else</span>
-    <span class="p">{</span>
-      <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\t</span><span class="s">%d.  "</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
-      <span class="n">puts</span><span class="p">(</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">-</span><span class="p">(</span><span class="n">COLA</span><span class="o">-</span><span class="n">i</span><span class="p">)]);</span>
-    <span class="p">}</span>
-
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">inicializarCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">inicio</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-  <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">final</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">=</span><span class="n">COLA</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="n">pcola</span><span class="o">-&amp;</span><span class="n">gt</span><span class="p">;</span><span class="n">colaFich</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sc">'\0'</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">inicializarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sc">'\0'</span><span class="p">;</span>
-    <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">pendientes</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-    <span class="n">inicializarCola</span><span class="p">(</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">colaImp</span><span class="p">);</span>
-  <span class="p">}</span>
-
-
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">guardarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">FILE</span> <span class="o">*</span><span class="n">pfich</span><span class="p">;</span> <span class="cm">/* Referencia al fichero */</span>
-  <span class="kt">char</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">error</span><span class="p">;</span> <span class="cm">/* almacena si ha habido error */</span>
-  <span class="n">error</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-
-
-  <span class="k">if</span> <span class="p">((</span><span class="n">pfich</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="s">"listaImpresoras.bin"</span><span class="p">,</span><span class="s">"w"</span><span class="p">))</span><span class="o">!=</span><span class="nb">NULL</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">for</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(</span><span class="n">lista</span><span class="p">);</span><span class="n">p</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(((</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)</span><span class="n">lista</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">IMPRESORAS</span><span class="o">*</span><span class="k">sizeof</span><span class="p">(</span><span class="n">tImpresora</span><span class="p">)));</span><span class="n">p</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="n">putc</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">,</span><span class="n">pfich</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="n">fclose</span> <span class="p">(</span><span class="n">pfich</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">else</span>
-    <span class="n">error</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-  <span class="k">return</span> <span class="n">error</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">recuperarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">FILE</span> <span class="o">*</span><span class="n">pfich</span><span class="p">;</span> <span class="cm">/* Referencia al fichero */</span>
-  <span class="kt">char</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">error</span><span class="p">;</span> <span class="cm">/* almacena si ha habido error */</span>
-  <span class="n">error</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-
-  <span class="k">if</span> <span class="p">((</span><span class="n">pfich</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="s">"listaImpresoras.bin"</span><span class="p">,</span><span class="s">"r"</span><span class="p">))</span><span class="o">!=</span><span class="nb">NULL</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">for</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(</span><span class="n">lista</span><span class="p">);</span><span class="n">p</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(((</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)(</span><span class="n">lista</span><span class="p">))</span><span class="o">+</span><span class="p">(</span><span class="n">IMPRESORAS</span><span class="o">*</span><span class="k">sizeof</span><span class="p">(</span><span class="n">tImpresora</span><span class="p">)));</span><span class="n">p</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">getc</span><span class="p">(</span><span class="n">pfich</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="n">fclose</span> <span class="p">(</span><span class="n">pfich</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">else</span>
-    <span class="n">error</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-  <span class="k">return</span> <span class="n">error</span><span class="p">;</span>
-  <span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">menu</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">char</span> <span class="n">opcion</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"Menu</span><span class="se">\n</span><span class="s">Seleccione una opcion:</span><span class="se">\n\t</span><span class="s">1. Agregar impresora</span><span class="se">\n\t</span><span class="s">2. Mandar ficheros por lote a una impresora</span><span class="se">\n\t</span><span class="s">3. Listar todos los ficheros pendientes de imprimir</span><span class="se">\n\t</span><span class="s">4. Imprimir un fichero</span><span class="se">\n\t</span><span class="s">5. Borrar una impresora</span><span class="se">\n\t</span><span class="s">6. Salir</span><span class="se">\n</span><span class="s"> "</span><span class="p">);</span>
-  <span class="n">fflush</span><span class="p">(</span><span class="n">stdin</span><span class="p">);</span>
-  <span class="n">fgets</span><span class="p">(</span><span class="n">opcion</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
-  <span class="k">return</span> <span class="n">atoi</span><span class="p">(</span><span class="n">opcion</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">agregarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">numImpresora</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">char</span> <span class="n">input</span><span class="p">[</span><span class="mi">11</span><span class="p">];</span>
-  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
-
-  <span class="n">printf</span><span class="p">(</span><span class="s">"Impresoras disponibles:</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">IMPRESORAS</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%s"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Introduzca un nombre para la impresora: "</span><span class="p">);</span>
-  <span class="n">fgets</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="n">stdin</span><span class="p">);</span>
-
-  <span class="k">if</span><span class="p">(</span><span class="n">enLista</span><span class="p">(</span><span class="n">input</span><span class="p">)</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="mi">0</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">strncpy</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">huecoLibre</span><span class="p">()].</span><span class="n">nombre</span><span class="p">,</span><span class="n">input</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">else</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"Esa impresora ya esta en la lista!</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">leerFichero</span><span class="p">(</span><span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">13</span><span class="p">])</span>
-<span class="p">{</span>
-  <span class="kt">FILE</span> <span class="o">*</span><span class="n">lectura</span><span class="p">;</span>
-  <span class="kt">char</span> <span class="n">letra</span><span class="p">;</span>
-  <span class="n">lectura</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="n">ficheroOut</span><span class="p">,</span><span class="s">"r"</span><span class="p">);</span>
-  <span class="k">if</span><span class="p">(</span><span class="n">lectura</span><span class="o">!=</span><span class="nb">NULL</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">while</span><span class="p">((</span><span class="n">letra</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span><span class="n">fgetc</span><span class="p">(</span><span class="n">lectura</span><span class="p">))</span><span class="o">!=</span><span class="n">EOF</span><span class="p">)</span>
-      <span class="n">printf</span><span class="p">(</span><span class="s">"%c"</span><span class="p">,</span><span class="n">letra</span><span class="p">);</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">else</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"Error al abrir el archivo.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-  <span class="n">fclose</span><span class="p">(</span><span class="n">lectura</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">void</span> <span class="nf">borrarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">queImp</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">char</span> <span class="n">sacado</span><span class="p">[</span><span class="mi">13</span><span class="p">];</span>
-
-  <span class="n">printf</span><span class="p">(</span><span class="s">"Borrando impresora %s</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">nombre</span><span class="p">);</span>
-
-  <span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">nombre</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="sc">'\0'</span><span class="p">;</span>
-  <span class="k">while</span><span class="p">(</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="n">sacarCola</span><span class="p">(</span><span class="n">sacado</span><span class="p">,</span><span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">colaImp</span><span class="p">);</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">"Desencolando elemento '%s'</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">sacado</span><span class="p">);</span>
-    <span class="n">leerFichero</span><span class="p">(</span><span class="n">sacado</span><span class="p">);</span>
-    <span class="n">lista</span><span class="p">[</span><span class="n">queImp</span><span class="p">].</span><span class="n">pendientes</span><span class="o">--</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span></code></pre></figure>
-
-<p>Perdonad el posible nivel de spaghetti que pueda haber en el código, en el momento no estaba demasiado familiarizado con las formas estándar de hacer las cosas (y posiblemente ahora tampoco).</p>
-
-<p>El problema de haber usado recursos extraños viene en las funciones <em>int recuperarLista(void)</em> e <em>int guardarLista(void)</em>. La parte de ficheros no la vimos muy en profundidad en las clases de teoría, así que yo la escribí de la forma que consideré que había que hacerlo.</p>
-
-<p>Por ejemplo:</p>
-
-<figure class="highlight"><pre><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">guardarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-  <span class="kt">FILE</span> <span class="o">*</span><span class="n">pfich</span><span class="p">;</span> <span class="cm">/* Referencia al fichero */</span>
-  <span class="kt">char</span> <span class="o">*</span><span class="n">p</span><span class="p">;</span>
-  <span class="kt">int</span> <span class="n">error</span><span class="p">;</span> <span class="cm">/* almacena si ha habido error */</span>
-  <span class="n">error</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-
-
-  <span class="k">if</span> <span class="p">((</span><span class="n">pfich</span><span class="o">=</span><span class="n">fopen</span><span class="p">(</span><span class="s">"listaImpresoras.bin"</span><span class="p">,</span><span class="s">"w"</span><span class="p">))</span><span class="o">!=</span><span class="nb">NULL</span><span class="p">)</span>
-  <span class="p">{</span>
-    <span class="k">for</span><span class="p">(</span><span class="n">p</span><span class="o">=</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(</span><span class="n">lista</span><span class="p">);</span><span class="n">p</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;(</span><span class="kt">char</span><span class="o">*</span><span class="p">)(((</span><span class="kt">unsigned</span> <span class="kt">long</span><span class="p">)</span><span class="n">lista</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">IMPRESORAS</span><span class="o">*</span><span class="k">sizeof</span><span class="p">(</span><span class="n">tImpresora</span><span class="p">)));</span><span class="n">p</span><span class="o">++</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="n">putc</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">,</span><span class="n">pfich</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="n">fclose</span> <span class="p">(</span><span class="n">pfich</span><span class="p">);</span>
-  <span class="p">}</span>
-  <span class="k">else</span>
-    <span class="n">error</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-  <span class="k">return</span> <span class="n">error</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
-
-<p>Procedo a intentar explicarlo. Lo que había que guardar del programa era un array de impresoras (del tipo <em>tImpresora</em>). Entonces, en la función los pasos que sigo son los siguientes:</p>
-<ul>
-	<li>Abro el fichero para escribir</li>
-	<li>Si se abre correctamente hago un bucle <em>for</em> que empieza en el puntero del array y acaba en el puntero resultante de la suma del puntero del array y el tamaño del tipo impresora multiplicado por el número de impresoras. De esta forma recorremos <strong>todo</strong> el array puntero a puntero.</li>
-	<li>En cada iteración del <em>for</em> escribo en el fichero un "carácter". Da igual lo que hubiera en esa posición de memoria, yo escribo un carácter porque en C un char ocupa 1 byte exactamente.  Con esto consigo escribir todas las posiciones de memoria del array en el fichero.</li>
-	<li>Cierro el fichero y salgo de la función.</li>
-</ul>
-<p>Con<em> recursos extraños</em> entiendo que el profesor pensaba que lo había copiado, plagiado o que me lo había hecho alguien. Le expliqué cómo funcionaba y cuando vio que lo entendía se dio por satisfecho y consideró que el código era mío, como ciertamente era.</p>
-
-    
-  </div>-->
-
-<!--</article>
-
-<article class="home">
-
-  <!--<span class="post-date">
-    
-    May
-    6th,
-    
-    2015
-  </span>-->
-  <div id="article">
-    <h3>
-      <a href="/2015/05/06/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos.html">Métodos para el análisis de circuitos básicos</a>
-    </h3>
-    
-    <span id="separator">·</span>
-    <ul class="tag_box list-unstyled list-inline">
-      
-     
-      
-        <li><a href="/tags.html#ETSIST-ref">
-          ETSIST
-        <!--  -->
-        </a></li>
-        
-      
-      
-    </ul>
-    
-
-    <hr><!--custom added-->
-  </div>
-<!--  <div>
-    
-    <p>En Análisis de Circuitos I nos enseñaron unos sencillos métodos para aplicar a la hora de analizar un circuito. Son bastante straight-forward y aveces te llevan demasiado de la mano, pero una vez los interiorizas son muy útiles. También son de gran ayuda para gente a la que le cuesta comprender las definiciones.</p>
+      <li>
+        <h3><span class="post-list__post-title post-title"><a href="/2015/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos/" title="Métodos para el análisis de circuitos básicos">Métodos para el análisis de circuitos básicos</a></span><span class="post-meta__tags"><a href="/tags/#ETSIST">ETSIST</a> </span></h3>
+        <!--<p class="excerpt">En Análisis de Circuitos I nos enseñaron unos sencillos métodos para aplicar a la hora de analizar un circuito. Son bastante straight-forward y aveces te llevan demasiado de la mano, pero una vez los interiorizas son muy útiles. También son de gran ayuda para gente a la que le cuesta comprender las definiciones.
 <ol>
 	<li>Método 1: Evaluar una corriente
 <ul>
@@ -1023,49 +214,40 @@ Cada impresora se almacenará en una estructura con tres campos:
 </ul>
 </li>
 </ol>
-
+&hellip;</p>&#8226;
+        <div class="post-list__meta"><time datetime="6 May 2015" class="post-list__meta--date date">6 May 2015</time> &#8226; <span class="post-meta__tags">on <a href="/tags/#ETSIST">ETSIST</a> </span></div>-->
+        <hr class="post-list__divider">
+      </li>
     
-  </div>-->
+  </ol>
 
-<!--</article>
-
-<hr/>-->
-
-<ul class="pager">
+  <hr class="post-list__divider ">
 
   
-  <!--<li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>-->
-  
 
-  <li>
-    <span class="page_number">Page 1 of 1</span>
-  </li>
+</div>
 
-  
-  <!--<li class="next disabled">
-    <a>Older &rarr;</a>
-  </li>-->
-  
+      </div>
 
-</ul>
+      <footer class="footer">
+  <span class="footer__copyright">This work by Ricardo Sanz is licensed under a Creative Commons License <a href="http://creativecommons.org/licenses/by-sa/4.0/">BY-SA 4.0</a>.</span>
+</footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64295510-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 
-
-
-		<footer>
-			<p>
-				Creative Commons License <a href="http://creativecommons.org/licenses/by-sa/4.0/">BY-SA 4.0</a>. Running a modified <a href="https://github.com/dbtek/dbyll">dbyll</a>.
-			</p>
-		</footer>
-	</div>
-
-	<script type="text/javascript" src="/assets/resources/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="/assets/resources/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/assets/js/app.js"></script>
-</body>
+      <br>
+    </div>
+  </body>
 </html>
-
-
-

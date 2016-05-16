@@ -1,33 +1,45 @@
-This is a modified dbyll
-=====
+# jekyll-uno
 
-Open source stylish, minimalistic theme for jekyll.  
-Original: http://dbtek.github.io/dbyll/
+Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+
+> :warning:
+  This theme requires ruby and rubygems installed
 
 ### Features
-- Responsive layout.
-- Only one kind of tags.
-- Social profile and bio of author.
-- Bootstrap based.
-- Glyphicon and Font-Awesome Icons.
-- Pagination.
-- Disqus comments.
 
-### Download
-* [Download original dbyll](https://github.com/dbtek/dbyll/archive/master.zip)
+* Clean layout
+* Resposive layout
+* Pagination
+* Syntax highlighting
+* Social links
+* Tags listing page
+* Categories listing page
+* Google Analytics integration
+* Disqus integration
 
-### Install
-- You need to have [ruby](https://www.ruby-lang.org/en/documentation/installation/) installed in your system.
-- Install bundler which helps in specifying and installing dependencies of any Ruby project. ```gem install bundler```
-- Go to the root of the repo and run this - ```bundle install```
-- Then - ```bundle exec jekyll serve```
+---
 
-### Screenshots
-![dbyll-screenshot](assets/media/rsre-ss.png)
+### Install and Test
 
-### License
-- [MIT](http://opensource.org/licenses/MIT)
+1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
+2. Enter the folder: `cd jekyll-uno/`
+3. If you don't have bundler installed: `gem install bundler`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
 
+Access via: [http://localhost:4000/jekyll-uno](http://localhost:4000/jekyll-uno)
 
+---
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/dbtek/dbyll/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+### Demo and Download
+
+[Demo](http://joshgerdes.com/jekyll-uno/)
+[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+
+![jekyll-uno - free Jekyll theme](/screenshot.png)
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).

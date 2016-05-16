@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title></title>
-		<description>Not so fast.</description>
-		<link>/</link>
-		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-		
-			<item>
-				<title>Hello World!</title>
-				<description>&lt;p&gt;He migrado mi blog a &lt;strong&gt;jekyll&lt;/strong&gt;.
+  <channel>
+    <title>Ricardo Sanz</title>
+    <description>Telecommunications student always willing to make stuff. I love electronics.</description>
+    <link>http://ricardosa.nz//</link>
+    <atom:link href="http://ricardosa.nz//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 16 May 2016 19:41:16 +0200</pubDate>
+    <lastBuildDate>Mon, 16 May 2016 19:41:16 +0200</lastBuildDate>
+    <generator>Jekyll v3.0.5</generator>
+    
+      <item>
+        <title>Hello World!</title>
+        <description>&lt;p&gt;He migrado mi blog a &lt;strong&gt;jekyll&lt;/strong&gt;.
 Wordpress requería más atención, mantenimiento y tiempo del que me gustaría dedicar.&lt;/p&gt;
 
 &lt;p&gt;El tema que estoy usando es una versión de &lt;strong&gt;dbyll&lt;/strong&gt;, el cual fue originalmente hecho por &lt;strong&gt;&lt;a href=&quot;http://ismaildemirbilek.com&quot;&gt;dbtek&lt;/a&gt;&lt;/strong&gt;. Open sourced under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
@@ -17,37 +20,58 @@ Wordpress requería más atención, mantenimiento y tiempo del que me gustaría 
 
 &lt;p&gt;Como &lt;em&gt;chuleta&lt;/em&gt; de Markdown para futuras referencias.&lt;/p&gt;
 
+&lt;p&gt;Para poner varias etiquetas tags: [separadas, por, comas]&lt;/p&gt;
+
+&lt;p&gt;Así se ponen cuadrados azules &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Se puede poner código así&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Y así&lt;/p&gt;
+
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;Así se pone código&#39;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;que_no_va_a_ningun_lado&quot;&gt;Así se pone un botón&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn btn-secondary&quot; href=&quot;que_no_va_a_ningun_lado&quot;&gt;Así se pone un botón&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Sun, 28 Feb 2016 00:00:00 +0100</pubDate>
-				<link>/2016/02/28/hello-world.html</link>
-				<guid isPermaLink="true">/2016/02/28/hello-world.html</guid>
-			</item>
-		
-			<item>
-				<title>Productivity Hour</title>
-				<description>&lt;p&gt;Hoy he tomado una nueva medida: he instaurado la hora de la productividad.&lt;/p&gt;
+        <pubDate>Sun, 28 Feb 2016 16:04:23 +0100</pubDate>
+        <link>http://ricardosa.nz//2016/hello-world/</link>
+        <guid isPermaLink="true">http://ricardosa.nz//2016/hello-world/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Productivity Hour</title>
+        <description>&lt;p&gt;Hoy he tomado una nueva medida: he instaurado la hora de la productividad.&lt;/p&gt;
 
 &lt;p&gt;Durante esa hora hay que centrarse en hacer una cosa. No importa si ese día estás haciendo algo o haciendo nada, la hora de la productividad es sagrada.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/media/prodhour.png&quot; alt=&quot;Productivity Hour&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/prodhour.png&quot; alt=&quot;Productivity Hour&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;La idea es centrarse en hacer una sola cosa y avanzar esa cosa lo máximo posible en una hora.&lt;/p&gt;
 
 &lt;p&gt;Ningún tipo de distracción está permitida, no importa lo interesante que sea.&lt;/p&gt;
 </description>
-				<pubDate>Tue, 04 Aug 2015 00:00:00 +0200</pubDate>
-				<link>/2015/08/04/Productivity-Hour.html</link>
-				<guid isPermaLink="true">/2015/08/04/Productivity-Hour.html</guid>
-			</item>
-		
-			<item>
-				<title>Help Arranz</title>
-				<description>&lt;p&gt;Quería desconectar un poco del estudio así que en un rato he hecho un pequeño juego con HTML 5. La mecánica es un poco absurda y no hay forma de librarse de una asegurada muerte, solo prolongar la agonía hasta llevarte un &lt;i&gt;calculadorazo &lt;/i&gt;en la jeta.&lt;/p&gt;
+        <pubDate>Tue, 04 Aug 2015 00:00:00 +0200</pubDate>
+        <link>http://ricardosa.nz//2015/Productivity-Hour/</link>
+        <guid isPermaLink="true">http://ricardosa.nz//2015/Productivity-Hour/</guid>
+        
+        <category>theory</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Help Arranz</title>
+        <description>&lt;p&gt;Quería desconectar un poco del estudio así que en un rato he hecho un pequeño juego con HTML 5. La mecánica es un poco absurda y no hay forma de librarse de una asegurada muerte, solo prolongar la agonía hasta llevarte un &lt;i&gt;calculadorazo &lt;/i&gt;en la jeta.&lt;/p&gt;
 
 &lt;p&gt;Pero bueno, para pasar un rato corto el juego está bien.&lt;/p&gt;
 
@@ -58,16 +82,20 @@ Wordpress requería más atención, mantenimiento y tiempo del que me gustaría 
 &lt;p&gt;&lt;em&gt;Arranz es un estudiante de Turismo e Historia y necesita tu ayuda. Échale una mano esquivando calculadoras científicas y recuperando valiosos jarrones griegos.
 Usa las flechas de tu teclado o los botones del juego para controlar a Arranz.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&quot;btn btn-default&quot; href=&quot;/html5/arranz/&quot;&gt;Juega&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn btn-secondary&quot; href=&quot;/html5/arranz/&quot; target=&quot;_blank&quot;&gt;Juega&lt;/a&gt;&lt;/p&gt;
 </description>
-				<pubDate>Fri, 19 Jun 2015 00:00:00 +0200</pubDate>
-				<link>/2015/06/19/Help-Arranz.html</link>
-				<guid isPermaLink="true">/2015/06/19/Help-Arranz.html</guid>
-			</item>
-		
-			<item>
-				<title>Práctica 4 Prog 1</title>
-				<description>&lt;h3 style=&quot;text-align: center;&quot;&gt;ATTENTION: POSSIBLE SPAGHETTI CODE AHEAD&lt;/h3&gt;
+        <pubDate>Fri, 19 Jun 2015 00:00:00 +0200</pubDate>
+        <link>http://ricardosa.nz//2015/Help-Arranz/</link>
+        <guid isPermaLink="true">http://ricardosa.nz//2015/Help-Arranz/</guid>
+        
+        <category>ocio</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Práctica 4 Prog 1</title>
+        <description>&lt;h3 style=&quot;text-align: center;&quot;&gt;ATTENTION: POSSIBLE SPAGHETTI CODE AHEAD&lt;/h3&gt;
 &lt;p&gt;Bueno, en vista de que el examen de recuperación de &lt;strong&gt;Programación I&lt;/strong&gt; es dentro de un par de horas, supongo que no pasará nada si publico mi solución a la &lt;strong&gt;Práctica 4&lt;/strong&gt; de esta asignatura que entregué en Enero de este año.&lt;/p&gt;
 
 &lt;p&gt;El enunciado decía lo siguiente:&lt;/p&gt;
@@ -687,14 +715,18 @@ Cada impresora se almacenará en una estructura con tres campos:
 &lt;/ul&gt;
 &lt;p&gt;Con&lt;em&gt; recursos extraños&lt;/em&gt; entiendo que el profesor pensaba que lo había copiado, plagiado o que me lo había hecho alguien. Le expliqué cómo funcionaba y cuando vio que lo entendía se dio por satisfecho y consideró que el código era mío, como ciertamente era.&lt;/p&gt;
 </description>
-				<pubDate>Wed, 03 Jun 2015 00:00:00 +0200</pubDate>
-				<link>/2015/06/03/Pra-ctica-4-Prog-1.html</link>
-				<guid isPermaLink="true">/2015/06/03/Pra-ctica-4-Prog-1.html</guid>
-			</item>
-		
-			<item>
-				<title>Métodos para el análisis de circuitos básicos</title>
-				<description>&lt;p&gt;En Análisis de Circuitos I nos enseñaron unos sencillos métodos para aplicar a la hora de analizar un circuito. Son bastante straight-forward y aveces te llevan demasiado de la mano, pero una vez los interiorizas son muy útiles. También son de gran ayuda para gente a la que le cuesta comprender las definiciones.&lt;/p&gt;
+        <pubDate>Wed, 03 Jun 2015 00:00:00 +0200</pubDate>
+        <link>http://ricardosa.nz//2015/Pra-ctica-4-Prog-1/</link>
+        <guid isPermaLink="true">http://ricardosa.nz//2015/Pra-ctica-4-Prog-1/</guid>
+        
+        <category>ETSIST</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Métodos para el análisis de circuitos básicos</title>
+        <description>&lt;p&gt;En Análisis de Circuitos I nos enseñaron unos sencillos métodos para aplicar a la hora de analizar un circuito. Son bastante straight-forward y aveces te llevan demasiado de la mano, pero una vez los interiorizas son muy útiles. También son de gran ayuda para gente a la que le cuesta comprender las definiciones.&lt;/p&gt;
 &lt;ol&gt;
 	&lt;li&gt;Método 1: Evaluar una corriente
 &lt;ul&gt;
@@ -711,10 +743,14 @@ Cada impresora se almacenará en una estructura con tres campos:
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-				<pubDate>Wed, 06 May 2015 00:00:00 +0200</pubDate>
-				<link>/2015/05/06/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos.html</link>
-				<guid isPermaLink="true">/2015/05/06/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos.html</guid>
-			</item>
-		
-	</channel>
+        <pubDate>Wed, 06 May 2015 00:00:00 +0200</pubDate>
+        <link>http://ricardosa.nz//2015/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos/</link>
+        <guid isPermaLink="true">http://ricardosa.nz//2015/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos/</guid>
+        
+        <category>ETSIST</category>
+        
+        
+      </item>
+    
+  </channel>
 </rss>
