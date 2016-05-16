@@ -4,6 +4,31 @@
 </span>
 
 <header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+  <script>
+    // Create the Trianglify pattern
+    var pattern = Trianglify({
+        cell_size: Math.floor((Math.random() * 70) + 20),
+        seed: 'jr5jm',
+        variance: (Math.random() * (0.25 - 1.00) + 1.00).toFixed(2),
+        x_colors: 'PRGn',
+        y_colors: 'match_x',
+        palette: Trianglify.colorbrewer,
+        stroke_width: 1.51,
+    });
+
+    // Serialize the SVG object to a String
+    var m = new XMLSerializer().serializeToString(pattern.svg());
+
+    // Perform the base64 encoding of the String
+    var k = window.btoa(m);
+
+    // Query the element to set the background image property
+    var element = document.getElementsByTagName('header')[0];
+
+    // Set the background image property, including the encoding type header
+    element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + k + '")';
+  </script>
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
