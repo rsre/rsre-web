@@ -18,7 +18,7 @@ El enunciado decía lo siguiente:
 <ol>
 	<li>PRIMERA FASE:
 Codificar en C un programa colaImpresora.c que maneje una estructura de tipo cola en la que se almacenarán los nombres de los ficheros que se quieren imprimir.Los 6 nombres que se van a utilizar para generar los nombres de los ficheros, se pasarán al programa en el mandato de ejecución, y el programa los recibirá como parámetros de main(), de tal forma que la ejecución será:
-<pre class="lang:sh decode:true ">C:\&gt; colaImpresora fichero1 fichero2 fichero3 fichero4 fichero5 fichero6
+<pre class="lang:sh decode:true ">C:\&gt; colaImpresora file1 file2 file3 file4 file5 file6
 </pre>
 Donde ficheroN es el nombre que el alumno asigne a un determinado fichero.</li>
 	<li>SEGUNDA FASE:
@@ -28,7 +28,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 	<li>nombre: identificador de la impresora. Cadena de 20 caracteres significativos.</li>
 	<li>número de ficheros pendientes de impresión en la cola de la impresora.</li>
 	<li>la cola de ficheros (resultante de la primera fase da la práctica).Inicialmente el programa leerá el nombre de seis ficheros que se pasará al programa en la ejecución, como parámetros de main(), de tal forma que la ejecución será:
-<pre class="lang:sh decode:true">C:\&gt; listaImpresoras fichero1 fichero2 fichero3 fichero4 fichero5 fichero6</pre>
+<pre class="lang:sh decode:true">C:\&gt; listaImpresoras file1 file2 file3 file4 file5 file6</pre>
 </li>
 </ul>
 </li>
