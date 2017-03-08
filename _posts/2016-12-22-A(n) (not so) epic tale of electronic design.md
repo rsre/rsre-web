@@ -38,7 +38,7 @@ I had no previous experience with ATMEL microprocessors out of common arduino th
 
 Fortunately, everything worked out in the end and around 50 students of the school were able to enjoy the experience of assembling something with their own hands.
 
-_This article was published in the 16th number of TelekoSur, the ETSIST’s Student Union magazine, and then it was republished in Telecom Electronics Association [AETEL's blog](aetel.etsist.upm.es) and here. It was originally written in Spanish, translation losses may have occurred._
+_This article was published in the 16th number of TelekoSur, the ETSIST’s Student Union magazine, and then it was republished in Telecom Electronics Association [AETEL's blog](http://aetel.etsist.upm.es) and here. It was originally written in Spanish, translation losses may have occurred._
 
 1. Sphera is a week long event organised by the student groups of ETSIST with lots of fun activities.
 2. The freezers (“las neveras”) are the exam halls of the school. They have this nickname because they are completely white and it’s freezing cold inside.
