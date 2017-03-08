@@ -38,11 +38,11 @@ I had no previous experience with ATMEL microprocessors out of common arduino th
 
 Fortunately, everything worked out in the end and around 50 students of the school were able to enjoy the experience of assembling something with their own hands.
 
-This article was published in the 16th number of TelekoSur, the ETSIST’s Student Union magazine. It was originally written in Spanish, translation losses may have occurred.
+_This article was published in the 16th number of TelekoSur, the ETSIST’s Student Union magazine, and then it was republished in Telecom Electronics Association [AETEL's blog](aetel.etsist.upm.es) and here. It was originally written in Spanish, translation losses may have occurred._
 
-Sphera is a week long event organised by the student groups of ETSIST with lots of fun activities.
-The freezers (“las neveras”) are the exam halls of the school. They have this nickname because they are completely white and it’s freezing cold inside.
-Sumobots are fighting robots that try to push each other out of a Dojo.
-IEEE National Student Branch Congress (Congreso Nacional de Ramas de Estudiantes del IEEE) is a gathering of student members of IEEE in Spain. Each year is organised by a different Student Branch and this year it was Universidad Miguel Hernández turn.
-Elecrow is an elctronic shop in Shenzen, China. Cheap PCBs can be acquired here.
-Farnell is a distributor of electronic parts based in United Kingdom.
+1. Sphera is a week long event organised by the student groups of ETSIST with lots of fun activities.
+2. The freezers (“las neveras”) are the exam halls of the school. They have this nickname because they are completely white and it’s freezing cold inside.
+3. Sumobots are fighting robots that try to push each other out of a Dojo.
+4. IEEE National Student Branch Congress (Congreso Nacional de Ramas de Estudiantes del IEEE) is a gathering of student members of IEEE in Spain. Each year is organised by a different Student Branch and this year it was Universidad Miguel Hernández turn.
+5. Elecrow is an elctronic shop in Shenzen, China. Cheap PCBs can be acquired here.
+6. Farnell is a distributor of electronic parts based in United Kingdom.
