@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I made some T-shirt design
-date:   2017-03-08 01:24:00
+date: 2017-03-08 01:24:00
 categories: []
 tags: [ETSIST]
 fullview: true
