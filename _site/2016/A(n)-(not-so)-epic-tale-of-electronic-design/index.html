@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Ricardo Sanz</title>
+  <title>A(n) (not so) epic tale of electronic design</title>
   <meta name="description" content="Telecommunications student always willing to make stuff. I love electronics.">
   <meta name="author" content="Ricardo Sanz">
   <meta name="HandheldFriendly" content="True">
@@ -43,7 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://ricardosa.nz//404.html">
+  <link rel="canonical" href="http://ricardosa.nz//2016/A(n)-(not-so)-epic-tale-of-electronic-design/">
   <link rel="alternate" type="application/rss+xml" title="Ricardo Sanz" href="/feed.xml">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -177,64 +177,85 @@
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
         <article class="post-container post-container--single">
-
   <header class="post-header">
-    <h1 class="post-title"></h1>
+    <div class="post-meta">
+      <time datetime="22 Dec 2016" class="post-meta__date date">22 Dec 2016</time><span class="post-meta__tags"><a href="/tags/#ETSIST">ETSIST</a> </span>
+    </div>
+    <h1 class="post-title">A(n) (not so) epic tale of electronic design</h1>
   </header>
 
   <section class="post">
-    <!----------------------------------------------------------------
-     _ _           _ _          
-  __| | |__  _   _| | |         Ascii arts included in this page:
- / _` | '_ \| | | | | |         - R2D2, provided by: http://www.chris.com/
-| (_| | |_) | |_| | | |         - Texts, generated from: http://www.network-science.de/ascii/
- \__,_|_.__/ \__, |_|_|         http://github.com/dbtek/dbyll
--------------|___/------------------------------------------------>
+    <p>Sometimes I amaze myself. Even for good. The ability us engineering stundets have to image something and just do it is awesome.</p>
 
-  <style>
-    pre {
-          background: none;
-          border: none;
-    }
-  </style>
+<p>Last year we found ourselves organising the Sphera event[1]. The presidents of all the student groups in the school had reunited to figure out the timetables and space for the venue in the freezers[2]. AETEL had three activities: a minisumo robot competition[3], a demo flight of our quadcopter and a workshop for arduino beginners.</p>
 
-  <pre>
+<p>If you make an analysis of our planned activities you may realise none of them required the participants to be very active. In fact, the only activity that implied building was the sumobot competition and the participants had to do all on their own…</p>
 
-                       444444444       000000000            444444444   
-                      4::::::::4     00:::::::::00         4::::::::4  
-                     4:::::::::4   00:::::::::::::00      4:::::::::4  
-                    4::::44::::4  0:::::::000:::::::0    4::::44::::4  
-                   4::::4 4::::4  0::::::0   0::::::0   4::::4 4::::4  
-                  4::::4  4::::4  0:::::0     0:::::0  4::::4  4::::4  
-                 4::::4   4::::4  0:::::0     0:::::0 4::::4   4::::4  
-                4::::444444::::4440:::::0 000 0:::::04::::444444::::444
-                4::::::::::::::::40:::::0 000 0:::::04::::::::::::::::4
-                4444444444:::::4440:::::0     0:::::04444444444:::::444
-                          4::::4  0:::::0     0:::::0          4::::4  
-                          4::::4  0::::::0   0::::::0          4::::4  
-                          4::::4  0:::::::000:::::::0          4::::4  
-                        44::::::44 00:::::::::::::00         44::::::44
-                        4::::::::4   00:::::::::00           4::::::::4
-                        4444444444     000000000             4444444444
+<p>Being our Society about doing stuff and teaching stuff I decided to find a remedy for this problem. People had to build something. I wanted them to know the feeling of assembling something with your own hands, testing it, making it work and knowing you did it with your own effort. I came to the conclusion that getting together a kit to solder would be nice and Carlos Berbell helped me settle on a Persistence of View display. The idea was to put together a simple kit that would draw some attention for people to assemble for free any time during the Sphera event.</p>
 
-         ,-----.             _   _     _           _                 _     _               _   
-       ,'_/_|_\_`.          | |_| |__ (_)___   ___| |__   ___  _   _| | __| |  _ __   ___ | |_ 
-      /<<::8[O]::>\         | __| '_ \| / __| / __| '_ \ / _ \| | | | |/ _` | | '_ \ / _ \| __|
-     _|-----------|_        | |_| | | | \__ \ \__ \ | | | (_) | |_| | | (_| | | | | | (_) | |_ 
- :::|  | ====-=- |  |:::     \__|_| |_|_|___/ |___/_| |_|\___/ \__,_|_|\__,_| |_| |_|\___/ \__|
- :::|  | -=-==== |  |:::                                                                         
- :::\  | ::::|()||  /:::     _                                                          
- ::::| | ....|()|| |::::    | |__   __ _ _ __  _ __   ___ _ __       _____   _____ _ __ 
-     | |_________| |        | '_ \ / _` | '_ \| '_ \ / _ \ '_ \     / _ \ \ / / _ \ '__|
-     | |\_______/| |        | | | | (_| | |_) | |_) |  __/ | | |_  |  __/\ V /  __/ |   
-    /   \ /   \ /   \       |_| |_|\__,_| .__/| .__/ \___|_| |_( )  \___| \_/ \___|_|   
-    `---' `---' `---'                   |_|   |_|              |/                       
+<p>I did the electronic design on a piece of paper while checking the pinout of the ATtiny85 on google. We didn’t have much time, so I asked Carlos to design the printed circuit board because I’m not super skilled with board design and I would have taken too long. I sent him the schematic and the drawings for the board and he did the design.</p>
 
+<p><img src="/images/pocketpov/photo1.jpg" alt="pcb_pocketPOV" />
+<strong>PCB AETEL pocket PoV</strong></p>
 
-    </pre>
+<p>We were running against the clock, we had to leave to Elche for IEEE National Student Branch Congress[4] but we managed to find some time to order the boards on Elecrow[5], the components on Farnell[6] and the batteries.</p>
+
+<p>After a nice weekend with fantastic people in Elche and having made a lot of networking and friends, we came back to Campus Sur just in time for Sphera. Luckily Jota had done all the drone stuff and Carlos had the arduino talk prepared, that allowed me to center completely on the PoV display.</p>
+
+<p><img src="/images/pocketpov/photo2.jpg" alt="pocketPOV" />
+<strong>Completely assembled</strong></p>
+
+<p>Since we had to do everything so quick, while preparing many other activities and even being a few hundred kilometers away, we hadn’t had much time to test the design. In fact, we hadn’t even built a single prototype. I know, I know, right now you are thinking: “what engineer manufactures something before even prototyping? Things should go the other way around” and I agree with you, but sometimes you’ve got to do what you’ve got to do. We didn’t have time to test and the design was very simple, so we decided to take the chance and it worked in the end. The assembly of the first unit was easy and didn’t take long, programming, however, was more complicated.</p>
+
+<p><img src="/images/pocketpov/photo3.jpg" alt="WorkingPOV" />
+<strong>Demonstration of AETEL pocket PoV</strong></p>
+
+<p>I had no previous experience with ATMEL microprocessors out of common arduino things, and the first thing I had to do was put together an ad hoc programmer with an arduino UNO and a few cables, then I installed the descriptors for this microcontroller and then fight with the code until it worked. Making the thing work as a PoV display was not difficult, the difficult part was putting the chip to sleep so it didn’t kill the battery while waiting for a user to press the button, all this in a few hours and with little (or no) previous experience.</p>
+
+<p>Fortunately, everything worked out in the end and around 50 students of the school were able to enjoy the experience of assembling something with their own hands.</p>
+
+<p><em>This article was published in the 16th number of TelekoSur, the ETSIST’s Student Union magazine, and then it was republished in Telecom Electronics Association <a href="http://aetel.etsist.upm.es">AETEL’s blog</a> and here. It was originally written in Spanish, translation losses may have occurred.</em></p>
+
+<ol>
+  <li>Sphera is a week long event organised by the student groups of ETSIST with lots of fun activities.</li>
+  <li>The freezers (“las neveras”) are the exam halls of the school. They have this nickname because they are completely white and it’s freezing cold inside.</li>
+  <li>Sumobots are fighting robots that try to push each other out of a Dojo.</li>
+  <li>IEEE National Student Branch Congress (Congreso Nacional de Ramas de Estudiantes del IEEE) is a gathering of student members of IEEE in Spain. Each year is organised by a different Student Branch and this year it was Universidad Miguel Hernández turn.</li>
+  <li>Elecrow is an elctronic shop in Shenzen, China. Cheap PCBs can be acquired here.</li>
+  <li>Farnell is a distributor of electronic parts based in United Kingdom.</li>
+</ol>
+
   </section>
-
+  <section id="disqus_thread"></section><!-- /#disqus_thread -->
 </article>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'ricardosanz'; // required: replace example with your forum shortname
+        var disqus_config = function () {
+          this.page.url = 'http://ricardosa.nz/2016/A(n)-(not-so)-epic-tale-of-electronic-design/';
+          this.page.identifier = '/2016/A(n) (not so) epic tale of electronic design';
+          this.page.title = 'A(n) (not so) epic tale of electronic design';
+        };
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
       </div>
 
       <footer class="footer">
