@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ricardo Sanz</title>
-    <description>Telecommunications student always willing to make stuff. I love electronics.</description>
+    <description>I love electronics.</description>
     <link>http://ricardosa.nz//</link>
     <atom:link href="http://ricardosa.nz//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 20 May 2017 03:39:10 +0200</pubDate>
-    <lastBuildDate>Sat, 20 May 2017 03:39:10 +0200</lastBuildDate>
+    <pubDate>Mon, 18 Dec 2017 03:24:24 +0100</pubDate>
+    <lastBuildDate>Mon, 18 Dec 2017 03:24:24 +0100</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -793,8 +793,8 @@ Cada impresora se almacenará en una estructura con tres campos:
 &lt;p&gt;Con&lt;em&gt; recursos extraños&lt;/em&gt; entiendo que el profesor pensaba que lo había copiado, plagiado o que me lo había hecho alguien. Le expliqué cómo funcionaba y cuando vio que lo entendía se dio por satisfecho y consideró que el código era mío, como ciertamente era.&lt;/p&gt;
 </description>
         <pubDate>Wed, 03 Jun 2015 00:00:00 +0200</pubDate>
-        <link>http://ricardosa.nz//2015/Pr%C3%A1ctica-4-Prog-1/</link>
-        <guid isPermaLink="true">http://ricardosa.nz//2015/Pr%C3%A1ctica-4-Prog-1/</guid>
+        <link>http://ricardosa.nz//2015/Pra-ctica-4-Prog-1/</link>
+        <guid isPermaLink="true">http://ricardosa.nz//2015/Pra-ctica-4-Prog-1/</guid>
         
         <category>ETSIST</category>
         
@@ -821,8 +821,8 @@ Cada impresora se almacenará en una estructura con tres campos:
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 06 May 2015 00:00:00 +0200</pubDate>
-        <link>http://ricardosa.nz//2015/M%C3%A9todos-para-el-an%C3%A1lisis-de-circuitos-b%C3%A1sicos/</link>
-        <guid isPermaLink="true">http://ricardosa.nz//2015/M%C3%A9todos-para-el-an%C3%A1lisis-de-circuitos-b%C3%A1sicos/</guid>
+        <link>http://ricardosa.nz//2015/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos/</link>
+        <guid isPermaLink="true">http://ricardosa.nz//2015/Me-todos-para-el-ana-lisis-de-circuitos-ba-sicos/</guid>
         
         <category>ETSIST</category>
         
