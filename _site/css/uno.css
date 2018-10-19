@@ -1069,6 +1069,21 @@ pre {
 	font-size: 1.2em;
 	font-weight: lighter;
 	color: #999999; }
+/*Simple Jekyll Search*/
+.blog-header {
+	clear: both;
+	padding-bottom: 5em;
+}
+.blog-title {
+	float: left;
+	width: 55%;
+}
+.search-container {
+	float: right;
+	width: 35%;
+	padding-top: 0.5em;
+}
+/*end*/
 
 .block-heading {
 	display: inline;
@@ -1540,7 +1555,7 @@ input[type="tel"] {
 	background: #FFF;
 	border: 1px solid #dddddd;
 	border-radius: 3px;
-	font-size: .9em;
+	font-size: 1em;
 	color: #666666; }
 	input[type="text"]:focus,
 	input[type="password"]:focus,
