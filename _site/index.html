@@ -176,8 +176,27 @@
 
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <h1> Mind Deviations </h1>
-<br>
+        <div style="clear:both;padding-bottom: 5em;" >
+<div style="float:left;width:55%;" >
+  <h1> Mind Deviations </h1>
+</div>
+<div id="search-container"style="float:right;width:35%;padding-top: 0.5em">
+<input type="text" id="search-input" placeholder="search...">
+<ul id="results-container"></ul>
+</div>
+
+<!-- Script pointing to search-script.js -->
+<script src="/js/simple-jekyll-search.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+})
+</script>
+</div>
 <div class="main-post-list">
 
   <ol class="post-list">
