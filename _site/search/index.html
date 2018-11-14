@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Migrated to Jekyll!</title>
+  <title>Ricardo Sanz</title>
   <meta name="description" content="I love electronics.">
   <meta name="author" content="Ricardo Sanz">
   <meta name="HandheldFriendly" content="True">
@@ -43,7 +43,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://ricardosa.nz/2016/hello-world/">
+  <link rel="canonical" href="http://ricardosa.nz/search/">
   <link rel="alternate" type="application/rss+xml" title="Ricardo Sanz" href="/feed.xml">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -176,76 +176,23 @@
 
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <article class="post-container post-container--single">
-  <header class="post-header">
-    <div class="post-meta">
-      <time datetime="28 Feb 2016" class="post-meta__date date">28 Feb 2016</time><span class="post-meta__tags"></span>
-    </div>
-    <h1 class="post-title">Migrated to Jekyll!</h1>
-  </header>
-
-  <section class="post">
-    <p>He migrado mi blog a <strong>jekyll</strong>.
-Wordpress requería más atención, mantenimiento y tiempo del que me gustaría dedicar.</p>
-
-<p>El tema que estoy usando es una versión de <strong>jekyll-uno</strong>, el cual fue originalmente hecho por <strong><a href="https://github.com/joshgerdes">joshgerdes</a></strong>. Open sourced under <a href="http://opensource.org/licenses/MIT">MIT</a> license.</p>
-
-<h3 id="aprovecho-este-post">Aprovecho este post</h3>
-
-<p>Como <em>chuleta</em> de Markdown para futuras referencias.</p>
-
-<p>Para poner varias etiquetas tags: [separadas, por, comas]</p>
-
-<p>Así se ponen cuadrados azules <code class="highlighter-rouge">_posts</code>.</p>
-
-<p>Se puede poner código así</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span>
-</code></pre>
+        <h1> Search Mind Deviations </h1>
+<div class="main-post-list">
+  <div id="search-container">
+    <input type="text" id="search-input" class="search-input" placeholder="search...">
+    <ul id="results-container"></ul>
+  </div>
+  <!-- Script pointing to search-script.js -->
+  <script src="/js/simple-jekyll-search.js" type="text/javascript"></script>
+  <!-- Configuration -->
+  <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json'
+    })
+  </script>
 </div>
-<p>Y así</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">foo</span>
-  <span class="nb">puts</span> <span class="s1">'Así se pone código'</span>
-<span class="k">end</span></code></pre></figure>
-
-<p><a class="btn btn-secondary" href="que_no_va_a_ningun_lado">Así se pone un botón</a></p>
-
-  </section>
-  <section id="disqus_thread"></section><!-- /#disqus_thread -->
-</article>
-
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'ricardosanz'; // required: replace example with your forum shortname
-        var disqus_config = function () {
-          this.page.url = 'http://ricardosa.nz/2016/hello-world/';
-          this.page.identifier = '/2016/hello-world';
-          this.page.title = 'Migrated to Jekyll!';
-        };
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-
-
       </div>
 
       <footer class="footer">

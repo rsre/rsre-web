@@ -5,8 +5,8 @@
     <description>I love electronics.</description>
     <link>http://ricardosa.nz/</link>
     <atom:link href="http://ricardosa.nz/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 19 Oct 2018 12:16:56 +0200</pubDate>
-    <lastBuildDate>Fri, 19 Oct 2018 12:16:56 +0200</lastBuildDate>  
+    <pubDate>Wed, 14 Nov 2018 02:17:05 +0100</pubDate>
+    <lastBuildDate>Wed, 14 Nov 2018 02:17:05 +0100</lastBuildDate>
     <generator>Jekyll v3.0.2</generator>
     
       <item>
@@ -87,13 +87,13 @@
       </item>
     
       <item>
-        <title>Hello World!</title>
+        <title>Migrated to Jekyll!</title>
         <description>&lt;p&gt;He migrado mi blog a &lt;strong&gt;jekyll&lt;/strong&gt;.
 Wordpress requería más atención, mantenimiento y tiempo del que me gustaría dedicar.&lt;/p&gt;
 
 &lt;p&gt;El tema que estoy usando es una versión de &lt;strong&gt;jekyll-uno&lt;/strong&gt;, el cual fue originalmente hecho por &lt;strong&gt;&lt;a href=&quot;https://github.com/joshgerdes&quot;&gt;joshgerdes&lt;/a&gt;&lt;/strong&gt;. Open sourced under &lt;a href=&quot;http://opensource.org/licenses/MIT&quot;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 
-&lt;h3 id=&quot;voy-a-mantener-este-post&quot;&gt;Voy a mantener este post&lt;/h3&gt;
+&lt;h3 id=&quot;aprovecho-este-post&quot;&gt;Aprovecho este post&lt;/h3&gt;
 
 &lt;p&gt;Como &lt;em&gt;chuleta&lt;/em&gt; de Markdown para futuras referencias.&lt;/p&gt;
 

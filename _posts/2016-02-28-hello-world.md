@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World!
+title: Migrated to Jekyll!
 date:   2016-02-28 15:04:23
 categories: []
 tags: []
@@ -13,7 +13,7 @@ Wordpress requería más atención, mantenimiento y tiempo del que me gustaría 
 
 El tema que estoy usando es una versión de **jekyll-uno**, el cual fue originalmente hecho por **[joshgerdes](https://github.com/joshgerdes)**. Open sourced under [MIT](http://opensource.org/licenses/MIT) license.
 
-### Voy a mantener este post
+### Aprovecho este post
 
 Como *chuleta* de Markdown para futuras referencias.
 

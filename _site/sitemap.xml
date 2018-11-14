@@ -111,7 +111,22 @@
     <url>
       <loc>http://ricardosa.nz/404.html</loc>
       
-        <lastmod>2018-10-19T12:16:56+02:00</lastmod>
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://ricardosa.nz/about/</loc>
+      
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -126,8 +141,7 @@
     <url>
       <loc>http://ricardosa.nz/categories/</loc>
       
-        <lastmod>2018-10-19T12:16:56+02:00</lastmod>
-
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -142,8 +156,7 @@
     <url>
       <loc>http://ricardosa.nz/feed.xml</loc>
       
-        <lastmod>2018-10-19T12:16:56+02:00</lastmod>
-
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -158,8 +171,7 @@
     <url>
       <loc>http://ricardosa.nz/</loc>
       
-        <lastmod>2018-10-19T12:16:56+02:00</lastmod>
-
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -174,7 +186,22 @@
     <url>
       <loc>http://ricardosa.nz/js/main.js</loc>
       
-        <lastmod>2018-10-19T12:16:56+02:00</lastmod>
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://ricardosa.nz/search/</loc>
+      
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -189,8 +216,7 @@
     <url>
       <loc>http://ricardosa.nz/search.json</loc>
       
-        <lastmod>2018-10-19T12:16:56+02:00</lastmod>
-
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -207,8 +233,7 @@
     <url>
       <loc>http://ricardosa.nz/tags/</loc>
       
-        <lastmod>2018-10-19T12:16:56+02:00</lastmod>
-
+        <lastmod>2018-11-14T02:17:05+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>

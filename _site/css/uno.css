@@ -1080,8 +1080,11 @@ pre {
 }
 .search-container {
 	float: right;
-	width: 35%;
+	width: auto;
 	padding-top: 0.5em;
+}
+.search-input {
+	width: 95% !important;
 }
 /*end*/
 
