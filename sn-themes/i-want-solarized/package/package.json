@@ -1,0 +1,15 @@
+{
+        "sn": {
+                "main": "dist.css"
+        },
+        "identifier": "nz.ricardosa.theme-i-want-solarized",
+        "name": "I want Solarized",
+        "content_type": "SN|Theme",
+        "version": "1.0.0",
+        "description": "Dark solarized theme for the masses.",
+        "url": "https://ricardosa.nz/sn-themes/i-want-solarized/package.json",
+        "download_url": "https://ricardosa.nz/sn-themes/i-want-solarized/package.zip",
+        "latest_url": "https://ricardosa.nz/sn-themes/i-want-solarized/package.json",
+        "marketing_url": "https://github.com/rsre/rsre-web/sn-themes",
+        "thumbnail_url": "https://github.com/rsre/rsre-web/raw/master/sn-themes/images/solarized-screenshot.png"
+}
