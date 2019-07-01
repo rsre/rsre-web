@@ -1,14 +1,14 @@
 /* TEAM */
-Developer & Designer: Josh Gerdes
-Twitter: @joshgerdes
-Site: http://joshgerdes.com
-Location: Minneapolis, MN, USA
+Developer & Designer: Ricardo Sanz
+Twitter: @ricardosanz
+Site: http://ricardosa.nz
+Location: Guadalajara, SPAIN
 						
 /* THANKS */
-Name: Dale Anthony
+Name: Dale Anthony, Josh Gerdes
 
 /* SITE */
-Last update: 2016/02/10
+Last update: 5/10/2021
 Standards: HTML5, CSS3
 Components: Jekyll
 Software: Sublime Text, Photoshop
