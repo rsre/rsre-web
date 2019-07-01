@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/rsanz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ricardosa.nz
+  * I am rsanz (https://keybase.io/rsanz) on keybase.
+  * I have a public key ASDA_j6X9bxIbvPJa6yrPssDvKVZQTCS1T32fMjP90HcPQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c0fe3e97f5bc486ef3c96bacab3ecb03bca559413092d53df67cc8cff741dc3d0a",
+      "host": "keybase.io",
+      "kid": "0120c0fe3e97f5bc486ef3c96bacab3ecb03bca559413092d53df67cc8cff741dc3d0a",
+      "uid": "a357730b734aa26f7fa912a0e835ae19",
+      "username": "rsanz"
+    },
+    "merkle_root": {
+      "ctime": 1551818358,
+      "hash": "c7dcfdb37f0d93162dc83cd7a8879cb7c69b4e2f7d1db9b7f44a9491e0ea508843e476fd0e42b0fb8a9099d9a319c2a3b172cf31681f6479f5caecbc561fb0d2",
+      "hash_meta": "f2ba47272df90d4337793eb960f5564c6257c8effbaa941489d799756b8a6e54",
+      "seqno": 4882702
+    },
+    "service": {
+      "entropy": "rsYWGo4PmCa+9Vas1Imvd1ZG",
+      "hostname": "ricardosa.nz",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.0.0"
+  },
+  "ctime": 1551818402,
+  "expire_in": 504576000,
+  "prev": "11aa41cd032325abe553c72a0b5a3370d97d5178d695e0a25d092d7c8e51da4a",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgwP4+l/W8SG7zyWusqz7LA7ylWUEwktU99nzIz/dB3D0Kp3BheWxvYWTESpcCCcQgEapBzQMjJavlU8cqC1ozcNl9UXjWleCiXQktfI5R2krEIJOPgqiodKLhfa24jF+YiSMQ0bzhJXr56JqVxrhz+6rfAgHCo3NpZ8RAyAv+Nko8aYLU+QMOJbsgJsX6qvICXlxzaNBbfTAhz4f34xn3LJh1L01mz6iNx5q84epdg5n8wWq/iZS/q6+FAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDuxthGaNy5hjaZvHSsBvuW+a2xzl8BhLrB/Xy9ShdxMo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rsanz
+
+==================================================================
