@@ -251,10 +251,10 @@ Cada impresora se almacenará en una estructura con tres campos:
   <span class="n">tCola</span> <span class="n">colaImp</span><span class="p">;</span>
 <span class="p">}</span><span class="n">tImpresora</span><span class="p">;</span>
 
-<span class="n">tImpresora</span> <span class="n">lista</span><span class="p">[</span><span class="n">IMPRESORAS</span><span class="p">];</span><span class="c1">//lista esta declarada como variable global para simplificar el programa
-</span>
-<span class="c1">//Declaracion de las funciones
-</span><span class="kt">int</span> <span class="n">colaLlena</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="n">tImpresora</span> <span class="n">lista</span><span class="p">[</span><span class="n">IMPRESORAS</span><span class="p">];</span><span class="c1">//lista esta declarada como variable global para simplificar el programa</span>
+
+<span class="c1">//Declaracion de las funciones</span>
+<span class="kt">int</span> <span class="nf">colaLlena</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:colaLlena
 *Descripcion: analiza si una cola esta llena
@@ -263,7 +263,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida: devuelve un entero. 1 si esta llena, 0 si no esta llena
 *Parametros de entrada/salida:-----
 *************************************************************/</span>
-<span class="kt">int</span> <span class="n">colaVacia</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">colaVacia</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:colaVacia
 *Descripcion:analiza si una cola esta vacia
@@ -272,7 +272,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida: devuelve 1 si esta vacia y 0 si no esta vacia
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">int</span> <span class="n">huecoLibre</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">huecoLibre</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:huecoLibre
 *Descripcion:busca huecos en la lista de impresoras
@@ -282,7 +282,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *                     libre en la lista o -1 si esta llena
 *Parametros de entrada/salida:------
 *************************************************************/</span>
-<span class="kt">int</span> <span class="n">listaVacia</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">listaVacia</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:listaVacia
 *Descripcion:analiza si la lista esta vacia
@@ -292,7 +292,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *                       la lista o -1 si está vacia
 *Parametros de entrada/salida:-------
 *************************************************************/</span>
-<span class="kt">int</span> <span class="n">listaLlena</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">listaLlena</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:listaLlena
 *Descripcion:analiza si la lista esta llena
@@ -302,7 +302,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *                       menos un hueco libre, 1 si esta llena
 *Parametros de entrada/salida:--------
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">meterCola</span><span class="p">(</span><span class="kt">char</span> <span class="n">cadena</span><span class="p">[],</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">meterCola</span><span class="p">(</span><span class="kt">char</span> <span class="n">cadena</span><span class="p">[],</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:meterCola
 *Descripcion:pone una cadena de caracteres en una cola
@@ -311,7 +311,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:---
 *Parametros de entrada/salida:-----
 *************************************************************/</span>
-<span class="kt">int</span> <span class="n">enLista</span> <span class="p">(</span><span class="kt">char</span> <span class="n">buscar</span><span class="p">[]);</span>
+<span class="kt">int</span> <span class="nf">enLista</span> <span class="p">(</span><span class="kt">char</span> <span class="n">buscar</span><span class="p">[]);</span>
 <span class="cm">/*************************************************************
 *Nombre:enLista
 *Descripcion:busca en la lista una impresora
@@ -321,7 +321,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *                     si no, devuele -1
 *Parametros de entrada/salida:-----
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">mandarFicherosPorLote</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">tImpresora</span> <span class="o">*</span><span class="n">pimpresora</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">mandarFicherosPorLote</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">tImpresora</span> <span class="o">*</span><span class="n">pimpresora</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:mandarFicherosPorLote
 *Descripcion:manda n ficheros de argv a la cola de una impresora
@@ -333,7 +333,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:----
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">sacarCola</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">ficheroOut</span><span class="p">,</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">sacarCola</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">ficheroOut</span><span class="p">,</span> <span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:sacarCola
 *Descripcion:saca 1 fichero de la cola
@@ -342,7 +342,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida: ficheroOut: donde se guarda el fichero sacado
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">imprimirCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">imprimirCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:imprimirCola
 *Descripcion:imprime toda una cola de impresion
@@ -351,7 +351,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:----
 *Parametros de entrada/salida:-----
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">inicializarCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">inicializarCola</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:inicializarCola
 *Descripcion:inicializa una cola poniendo a 0 todos sus parametros
@@ -360,7 +360,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:----
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">inicializarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">inicializarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:inicializarLista
 *Descripcion:inicializa la lista poniendo a cero todos sus parametros
@@ -369,7 +369,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:-----
 *Parametros de entrada/salida:-----
 *************************************************************/</span>
-<span class="kt">int</span> <span class="n">guardarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">guardarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:guardarLista
 *Descripcion:guarda el estado actual de la lista en un fichero externo
@@ -378,7 +378,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">int</span> <span class="n">recuperarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">recuperarLista</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:recuperarLista
 *Descripcion:recupera una lista si encuentra una copia guardada
@@ -387,7 +387,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:devuelve 1 si la guarda correctamente, 0 si hay error
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">int</span> <span class="n">menu</span> <span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">int</span> <span class="nf">menu</span> <span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:menu
 *Descripcion:muestra un menu y pide al usuario una opcion
@@ -396,7 +396,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:devuelve la opcion elegida
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">agregarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">numImpresora</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">agregarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">numImpresora</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:agregarImpresora
 *Descripcion:agrega una impresora a la lista
@@ -405,7 +405,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:----
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">leerFichero</span><span class="p">(</span><span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">13</span><span class="p">]);</span>
+<span class="kt">void</span> <span class="nf">leerFichero</span><span class="p">(</span><span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">13</span><span class="p">]);</span>
 <span class="cm">/*************************************************************
 *Nombre:leerFichero
 *Descripcion:lee un fichero de texto y lo muestra por salida estandar
@@ -414,7 +414,7 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de salida:----
 *Parametros de entrada/salida:----
 *************************************************************/</span>
-<span class="kt">void</span> <span class="n">borrarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">queImp</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">borrarImpresora</span><span class="p">(</span><span class="kt">int</span> <span class="n">queImp</span><span class="p">);</span>
 <span class="cm">/*************************************************************
 *Nombre:borrarImpresora
 *Descripcion:borra una impresora de la lista
@@ -424,8 +424,8 @@ Cada impresora se almacenará en una estructura con tres campos:
 *Parametros de entrada/salida:----
 *************************************************************/</span>
 
-<span class="c1">//FUNCION PRINCIPAL
-</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="c1">//FUNCION PRINCIPAL</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 <span class="p">{</span>
   <span class="kt">char</span> <span class="n">ficheroOut</span><span class="p">[</span><span class="mi">12</span><span class="o">+</span><span class="mi">1</span><span class="p">];</span>
   <span class="kt">int</span> <span class="n">condicion</span><span class="p">;</span>
@@ -531,10 +531,10 @@ Cada impresora se almacenará en una estructura con tres campos:
           <span class="n">printf</span><span class="p">(</span><span class="s">"Fin del programa. Lista guardada. Adios.</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
           <span class="n">condicion</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
           <span class="k">break</span><span class="p">;</span>
-        <span class="p">}</span><span class="c1">//fin del switch
-</span>      <span class="p">}</span><span class="c1">//fin del bucle
-</span><span class="p">}</span><span class="c1">//fin de main
-</span>
+        <span class="p">}</span><span class="c1">//fin del switch</span>
+      <span class="p">}</span><span class="c1">//fin del bucle</span>
+<span class="p">}</span><span class="c1">//fin de main</span>
+
 
 
 <span class="kt">int</span> <span class="nf">colaLlena</span><span class="p">(</span><span class="n">tCola</span> <span class="o">*</span><span class="n">pcola</span><span class="p">)</span>
