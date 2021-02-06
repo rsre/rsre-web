@@ -5,9 +5,9 @@
     <description>I love electronics.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 30 Dec 2019 11:38:05 +0100</pubDate>
-    <lastBuildDate>Mon, 30 Dec 2019 11:38:05 +0100</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Sat, 06 Feb 2021 15:41:47 +0100</pubDate>
+    <lastBuildDate>Sat, 06 Feb 2021 15:41:47 +0100</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>I made some T-shirt design</title>
@@ -99,7 +99,7 @@ Wordpress requería más atención, mantenimiento y tiempo del que me gustaría 
 
 &lt;p&gt;Para poner varias etiquetas tags: [separadas, por, comas]&lt;/p&gt;
 
-&lt;p&gt;Así se ponen cuadrados azules &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Así se ponen cuadrados azules &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Se puede poner código así&lt;/p&gt;
 
