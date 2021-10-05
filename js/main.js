@@ -47,7 +47,13 @@ $(document).ready(function () {
   }
 
   if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
-    $('.panel-cover').addClass('panel-cover--collapsed-left')
+    currentWidth = $(window).width()
+    if (currentWidth < 960) {
+      $('.panel-cover').addClass('panel-cover--collapsed')
+      $('.about-wrapper').css('display', 'none')
+    } else {
+      $('.panel-cover').addClass('panel-cover--collapsed-left')
+    }
   }
 
   $('.btn-mobile-menu').click(function () {
