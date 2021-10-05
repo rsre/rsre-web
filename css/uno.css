@@ -1466,6 +1466,9 @@ nav {
 	min-width: 3em;
 }
 
+.nav-mobile {
+	display: none; }
+
 .navigation__item {
 	display: inline-block;
 	margin: 0 2px 0 0;
@@ -1676,6 +1679,9 @@ input[type="tel"] {
 @media all and (max-width: 960px) {
 	.btn-mobile-menu {
 		display: block; }
+
+	.nav-desktop {
+		display: none !important; }
 
 	.panel-main {
 		display: table;
