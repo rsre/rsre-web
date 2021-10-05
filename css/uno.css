@@ -1457,6 +1457,10 @@ nav {
 	margin: 0;
 	list-style-type: none; }
 
+.cover-navigation--primary a {
+	min-width: 3em;
+}
+
 .navigation__item {
 	display: inline-block;
 	margin: 0 2px 0 0;
@@ -1472,10 +1476,10 @@ nav {
 			border-color: #FFF;
 			opacity: 1; }
 
-.navigation--social {
-	margin-left: 1.5em; }
+.navigation--social { }
 	.navigation--social a {
-		padding: 6px 8px 6px 9px; }
+		min-width: 1.5rem;
+		padding: 7px; }
 		.navigation--social a .label {
 			display: none; }
 		.navigation--social a .icon {
