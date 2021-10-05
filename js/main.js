@@ -29,11 +29,21 @@ $(document).ready(function () {
   })
 
   if (window.location.hash && window.location.hash == '#blog') {
-    $('.panel-cover').addClass('panel-cover--collapsed-left')
+    currentWidth = $(window).width()
+    if (currentWidth < 960) {
+      $('.panel-cover').addClass('panel-cover--collapsed')
+    } else {
+      $('.panel-cover').addClass('panel-cover--collapsed-left')
+    }
   }
 
   if (window.location.hash && window.location.hash == '#about') {
-    $('.panel-cover').addClass('panel-cover--collapsed-right')
+    currentWidth = $(window).width()
+    if (currentWidth < 960) {
+      $('.panel-cover').addClass('panel-cover--collapsed')
+    } else {
+      $('.panel-cover').addClass('panel-cover--collapsed-right')
+    }
   }
 
   if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
