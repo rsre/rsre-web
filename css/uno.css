@@ -1116,11 +1116,15 @@ pre {
 	width: 940px;
 	margin: 0 auto; }
 
+.about-wrapper {
+	z-index: 800;
+	width: 30%;
+	margin-left: 1em; 
+	float: left;}
+
 .content-wrapper {
 	z-index: 800;
-	width: 60%;
-	max-width: 800px;
-	margin-left: 40%; }
+	margin-left: 30%;}
 
 .content-wrapper__inner {
 	margin: 0 3%;
@@ -1252,8 +1256,15 @@ hr {
 	background-size: cover; }
 
 .panel-cover--collapsed {
-	width: 40%;
-	max-width: 530px; }
+	width: 40%;}
+
+.panel-cover--collapsed-left {
+	right: 62%;
+	width: 40%;}
+
+.panel-cover--collapsed-right {
+	right: 0;
+	width: 67%;}
 
 .panel-cover--overlay {
 	display: block;
@@ -1736,6 +1747,11 @@ input[type="tel"] {
 	.content-wrapper__inner {
 		margin-right: 0;
 		margin-left: 0; }
+
+	.about-wrapper {
+		width: 20%;
+		max-width: none;
+		margin: 0 auto; }
 
 	.navigation__item {
 		width: 100%;
