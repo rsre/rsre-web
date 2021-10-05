@@ -1760,9 +1760,11 @@ input[type="tel"] {
 		margin-left: 0; }
 
 	.about-wrapper {
-		width: 20%;
+		width: 80%;
 		max-width: none;
-		margin: 0 auto; }
+		margin: 0 auto;
+		float: none;
+		padding: 20px 0;}
 
 	.navigation__item {
 		width: 100%;
