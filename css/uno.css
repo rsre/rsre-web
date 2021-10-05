@@ -1766,6 +1766,9 @@ input[type="tel"] {
 		float: none;
 		padding: 20px 0;}
 
+	.footer {
+		bottom: initial;}
+
 	.navigation__item {
 		width: 100%;
 		margin: 0 0 .4em 0; } }
