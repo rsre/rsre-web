@@ -1,6 +1,6 @@
-# jekyll-uno
+# ricardosa.nz
 
-Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
+This repo contains my web presence. It is based on Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
 
 > :warning:
   This theme requires ruby and rubygems installed
@@ -21,8 +21,8 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 
 ### Install and Test
 
-1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
-2. Enter the folder: `cd jekyll-uno/`
+1. Download or clone repo `git clone git@github.com:rsre/rsre.github.io.git`
+2. Enter the folder: `cd rsre.github.io/`
 3. If you don't have bundler installed: `gem install bundler`
 3. Install Ruby gems: `bundle install`
 4. Start Jekyll server: `jekyll serve`
@@ -33,8 +33,8 @@ Access via: [http://localhost:4000/jekyll-uno](http://localhost:4000/jekyll-uno)
 
 ### Demo and Download
 
-[Demo](http://joshgerdes.com/jekyll-uno/)
-[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
+[Demo](http://ricardosa.nz/)
+[Download](https://github.com/rsre/rsre.github.io/archive/master.zip)
 
 ![jekyll-uno - free Jekyll theme](/screenshot.png)
 
