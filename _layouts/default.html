@@ -6,7 +6,8 @@
     {% include header.html %}
 
     <div class="about-wrapper">
-      {% include about.html %}
+      {% capture my_include %}{% include about.md %}{% endcapture %}
+      {{ my_include | markdownify }}
     </div>
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
