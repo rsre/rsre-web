@@ -1770,10 +1770,11 @@ input[type="tel"] {
 		max-width: none;
 		margin: 0 auto;
 		float: none;
-		padding: 20px 0;}
+		padding: 20px 0; }
 
 	.footer {
-		bottom: initial;}
+		bottom: initial;
+		width: 80%; }
 
 	.navigation__item {
 		width: 100%;
