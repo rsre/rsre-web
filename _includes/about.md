@@ -9,3 +9,5 @@ I'm interested in:
 - Distributed systems
 - Decentralisation
 
+Currently I am experimenting running my own Matrix server and bridges to all platforms.
+
