@@ -8,7 +8,7 @@ Location: Guadalajara, SPAIN
 Name: Dale Anthony, Josh Gerdes
 
 /* SITE */
-Last update: 5/10/2021
+Last update: 28/12/2024
 Standards: HTML5, CSS3
 Components: Jekyll
-Software: Sublime Text, Photoshop
+Software: VSCode, Inkscape
